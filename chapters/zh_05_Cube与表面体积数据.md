@@ -12,13 +12,9 @@
 
 结果（Results）=>表面/等值线（Surfaces/Contours）菜单项用于打开 GaussView 表面与等值线（Surfaces and Contours）对话框（如下图所示）。它允许您以三维形式显示各种化学数据。体积数据可以由 Gaussian 检查点（checkpoint）文件生成，也可以从 Cube 文件中读入。请注意，实际显示一个表面（surface）包括两个步骤：
 
--
+- 通过生成或读入获得一个 Cube。
 
-通过生成或读入获得一个 Cube。
-
--
-
-生成用于显示的实际表面或等值线。
+- 生成用于显示的实际表面或等值线。
 
 该对话框允许您选择 Cube 以显示为表面和/或等值线，也可对当前已显示的表面和等值线进行操作。
 
@@ -30,26 +26,18 @@
 
 Cube 操作（Cube Actions）菜单包含以下项目：
 
--
+- 新建 Cube（New Cube）：打开生成 Cube（Generate Cube）对话框，您可在此选择要为该文件创建的 Cube 类型并指定其属性。新 Cube 随后会被加入可用 Cube 列表，可用于生成表面和等值线。
 
-新建 Cube（New Cube）：打开生成 Cube（Generate Cube）对话框，您可在此选择要为该文件创建的 Cube 类型并指定其属性。新 Cube 随后会被加入可用 Cube 列表，可用于生成表面和等值线。
+- 载入 Cube（Load Cube）：从外部文件读入 Cube 数据。该 Cube 可以是先前由 GaussView 保存的，也可以是由 cubegen 工具独立生成的。
 
--
-
-载入 Cube（Load Cube）：从外部文件读入 Cube 数据。该 Cube 可以是先前由 GaussView 保存的，也可以是由 cubegen 工具独立生成的。
-
--
-
-保存 Cube（Save Cube）：允许您保存 Cube 以供日后使用。
+- 保存 Cube（Save Cube）：允许您保存 Cube 以供日后使用。
 
 
 ![](../imgs/p136_142.png)
 
 <!-- p.137 -->
 
--
-
-删除 Cube（Remove Cube）：从列表中删除一项。如果该 Cube 是从外部文件载入或已保存的，则文件不受影响。如果该 Cube 是在本次会话中生成的且未保存，则数据将被丢弃，日后查看时必须重新生成。
+- 删除 Cube（Remove Cube）：从列表中删除一项。如果该 Cube 是从外部文件载入或已保存的，则文件不受影响。如果该 Cube 是在本次会话中生成的且未保存，则数据将被丢弃，日后查看时必须重新生成。
 
 ## 体积数据的可视化（Visualizing Volumetric Data）
 
@@ -57,37 +45,23 @@ Cube 操作（Cube Actions）菜单包含以下项目：
 
 该对话框底部的复选框同时适用于表面和等值线：
 
--
+- 为新表面/等值线添加视图（Add views for new surfaces/contours）：（源文无说明）
 
-为新表面/等值线添加视图（Add views for new surfaces/contours）：
-
--
-
-将操作应用于分子组（Apply actions to molecule group）：
+- 将操作应用于分子组（Apply actions to molecule group）：（源文无说明）
 
 ## 表面（Surfaces）
 
 表面操作（Surface Actions）菜单包含以下项目：
 
--
+- 新建表面（New Surface）：由当前选中的 Cube 生成一个新表面，并将其加入可查看的可用表面列表。
 
-新建表面（New Surface）：由当前选中的 Cube 生成一个新表面，并将其加入可查看的可用表面列表。
+- 新建映射表面（New Mapped Surface）：打开表面映射（Surface Mapping）对话框，您可在此决定要生成的表面类型以及由哪个 Cube 生成。所生成的表面是指定属性的按比例缩放的热图。创建后，它会被加入可显示的表面列表。
 
--
+- 显示表面（Show Surface）：显示被隐藏的表面。
 
-新建映射表面（New Mapped Surface）：打开表面映射（Surface Mapping）对话框，您可在此决定要生成的表面类型以及由哪个 Cube 生成。所生成的表面是指定属性的按比例缩放的热图。创建后，它会被加入可显示的表面列表。
+- 隐藏表面（Hide Surface）：隐藏一个表面。
 
--
-
-显示表面（Show Surface）：显示被隐藏的表面。
-
--
-
-隐藏表面（Hide Surface）：隐藏一个表面。
-
--
-
-删除表面（Remove Surface）：从可显示的表面列表中删除一个表面。若要再次查看，必须重新生成。
+- 删除表面（Remove Surface）：从可显示的表面列表中删除一个表面。若要再次查看，必须重新生成。
 
 表面列表下方的新表面的等值（Isovalue）字段控制所生成表面的特征。修改其数值将应用于随后生成的表面，但不影响已有表面。一般不应更改这些数值。注意：比较来自不同分子但使用了不同等值（isovalue）的表面通常会产生误导。
 
@@ -95,21 +69,13 @@ Cube 操作（Cube Actions）菜单包含以下项目：
 
 等值线操作（Contour Actions）菜单包含以下项目：
 
--
+- 新建等值线（New Contour）：打开生成等值线（Generate Contours）窗口。用于创建新的等值线。
 
-新建等值线（New Contour）：打开生成等值线（Generate Contours）窗口。用于创建新的等值线。
+- 显示等值线（Show Contour）：显示被隐藏的等值线。
 
--
+- 隐藏等值线（Hide Contour）：隐藏一条等值线。
 
-显示等值线（Show Contour）：显示被隐藏的等值线。
-
--
-
-隐藏等值线（Hide Contour）：隐藏一条等值线。
-
--
-
-删除等值线（Remove Contour）：从可显示的等值线列表中删除一条等值线。若要再次查看，必须重新生成。
+- 删除等值线（Remove Contour）：从可显示的等值线列表中删除一条等值线。若要再次查看，必须重新生成。
 
 ## Cube 的生成与操作（Generating and Manipulating Cubes）
 
@@ -149,13 +115,9 @@ GaussView 还允许您将一种属性的值映射到另一种属性的等值面�
 
 该对话框中各字段的用途如下：
 
--
+- 使用现有 Cube（Use an existing cube）：将当前 Cube 之一用作着色数据。当选中此项时，从出现的列表中选择所需的表面。
 
-使用现有 Cube（Use an existing cube）：将当前 Cube 之一用作着色数据。当选中此项时，从出现的列表中选择所需的表面。
-
--
-
-仅在表面点处生成数值（Generate values only at surface points）：在每个表面点处即时生成着色数据。这通常是更快的选择。在弹出菜单和其他字段中指定所需的着色数据表面。
+- 仅在表面点处生成数值（Generate values only at surface points）：在每个表面点处即时生成着色数据。这通常是更快的选择。在弹出菜单和其他字段中指定所需的着色数据表面。
 
 视图窗口（view window）显示映射表面，并在顶部包含颜色映射工具栏（如上图中右侧窗口所示）。映射表面渲染所用的颜色基于最小值与最大值之间的均匀缩放，如光谱（spectrum）左右两侧文本框中的数值所指定（分别为最小值和最大值）。更改这些框中的数值将改变颜色标尺，并相应改变映射表面上的着色。与其他工具栏一样，该颜色映射工具栏可通过单击握柄条并按住拖动，在窗口内移动。
 
@@ -174,17 +136,11 @@ GaussView 还允许您将一种属性的值映射到另一种属性的等值面�
 
 其余控件在所有表面类型的对话框中都存在。
 
--
+- 等值（IsoValues）弹出菜单控制显示正值、负值还是两者（默认）。
 
-等值（IsoValues）弹出菜单控制显示正值、负值还是两者（默认）。
+- 隐藏背面（Hide backside）复选框控制是否显示表面的背面。选中后，透明表面的透明度会提高。尝试在格式（Format）设为网格（Mesh）时打开和关闭它，以确切了解被隐藏或显示的内容。
 
--
-
-隐藏背面（Hide backside）复选框控制是否显示表面的背面。选中后，透明表面的透明度会提高。尝试在格式（Format）设为网格（Mesh）时打开和关闭它，以确切了解被隐藏或显示的内容。
-
--
-
-Z 裁剪（Z-Clip）滑块可用于去除图像最前面的部分，以便观察分子显示的内部。
+- Z 裁剪（Z-Clip）滑块可用于去除图像最前面的部分，以便观察分子显示的内部。
 
 表面属性的默认值可通过显示格式首选项（Display Format Preferences）的表面（Surface）面板设置，其中包含相同的控件。
 
@@ -197,9 +153,7 @@ Z 裁剪（Z-Clip）滑块可用于去除图像最前面的部分，以便观察
 
 等值线（contour）是 Cube 数据在某一平面上的二维投影。它们同样使用在表面与等值线对话框中生成的 Cube。您可以使用等值线操作（Contour Actions）菜单上的项目创建新等值线（新建等值线（New Contour））、显示或隐藏等值线（显示等值线（Show Contour）和隐藏等值线（Hide Contour）），以及删除等值线（删除等值线（Remove Contour））。下图显示了一个等值线显示示例。
 
-等值线图示例（Example Contour Plot）该等值线将 HOMO 投影到
-
-垂直于 C=O 键的平面上。
+等值线图示例（Example Contour Plot）该等值线将 HOMO 投影到 垂直于 C=O 键的平面上。
 
 下图显示了选择等值线操作（Contour Actions）=>新建等值线（New Contour）后出现的对话框。
 
@@ -212,21 +166,13 @@ Z 裁剪（Z-Clip）滑块可用于去除图像最前面的部分，以便观察
 
 该对话框将由先前通过表面与等值线对话框中 Cube 操作（Cube Actions）菜单创建或载入的现有 Cube 生成等值线。它包含四个子区域：
 
--
+- 二维网格（2-D Grid）：指定用于计算等值线点的网格特征。您用弹出菜单指定该区域中数值的单位。U 和 V 字段指定两个网格方向上的最小值和最大值，分辨率（Resolution）字段指定网格点之间的距离。
 
-二维网格（2-D Grid）：指定用于计算等值线点的网格特征。您用弹出菜单指定该区域中数值的单位。U 和 V 字段指定两个网格方向上的最小值和最大值，分辨率（Resolution）字段指定网格点之间的距离。
+- 平面（Plane）：指定绘制等值线的平面。该项在下文讨论。
 
--
+- Cube：选择等值线数据的来源：现有 Cube（从列表中选择）或为平面网格明确生成数值。后者在上图中示出；后者类似于映射表面的对应功能。
 
-平面（Plane）：指定绘制等值线的平面。该项在下文讨论。
-
--
-
-Cube：选择等值线数据的来源：现有 Cube（从列表中选择）或为平面网格明确生成数值。后者在上图中示出；后者类似于映射表面的对应功能。
-
--
-
-等值（IsoValues）：指定计算等值线所用的一系列等值。在此列表中可根据需要添加或删除项目。
+- 等值（IsoValues）：指定计算等值线所用的一系列等值。在此列表中可根据需要添加或删除项目。
 
 ## 定义等值线平面（Defining the Contour Plane）
 
@@ -324,9 +270,7 @@ PCM 溶剂化显示（PCM Solvation Display）显示由 SCRF=Read 功能的 Prin
 
 <!-- p.148 -->
 
-按键级着色（Coloring by Bond Order）本例在球棍显示模式下按键级
-
-给键着色：红色=单键，绿色=双键，黑色=共振键。
+按键级着色（Coloring by Bond Order）本例在球棍显示模式下按键级 给键着色：红色=单键，绿色=双键，黑色=共振键。
 
 您可以用关闭（Close）或取消（Cancel）按钮退出对话框。关闭（Close）在对话框关闭后保持原子属性显示，而取消（Cancel）则恢复正常的视图（View）显示。
 
@@ -339,29 +283,19 @@ PCM 溶剂化显示（PCM Solvation Display）显示由 SCRF=Read 功能的 Prin
 
 结果（Results）=>电荷分布（Charge Distribution）菜单项用于打开显示原子电荷（Display Atomic Charges）对话框（见下图）。该工具管理 Gaussian 中各种方法计算的部分电荷密度的显示。在对话框的原子电荷（Atomic Charges）区域中，可显示默认的 Mulliken 电荷以及该任务可用的其他计算电荷。类型（Type）菜单列出可用的选项。
 
-显示原子电荷（Displaying Atomic Charges）左侧对话框用于控制显示哪些电荷以及如何显示。中间窗口显示数值型电荷数显示，右侧窗口显示
-
-按电荷着色的原子（反映左侧对话框中的设置），以及偶极矩矢量。
+显示原子电荷（Displaying Atomic Charges）左侧对话框用于控制显示哪些电荷以及如何显示。中间窗口显示数值型电荷数显示，右侧窗口显示 按电荷着色的原子（反映左侧对话框中的设置），以及偶极矩矢量。
 
 默认情况下，电荷显示的颜色光谱（spectrum）通过读取为该分子计算的最大电荷并设置范围与之匹配来设定。也可以通过在颜色范围（Color Range）字段中输入数值手动调整范围。
 
 该对话框上部其余复选框的含义如下：
 
--
+- 显示数值（Show Numbers）：在每个原子旁放置原子电荷值。
 
-显示数值（Show Numbers）：在每个原子旁放置原子电荷值。
+- 按电荷给原子着色（Color Atoms by Charge）：按颜色范围（Color Range）字段和对称颜色范围（Symmetric Color Range）复选框的规定，按原子电荷给每个原子重新着色。
 
--
+- 对称颜色范围（Symmetric Color Range）：强制电荷范围的正负限具有相同的绝对大小（无论原子电荷值的实际范围如何）。
 
-按电荷给原子着色（Color Atoms by Charge）：按颜色范围（Color Range）字段和对称颜色范围（Symmetric Color Range）复选框的规定，按原子电荷给每个原子重新着色。
-
--
-
-对称颜色范围（Symmetric Color Range）：强制电荷范围的正负限具有相同的绝对大小（无论原子电荷值的实际范围如何）。
-
--
-
-固定颜色范围（Fixed Color Range）：强制电荷显示使用默认固定范围。该范围默认设为 -1.0 到 1.0，可在电荷分布首选项（Charge Distribution Preferences）中修改。
+- 固定颜色范围（Fixed Color Range）：强制电荷显示使用默认固定范围。该范围默认设为 -1.0 到 1.0，可在电荷分布首选项（Charge Distribution Preferences）中修改。
 
 对话框的偶极矩（Dipole Moment）区域控制显示中是否包含表示偶极矩的矢量。显示该矢量时，可以指定矢量长度的缩放因子（默认约为 1.0）及其原点。后者的可用取值如前图所示。
 

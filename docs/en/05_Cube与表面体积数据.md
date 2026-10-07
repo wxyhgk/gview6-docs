@@ -12,13 +12,9 @@
 
 The Results=>Surfaces/Contours menu item opens the GaussView Surfaces and Contours dialog (illustrated below). It allows you to display various chemical data in three dimensions. The volumetric data may be generated from a Gaussian checkpoint file or be read in from a cube file. Note that there are two steps involved in actually displaying a surface:
 
-- 
+- Obtaining a cube by generating it or reading it in.
 
-Obtaining a cube by generating it or reading it in.
-
-- 
-
-Generating the actual surface or contour for display.
+- Generating the actual surface or contour for display.
 
 This dialog allows you to select cubes for display as surfaces and/or contours and also to manipulate currently displayed surfaces and contours.
 
@@ -30,26 +26,18 @@ The three areas of the dialog control cubes (sets of volumetric data such as mol
 
 The Cube Actions menu contains the following items:
 
-- 
+- New Cube: Opens the Generate Cube dialogue, which allows you to choose which type of cube you wish to create for the file and specify its properties. The new cube is then added to the list of available cubes from which surfaces and contours are generated.
 
-New Cube: Opens the Generate Cube dialogue, which allows you to choose which type of cube you wish to create for the file and specify its properties. The new cube is then added to the list of available cubes from which surfaces and contours are generated.
+- Load Cube: Read in cube data from an external file. The cube may have been saved earlier from GaussView or generated independently by the cubegen utility.
 
-- 
-
-Load Cube: Read in cube data from an external file. The cube may have been saved earlier from GaussView or generated independently by the cubegen utility.
-
-- 
-
-Save Cube: Allows you to save a cube for later use.
+- Save Cube: Allows you to save a cube for later use.
 
 
 ![](../imgs/p136_142.png)
 
 <!-- p.137 -->
 
-- 
-
-Remove Cube: Remove an item from the list. If the cube was loaded from an external file or saved, the file is unaffected. If the cube was generated during this session and not saved, the data is discarded and must be regenerated for future viewing.
+- Remove Cube: Remove an item from the list. If the cube was loaded from an external file or saved, the file is unaffected. If the cube was generated during this session and not saved, the data is discarded and must be regenerated for future viewing.
 
 ## Visualizing Volumetric Data
 
@@ -57,59 +45,37 @@ The New … items on the Surface Actions and Contour Actions menus apply to the 
 
 The checkboxes at the bottom of the dialog apply to both surfaces and contours:
 
-- 
+- Add views for new surfaces/contours: (no explanation in source)
 
-Add views for new surfaces/contours:
-
-- 
-
-Apply actions to molecule group:
+- Apply actions to molecule group: (no explanation in source)
 
 ## Surfaces
 
 The Surface Actions menu contains the following items:
 
-- 
+- New Surface: Generates a new surface from the currently selected cube and adds it to the list of available surfaces to view.
 
-New Surface: Generates a new surface from the currently selected cube and adds it to the list of available surfaces to view.
+- New Mapped Surface: Opens the Surface Mapping dialogue, which allows you to decide which type of surface to generate and from which cube to generate it. The surface generated is a scaled heat map of the specified properties. After being created, it is added to the list of surfaces that can be displayed.
 
-- 
+- Show Surface: Reveals a hidden surface.
 
-New Mapped Surface: Opens the Surface Mapping dialogue, which allows you to decide which type of surface to generate and from which cube to generate it. The surface generated is a scaled heat map of the specified properties. After being created, it is added to the list of surfaces that can be displayed.
+- Hide Surface: Hides a surface.
 
-- 
+- Remove Surface: Removes a surface from the list of surfaces that can be displayed. To view it again, it must be generated again.
 
-Show Surface: Reveals a hidden surface.
-
-- 
-
-Hide Surface: Hides a surface.
-
-- 
-
-Remove Surface: Removes a surface from the list of surfaces that can be displayed. To view it again, it must be generated again.
-
-The |Isovalue| for new surfaces fields below the surfaces list control the characteristics of the generated surface. Modifying their values will apply to subsequently generated surfaces but will not affect existing ones. Generally, the values should not be changed. Note: Comparing surfaces from different molecules that used different isovalues is usually misleading.
+The `|Isovalue|` for new surfaces fields below the surfaces list control the characteristics of the generated surface. Modifying their values will apply to subsequently generated surfaces but will not affect existing ones. Generally, the values should not be changed. Note: Comparing surfaces from different molecules that used different isovalues is usually misleading.
 
 ## Contours
 
 The Contour Actions menu contains the following items:
 
-- 
+- New Contour: Opens the Generate Contours window. This is used to create a new contour.
 
-New Contour: Opens the Generate Contours window. This is used to create a new contour.
+- Show Contour: Reveals a hidden contour.
 
-- 
+- Hide Contour: Hides a contour.
 
-Show Contour: Reveals a hidden contour.
-
-- 
-
-Hide Contour: Hides a contour.
-
-- 
-
-Remove Contour: Removes a contour from the list of contours that can be displayed. To view it again, it must be generated again.
+- Remove Contour: Removes a contour from the list of contours that can be displayed. To view it again, it must be generated again.
 
 ## Generating and Manipulating Cubes
 
@@ -149,13 +115,9 @@ Creating a Mapped Surface
 
 The fields in this dialog have the following purposes:
 
-- 
+- Use an existing cube: Use one of the current cubes as the colorization data. Select the desired surface from the list that is present when this item is selected.
 
-Use an existing cube: Use one of the current cubes as the colorization data. Select the desired surface from the list that is present when this item is selected.
-
-- 
-
-Generate values only at surface points: Generate the colorization data on the fly at each surface point. This is generally a faster choice. Specify the desired surface for colorization data in the popup menu and other fields.
+- Generate values only at surface points: Generate the colorization data on the fly at each surface point. This is generally a faster choice. Specify the desired surface for colorization data in the popup menu and other fields.
 
 View windows display mapped surfaces and include a color mapping toolbar at the top (as in the window on the right in the figure above). The colors used in rendering a mapped surface are based on a uniform scaling between minimum and maximum values, as specified in the text boxes to the left and right of the spectrum (respectively). Changing the values in these boxes will change the color scale and correspondingly change the coloring on the mapped surface. Like other toolbars, this color-mapping toolbar can be moved by clicking and holding on the grip bar and dragging it around the window.
 
@@ -174,17 +136,11 @@ For transparent surfaces, the Transparent Options slider varies the opacity of t
 
 The remaining controls are present in the dialog for all surface types.
 
-- 
+- The IsoValues popup controls whether the positive values, negative values, or both (the default) are displayed.
 
-The IsoValues popup controls whether the positive values, negative values, or both (the default) are displayed.
+- The Hide backside checkbox controls whether the back side of surfaces are displayed. Checking it results in increased transparency for transparent surfaces. Try turning it on and off with the Format set to Mesh to see exactly what is being hidden or revealed.
 
-- 
-
-The Hide backside checkbox controls whether the back side of surfaces are displayed. Checking it results in increased transparency for transparent surfaces. Try turning it on and off with the Format set to Mesh to see exactly what is being hidden or revealed.
-
-- 
-
-The Z-Clip slider may be used to remove the frontmost portions of the image to allow views into the interior of the molecular display.
+- The Z-Clip slider may be used to remove the frontmost portions of the image to allow views into the interior of the molecular display.
 
 Defaults for surface properties can be set via the Display Format Preferences’ Surface panel, which contains the same controls.
 
@@ -197,9 +153,7 @@ Defaults for surface properties can be set via the Display Format Preferences’
 
 Contours are two dimension projections of cube data into a plane. They also use the cubes generated in the Surfaces and Contours dialog. You can use the items on the Contour Actions menu to create a new contour (New Contour), to display or hide a contour (Show Contour and Hide Contour), and to remove a contour (Remove Contour). The figure below illustrates an example contour display.
 
-Example Contour Plot This contour projects the HOMO into a
-
-plane perpendicular to the C=O bond.
+Example Contour Plot This contour projects the HOMO into a plane perpendicular to the C=O bond.
 
 The figure below illustrates the dialog that results from selecting Contour Actions=>New Contour.
 
@@ -212,21 +166,13 @@ The Generate Contours Dialog
 
 This dialog will generate a contour from an existing cube created or loaded previously via the Cube Actions menu in the Surfaces and Contours dialog. It contains four subareas:
 
-- 
+- 2-D Grid: Specifies characteristics of the grid used to compute the contour points. You specify the units for the values in this area with the popup menu. The U and V fields specify the minimum and maximum values in the two grid directions, and the Resolution field specifies the distance between grid points.
 
-2-D Grid: Specifies characteristics of the grid used to compute the contour points. You specify the units for the values in this area with the popup menu. The U and V fields specify the minimum and maximum values in the two grid directions, and the Resolution field specifies the distance between grid points.
+- Plane: Specifies the plane in which the contour will be drawn. This item is discussed below.
 
-- 
+- Cube: Selects the source of the contour data: either an existing cube (select it from the list) or values generated explicitly for the planar grid. The former is illustrated in the figure above; the latter is similar to the analogous feature for mapped surfaces.
 
-Plane: Specifies the plane in which the contour will be drawn. This item is discussed below.
-
-- 
-
-Cube: Selects the source of the contour data: either an existing cube (select it from the list) or values generated explicitly for the planar grid. The former is illustrated in the figure above; the latter is similar to the analogous feature for mapped surfaces.
-
-- 
-
-IsoValues: Specifies the series of isovalues at which the contour will be computed. You can add or remove items from this list as desired.
+- IsoValues: Specifies the series of isovalues at which the contour will be computed. You can add or remove items from this list as desired.
 
 ## Defining the Contour Plane
 
@@ -324,9 +270,7 @@ The Fixed Range for Color checkbox will enable you to enter your own values in t
 
 <!-- p.148 -->
 
-Coloring by Bond Order This example colors the bonds in ball-and-stick display mode by bond
-
-order: red=single bond, green=double bond, black=resonant bond.
+Coloring by Bond Order This example colors the bonds in ball-and-stick display mode by bond order: red=single bond, green=double bond, black=resonant bond.
 
 You can leave the dialog with either the Close or Cancel buttons. Close maintains the atomic properties display after the dialog closes while Cancel restores the normal View display.
 
@@ -339,29 +283,19 @@ You can leave the dialog with either the Close or Cancel buttons. Close maintain
 
 The Results=>Charge Distribution menu item opens the Display Atomic Charges dialog (see figure below). This tool manages the display of partial charge density as computed by various methods in Gaussian. Displays are available in the Atomic Charges area of the dialog for the default Mulliken charges and other computed charges that are available for this job. The Type menu lists the available choices.
 
-Displaying Atomic Charges The dialog on the left is used to control what charges are shown and how they are displayed. The window in the middle shows the numeric charge numbers display, and the one on the right shows the atoms colored by
-
-charge (reflecting the settings in the dialog on the left), as well as the dipole moment vector.
+Displaying Atomic Charges The dialog on the left is used to control what charges are shown and how they are displayed. The window in the middle shows the numeric charge numbers display, and the one on the right shows the atoms colored by charge (reflecting the settings in the dialog on the left), as well as the dipole moment vector.
 
 By default, the color spectrum for charge display is set by reading the maximum charge computed for the molecule and setting the range to match the charge. The range can also be adjusted manually by entering values into the Color Range fields.
 
 The remaining checkboxes in the top portion of this dialog have the following meanings:
 
-- 
+- Show Numbers: Place atomic charge values next to each atom.
 
-Show Numbers: Place atomic charge values next to each atom.
+- Color Atoms by Charge: Recolor each atom by atomic charge according to the specifications of the Color Range fields and the Symmetric Color Range checkbox.
 
-- 
+- Symmetric Color Range: Forces the positive and negative limits of the charge range to have the same absolute magnitude (regardless of the actual range of the atomic charge values).
 
-Color Atoms by Charge: Recolor each atom by atomic charge according to the specifications of the Color Range fields and the Symmetric Color Range checkbox.
-
-- 
-
-Symmetric Color Range: Forces the positive and negative limits of the charge range to have the same absolute magnitude (regardless of the actual range of the atomic charge values).
-
-- 
-
-Fixed Color Range: Force the charge display to use the default fixed range. This range is set to -1.0 to 1.0 by default, and it can be modified in the Charge Distribution Preferences.
+- Fixed Color Range: Force the charge display to use the default fixed range. This range is set to -1.0 to 1.0 by default, and it can be modified in the Charge Distribution Preferences.
 
 The Dipole Moment area of the dialog controls whether a vector representing the dipole moment is included in the display. When the vector is displayed, you can specify the scaling factor for the vector’s length (the default is about 1.0) as well as its origin. The available values for the latter are illustrated in the preceding figure.
 

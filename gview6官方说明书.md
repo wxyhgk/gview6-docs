@@ -163,25 +163,15 @@ Several GaussView features are visible here. At the top, we see the main GaussVi
 
 The GaussView interface consists of these main components:
 
-- 
+- The control panel containing the menu bar and Builder Fragment display area (grey background).
 
-The control panel containing the menu bar and Builder Fragment display area (grey background).
+- Various toolbars. By default, these are placed below the menu bar in the control panel, but they may also be detached if desired (see below). They may also be rearranged within the control panel as desired. This is why your toolbar may differ from the illustration above.
 
-- 
+- One or more molecule View window(s) (blue background by default).
 
-Various toolbars. By default, these are placed below the menu bar in the control panel, but they may also be detached if desired (see below). They may also be rearranged within the control panel as desired. This is why your toolbar may differ from the illustration above.
+- Dialogs corresponding to the various GaussView features.
 
-- 
-
-One or more molecule View window(s) (blue background by default).
-
-- 
-
-Dialogs corresponding to the various GaussView features.
-
-- 
-
-Preferences which control various aspects of the program’s functioning.
+- Preferences which control various aspects of the program’s functioning.
 
 Molecules appear and can be modified in View windows. Do not confuse the Builder Fragment display area below the main toolbar for a View window; it shows what item will be added to the current molecule at the next mouse click.
 
@@ -213,17 +203,11 @@ The Builder toolbar can also appear as a standalone palette (as illustrated on t
 
 GaussView uses these constructs to organize the many molecules which are being utilized at any given time:
 
-- 
+- A molecule is most often a single molecule being worked on in isolation from other ones that may also be open. A molecule generally corresponds to a single file stored on disk. These are also sometimes referred to as models. Note that a molecule in this sense may contain more than one chemical species (i.e., “molecules” in the usual chemical sense).
 
-A molecule is most often a single molecule being worked on in isolation from other ones that may also be open. A molecule generally corresponds to a single file stored on disk. These are also sometimes referred to as models. Note that a molecule in this sense may contain more than one chemical species (i.e., “molecules” in the usual chemical sense).
+- If there is more than one window open for the same molecule, the various different ones are referred to as views. Accordingly, a View window displays a molecule, and different views—and View windows—can display different orientations and properties of the same molecule.
 
-- 
-
-If there is more than one window open for the same molecule, the various different ones are referred to as views. Accordingly, a View window displays a molecule, and different views—and View windows—can display different orientations and properties of the same molecule.
-
-- 
-
-A molecule group is a collection of one or more molecules that are worked on as a unit. Molecule groups containing more than one molecule display each one in a separate subwindow of a combination View window (see Figure 4). Molecule groups are also referred to as model groups.
+- A molecule group is a collection of one or more molecules that are worked on as a unit. Molecule groups containing more than one molecule display each one in a separate subwindow of a combination View window (see Figure 4). Molecule groups are also referred to as model groups.
 
 View window title bars display information about the current molecule group, molecule, and view: each distinct molecule group is identified by an icon whose color is uniquely associated with it. The figure below shows the color icons from two different View windows (each corresponding to a different molecule group). All dialogs that are directly associated with that molecule group will use the same color icon to visually associate themselves with their parent molecule group (including new views created using View=>Add View). This color icon is also used to identify the molecule group in the Windows menu.
 
@@ -265,9 +249,7 @@ The Multiview Mode Content Menu
 
 You can also open this menu by right clicking the title bar of the multiview display area. This menu controls the layout and behavior of multiview display mode:
 
-- 
-
-Workspace Background Color: Modify the background color of the current window.
+- Workspace Background Color: Modify the background color of the current window.
 
 
 ![](imgs/p10_006.png)
@@ -275,25 +257,15 @@ Workspace Background Color: Modify the background color of the current window.
 ![](imgs/p10_007.png)
 
 <!-- p.11 -->
-- 
+- Options: Open the MultiView Options dialog (see below).
 
-Options: Open the MultiView Options dialog (see below).
+- Fit: Resize all individual molecule frames so all are visible in the window.
 
-- 
+- Synchronize: Link all frames so that mouse actions in one affect all of them (e.g., rotations). By default, each view is independent.
 
-Fit: Resize all individual molecule frames so all are visible in the window.
+- Manually Resizable SubWindows: Allow the resizing the SubWindows manually by clicking and dragging on the triangle in the lower right corner.
 
-- 
-
-Synchronize: Link all frames so that mouse actions in one affect all of them (e.g., rotations). By default, each view is independent.
-
-- 
-
-Manually Resizable SubWindows: Allow the resizing the SubWindows manually by clicking and dragging on the triangle in the lower right corner.
-
-- 
-
-Manually Movable SubWindows: Allow for the moving of the SubWindows manually by clicking and dragging on the upper portion of the SubWindow.
+- Manually Movable SubWindows: Allow for the moving of the SubWindows manually by clicking and dragging on the upper portion of the SubWindow.
 
 ### Customizing MultiView Windows
 
@@ -301,27 +273,17 @@ The Multiview Options Dialog The button labeled Less above closes the bottom par
 
 The various controls in the MultiView Options dialog have the following uses:
 
-- 
+- Visible Rows and Visible Columns: Number of rows and columns of individual frames initially appearing in a multiview window.
 
-Visible Rows and Visible Columns: Number of rows and columns of individual frames initially appearing in a multiview window.
+- Scrolling: Placement of scroll bars.
 
-- 
-
-Scrolling: Placement of scroll bars.
-
-- 
-
-Auto Fit SubWindows: When unchecked, resizing the multiview window does not affect the size of the individual frames, so more of them are typically visible when the window is made larger. When checked, individual frames are resized whenever the main window is so the same number of frames are always visible (based on the row and column values specified).
+- Auto Fit SubWindows: When unchecked, resizing the multiview window does not affect the size of the individual frames, so more of them are typically visible when the window is made larger. When checked, individual frames are resized whenever the main window is so the same number of frames are always visible (based on the row and column values specified).
 
 The following controls are visible when the More button has been pressed:
 
-- 
+- Workspace Margin, Horizontal Spacing, and Vertical Spacing: Padding around the block of individual view subwindows and between the individual columns and rows (respectively).
 
-Workspace Margin, Horizontal Spacing, and Vertical Spacing: Padding around the block of individual view subwindows and between the individual columns and rows (respectively).
-
-- 
-
-Borders, Titles, Captions, and Numbers: When checked, Borders displays border on individual view frames. Titles and Numbers control whether the job title and structure number appear in each frame title bar. Captions controls all title-bar text as a whole, and unchecking it suppresses all text regardless of the settings of the other items.
+- Borders, Titles, Captions, and Numbers: When checked, Borders displays border on individual view frames. Titles and Numbers control whether the job title and structure number appear in each frame title bar. Captions controls all title-bar text as a whole, and unchecking it suppresses all text regardless of the settings of the other items.
 
 
 ![](imgs/p11_008.png)
@@ -361,41 +323,23 @@ If two items are not bonded to one another (not connected by visible chemical bo
 
 GaussView contains the following menus, which have the indicated general purposes:
 
-- 
+- File: Creating, opening, printing, and saving structures and movies, as well as setting GaussView preferences.
 
-File: Creating, opening, printing, and saving structures and movies, as well as setting GaussView preferences.
+- Edit: Performing configuration tasks on a structure as a whole.
 
-- 
+- Tools: Specialized features for specific building tasks and calculation types.
 
-Edit: Performing configuration tasks on a structure as a whole.
+- Builder: Creating and modifying molecular structures and structural parameters.
 
-- 
+- View: Managing and interacting with the display of molecules.
 
-Tools: Specialized features for specific building tasks and calculation types.
+- Calculate: Setting up and submitting Gaussian calculations and viewing current GaussView-initiated jobs.
 
-- 
+- Results: Examining calculation results, including surfaces, spectra, plots, and animations.
 
-Builder: Creating and modifying molecular structures and structural parameters.
+- Windows: Managing the various GaussView windows.
 
-- 
-
-View: Managing and interacting with the display of molecules.
-
-- 
-
-Calculate: Setting up and submitting Gaussian calculations and viewing current GaussView-initiated jobs.
-
-- 
-
-Results: Examining calculation results, including surfaces, spectra, plots, and animations.
-
-- 
-
-Windows: Managing the various GaussView windows.
-
-- 
-
-Help: Viewing help files for GaussView and Gaussian, as well as GaussView tips.
+- Help: Viewing help files for GaussView and Gaussian, as well as GaussView tips.
 
 A reference table listing all GaussView menu items and toolbar icons is available here.
 
@@ -421,73 +365,39 @@ A reference table listing all GaussView menu items and toolbar icons is availabl
 
 Default settings for many GaussView features can be customized via the preferences, which are reached with the File=>Preferences menu path. The following preferences are available:
 
-- 
+- Building: Specify default settings for advanced fragment placement options.
 
-Building: Specify default settings for advanced fragment placement options.
+- Charge Distribution: Specify desired settings for displaying atomic charge and dipole moment data.
 
-- 
+- Clean Controls: Set the adjustable parameters and controls for the structure cleaning function.
 
-Charge Distribution: Specify desired settings for displaying atomic charge and dipole moment data.
+- Colors: Customize the coloring of various GaussView displays.
 
-- 
+- Custom Bonding Parameters: Specify data for identifying/assigning bond types.
 
-Clean Controls: Set the adjustable parameters and controls for the structure cleaning function.
+- Desktop: Define file associations for extensions associated with Gaussian and GaussView files (Windows version only).
 
-- 
+- Display Format: This category is broken down into four seperate categories: General, Molecule, Surface, and Text.
 
-Colors: Customize the coloring of various GaussView displays.
+- File/Directory: Set preferred directory locations for various GaussView contexts.
 
-- 
+- Font: Specify the font used for the GaussView interface.
 
-Custom Bonding Parameters: Specify data for identifying/assigning bond types.
+- Gaussian Setup: Set the preferred Gaussian Calculation Setup dialog settings.
 
-- 
+- Icons: Set default icon sizes in the user interface.
 
-Desktop: Define file associations for extensions associated with Gaussian and GaussView files (Windows version only).
+- Image: Set the preferred values for capturing images.
 
-- 
+- Job Setup: Define execution procedures for Gaussian and related jobs.
 
-Display Format: This category is broken down into four seperate categories: General, Molecule, Surface, and Text.
+- Movie, Animation: Specify preferences for animations created by GaussView.
 
-- 
+- Print: Set the preferred values for printing images.
 
-File/Directory: Set preferred directory locations for various GaussView contexts.
+- Vibrations: Set the preferred Display Vibrations dialog settings.
 
-- 
-
-Font: Specify the font used for the GaussView interface.
-
-- 
-
-Gaussian Setup: Set the preferred Gaussian Calculation Setup dialog settings.
-
-- 
-
-Icons: Set default icon sizes in the user interface.
-
-- 
-
-Image: Set the preferred values for capturing images.
-
-- 
-
-Job Setup: Define execution procedures for Gaussian and related jobs.
-
-- 
-
-Movie, Animation: Specify preferences for animations created by GaussView.
-
-- 
-
-Print: Set the preferred values for printing images.
-
-- 
-
-Vibrations: Set the preferred Display Vibrations dialog settings.
-
-- 
-
-Window Behavior: Set the preferred behavior for dialogs.
+- Window Behavior: Set the preferred behavior for dialogs.
 
 All of the preferences dialogs contain several buttons: Ok (save current settings and exit), Cancel (exit and discard unsaved changes), Default (restore GaussView’s installation settings), and Help (obtain online help). When you use the Default button, a dialog similar to the one below will appear:
 
@@ -593,33 +503,23 @@ See these links for details about Modifying Bonds and Modifying Angles.
 
 The Inquire button allows you to request geometric information directly from the View window when you click on the atoms of interest. Note that the selected atoms do not need to be bonded. The structural information appears in the View window’s status bar, as in Figure 14. The number of atoms that you select affects the resulting display on the View window:
 
-- 
-
-Hover over atom: atom type and number:
+- Hover over atom: atom type and number:
 
 . This feature is called mouse cursor tracking, and it is controlled by the setting on the Windows Behavior preference. By default, you must hold down F5 to use it. However, you can change the setting to have it always active or disabled entirely.
 
-- 
-
-1 atom: Atom type and number:
+- 1 atom: Atom type and number:
 
 .
 
-- 
-
-2 atoms: Bond length (distance):
+- 2 atoms: Bond length (distance):
 
 .
 
-- 
-
-3 atoms: Interatomic angle:
+- 3 atoms: Interatomic angle:
 
 .
 
-- 
-
-4 atoms: The 4-3-2-1 dihedral angle:
+- 4 atoms: The 4-3-2-1 dihedral angle:
 
 .
 
@@ -679,29 +579,17 @@ The default clean settings attempt to achieve a balance that produces expected �
 
 The following controls are available in the dialog. The fields in the Rel. Weights column are:
 
-- 
+- Bond: The targeted bond lengths are assigned based on the van der Waals radii of the two atoms forming the bond, with slight adjustment for bond type. They are not intended to be chemically accurate, but they should give reasonable input geometries for Gaussian.
 
-Bond: The targeted bond lengths are assigned based on the van der Waals radii of the two atoms forming the bond, with slight adjustment for bond type. They are not intended to be chemically accurate, but they should give reasonable input geometries for Gaussian.
+- NonBond: Repulsive term between all atoms that are not directly bonded. The purpose of this component is to keep atom centers apart so one atom is never masking another atom. However, it will not adjust biphenyl.
 
-- 
+- Hard Angle: Hard angles are calculated for atom centers that contain 2-4 bonds. They are weighted more heavily since the targeted angles are known. These terms are vital for maintaining atom center integrity.
 
-NonBond: Repulsive term between all atoms that are not directly bonded. The purpose of this component is to keep atom centers apart so one atom is never masking another atom. However, it will not adjust biphenyl.
+- Soft Angle: Soft angles are calculated for atom centers that contain 5 or more bonds. The targeted angles are not well known, but desired results can be achieved with practice. To produce a trigonal bipyramidal structure, adjust the axial bond angle to 180 degrees. Make sure the linear angle bias option is on. Most of the time, the clean procedure will produce the desired structure. Practice with coordinate patterns to get a feel for cleaning more complex coordinations.
 
-- 
+- 1-Ctr Dihed: Calculated from the Newman projections down each bond and limited to atom centers with less than 5 bonds. This term helps maintain atom center integrity when the 2-center dihedrals are causing distortions.
 
-Hard Angle: Hard angles are calculated for atom centers that contain 2-4 bonds. They are weighted more heavily since the targeted angles are known. These terms are vital for maintaining atom center integrity.
-
-- 
-
-Soft Angle: Soft angles are calculated for atom centers that contain 5 or more bonds. The targeted angles are not well known, but desired results can be achieved with practice. To produce a trigonal bipyramidal structure, adjust the axial bond angle to 180 degrees. Make sure the linear angle bias option is on. Most of the time, the clean procedure will produce the desired structure. Practice with coordinate patterns to get a feel for cleaning more complex coordinations.
-
-- 
-
-1-Ctr Dihed: Calculated from the Newman projections down each bond and limited to atom centers with less than 5 bonds. This term helps maintain atom center integrity when the 2-center dihedrals are causing distortions.
-
-- 
-
-2-Ctr Dihed: This is the only term that affects tertiary structure. The targeted dihedrals will be eclipsed or staggered based on the bond types. If each atom center contains multiple bonds, the targeted dihedral will be eclipsed.
+- 2-Ctr Dihed: This is the only term that affects tertiary structure. The targeted dihedrals will be eclipsed or staggered based on the bond types. If each atom center contains multiple bonds, the targeted dihedral will be eclipsed.
 
 The checkboxes at the bottom of the window have the following effects:
 
@@ -709,31 +597,19 @@ The checkboxes at the bottom of the window have the following effects:
 ![](imgs/p23_020.png)
 
 <!-- p.24 -->
-- 
+- Double the weight for linear angles: This term assists cleaning with soft angles where the angles at an atom center are not well known.
 
-Double the weight for linear angles: This term assists cleaning with soft angles where the angles at an atom center are not well known.
-
-- 
-
-Use one 2-center dihedral per bond: Normally, this option should remain unchecked. It is available to provide better performance on slower systems.
+- Use one 2-center dihedral per bond: Normally, this option should remain unchecked. It is available to provide better performance on slower systems.
 
 The fields in the Opt. Controls column are:
 
-- 
+- Tolerance: Lower values give more accurate structures, but can take significantly longer to clean. The range should be between 1.0E-5 and 1.0E-12.
 
-Tolerance: Lower values give more accurate structures, but can take significantly longer to clean. The range should be between 1.0E-5 and 1.0E-12.
+- View Updates: Controls how often the views of the molecule being cleaned are updated. A value of 1 gives a refresh with every clean cycle. A value of 10 gives a refresh every 10 clean cycles. A value of 0 disables view updates until clean is complete. Depending on your system, this parameter can have a significant effect on cleaning time.
 
-- 
+- Max Cycles: Maximum number of steps during a clean optimization. A good value is 150. Larger structures may require a larger value.
 
-View Updates: Controls how often the views of the molecule being cleaned are updated. A value of 1 gives a refresh with every clean cycle. A value of 10 gives a refresh every 10 clean cycles. A value of 0 disables view updates until clean is complete. Depending on your system, this parameter can have a significant effect on cleaning time.
-
-- 
-
-Max Cycles: Maximum number of steps during a clean optimization. A good value is 150. Larger structures may require a larger value.
-
-- 
-
-Max Time: Maximum time (seconds) allowed for a clean operation to complete.
+- Max Time: Maximum time (seconds) allowed for a clean operation to complete.
 
 It is important to remember that the various components of the clean force field are relative. Changing one weight will affect the behavior of the other weights. For example, an excessive non-bond weight will produce longer bonds. Similarly, an excessive hard angle weight could affect the 2-center dihedrals.
 
@@ -743,21 +619,13 @@ You can disable any set of terms by assigning a weight of 0.0. For example, disa
 
 If the clean function is too slow on your system, try these settings:
 
-- 
+- NonBond: 0
 
-NonBond: 0
+- 1-Ctr Dihed: 0
 
-- 
+- Use one 2-center dihedral per bond: checked
 
-1-Ctr Dihed: 0
-
-- 
-
-Use one 2-center dihedral per bond: checked
-
-- 
-
-View Updates: 0
+- View Updates: 0
 
 Poor performance of the clean function can also be a symptom of a memory shortage on the system.
 
@@ -769,35 +637,21 @@ The Rebond button and Edit=>Rebond menu path both initiate a rebonding process i
 
 The Point Group Symmetry dialog is used to specify the desired symmetry for a molecular structure. It is reached via the Tools=>Point Group menu path. The controls have the following meanings:
 
-- 
+- Enable point group symmetry: Enable GaussView’s symmetry features.
 
-Enable point group symmetry: Enable GaussView’s symmetry features.
-
-- 
-
-Constrain to subgroup: Select a point group to which to constrain the structure.
+- Constrain to subgroup: Select a point group to which to constrain the structure.
 
 
 <!-- p.25 -->
-- 
+- For: Select All changes to impose symmetry on future structural changes. None disables symmetry constrains.
 
-For: Select All changes to impose symmetry on future structural changes. None disables symmetry constrains.
+- Approximate higher-order point groups: Higher symmetry subgroups which might apply.
 
-- 
+- Tolerance: Cutoff level below which to consider structural parameters equal. Larger cutoffs make higher symmetry groups easier to identify. Thus, increasing the tolerance may cause additional point groups to appear in the popup menu on the left. You can select one of the items on the menu or enter a numerical value into the field.
 
-Approximate higher-order point groups: Higher symmetry subgroups which might apply.
+- Symmetrize button: Impose the selected higher-order point group on the molecular structure immediately.
 
-- 
-
-Tolerance: Cutoff level below which to consider structural parameters equal. Larger cutoffs make higher symmetry groups easier to identify. Thus, increasing the tolerance may cause additional point groups to appear in the popup menu on the left. You can select one of the items on the menu or enter a numerical value into the field.
-
-- 
-
-Symmetrize button: Impose the selected higher-order point group on the molecular structure immediately.
-
-- 
-
-Always track point group symmetry: Tells GaussView to continuously compute point group assignments as the geometry changes. Use this item in conjunction with a symmetry constraint setting of None in order to view point group changes continuously as you adjust structural parameters (e.g., use the bond length slider). Normally, the point group is identified only after the change is completed. For very large molecules on slower systems, enabling this item may cause noticeable delays in response time.
+- Always track point group symmetry: Tells GaussView to continuously compute point group assignments as the geometry changes. Use this item in conjunction with a symmetry constraint setting of None in order to view point group changes continuously as you adjust structural parameters (e.g., use the bond length slider). Normally, the point group is identified only after the change is completed. For very large molecules on slower systems, enabling this item may cause noticeable delays in response time.
 
 Imposing Symmetry on a Molecular Structure
 
@@ -831,17 +685,11 @@ There are several options for pasting molecules from the clipboard. The Edit=>Pa
 
 The items on the Paste submenu are:
 
-- 
+- Edit=>Paste=>Add to Molecule Group: Create a new model within the current molecule group, and place the structure on the clipboard into it.
 
-Edit=>Paste=>Add to Molecule Group: Create a new model within the current molecule group, and place the structure on the clipboard into it.
+- Edit=>Paste=>Replace Molecule: Remove the structure in the active window, and place the one on the clipboard there instead.
 
-- 
-
-Edit=>Paste=>Replace Molecule: Remove the structure in the active window, and place the one on the clipboard there instead.
-
-- 
-
-Edit=>Paste=>Append Molecule: Add the molecule on the clipboard to the active model as a separate fragment.
+- Edit=>Paste=>Append Molecule: Add the molecule on the clipboard to the active model as a separate fragment.
 
 # Placing a Fragment in a Centroid Position
 
@@ -877,17 +725,11 @@ This dialog can be used to add, remove, and change bond lengths.
 
 The Displacement fields specify how attached groups are handled as the bond distance changes:
 
-- 
+- Translate Atom: Move only the atom, keeping the group’s position fixed in space.
 
-Translate Atom: Move only the atom, keeping the group’s position fixed in space.
+- Translate Group: Move the attached group along with the atom (i.e., as a single unit).
 
-- 
-
-Translate Group: Move the attached group along with the atom (i.e., as a single unit).
-
-- 
-
-Fixed: Do not allow the atom or the group to move (all movement occurs at the other atom).
+- Fixed: Do not allow the atom or the group to move (all movement occurs at the other atom).
 
 The following figure illustrates the effects of different combinations of these choices:
 
@@ -929,21 +771,13 @@ Once you have modified a parameter using the SmartSlide, the OK button must be p
 
 The figure following illustrates some of the combinations of various Displacement settings for bond angles (they work in the same way for dihedral angles). The possible choices for each popup menu are:
 
-- 
+- Rotate Atom: Move only the atom, keeping the group’s position fixed in space.
 
-Rotate Atom: Move only the atom, keeping the group’s position fixed in space.
+- Translate Group: Move the attached group along with the atom as a single unit.
 
-- 
+- Rotate Group: The group’s position rotates along with the atoms as the angle changes.
 
-Translate Group: Move the attached group along with the atom as a single unit.
-
-- 
-
-Rotate Group: The group’s position rotates along with the atoms as the angle changes.
-
-- 
-
-Fixed: Do not allow the atom or the group to move (all movement occurs at other atoms).
+- Fixed: Do not allow the atom or the group to move (all movement occurs at other atoms).
 
 1,2=Fixed, 3=Rotate Atom
 
@@ -1003,35 +837,21 @@ There are two panels in this area. The Before panel, pictured below, sets restri
 
 Here are some preliminary definitions necessary for understanding the options in these panels:
 
-- 
+- The target atom is the one selected with a mouse click.
 
-The target atom is the one selected with a mouse click.
+- The hot atom is the atom in the new fragment that takes the place of the existing target atom when the two pieces are joined.
 
-- 
+- A terminal atom is any atom bonded to only one atom.
 
-The hot atom is the atom in the new fragment that takes the place of the existing target atom when the two pieces are joined.
+- A terminal valence atom is a hydrogen atom or an open valence bonded to only one atom.
 
-- 
-
-A terminal atom is any atom bonded to only one atom.
-
-- 
-
-A terminal valence atom is a hydrogen atom or an open valence bonded to only one atom.
-
-- 
-
-A join-bond is a bond between the hot atom and any terminal atom. These are bonds that can be eliminated in the process of connecting the fragment to the target atom. When a fragment is joined to the target atom, there must be one join bond in the fragment for each corresponding bond to the target atom.
+- A join-bond is a bond between the hot atom and any terminal atom. These are bonds that can be eliminated in the process of connecting the fragment to the target atom. When a fragment is joined to the target atom, there must be one join bond in the fragment for each corresponding bond to the target atom.
 
 These are the items in the Fragment Placement Before panel:
 
-- 
+- Target and Fragment Join-Bond Types Must Match: The selected join-bonds in the fragment must match the bond types of the target atom. Enabling this item will prevent many placements.
 
-Target and Fragment Join-Bond Types Must Match: The selected join-bonds in the fragment must match the bond types of the target atom. Enabling this item will prevent many placements.
-
-- 
-
-Fragment Join-Bonds Can Be Any Terminal Bonds: Normally, only hydrogen or open valences are taken as joinbonds. When this option is on, any terminal atoms are also candidates for join-bonds. For example, the oxygen bonds. When this option is on, any terminal atoms are also candidates for join-bonds. For example, the oxygen atom in formaldehyde could be used as a join-bond for ethylene because the bond type matches (double bond).
+- Fragment Join-Bonds Can Be Any Terminal Bonds: Normally, only hydrogen or open valences are taken as joinbonds. When this option is on, any terminal atoms are also candidates for join-bonds. For example, the oxygen bonds. When this option is on, any terminal atoms are also candidates for join-bonds. For example, the oxygen atom in formaldehyde could be used as a join-bond for ethylene because the bond type matches (double bond).
 
 
 ![](imgs/p34_039.png)
@@ -1041,25 +861,15 @@ Fragment Placement Restrictions
 
 The items in this window set restrictions on the circumstances in which fragments may be joined to an existing structure. This window shows the default values.
 
-- 
+- Create Fragment Join-Bonds If Necessary: This option will allow most fragments to be attached to any target. If the fragment does not have enough join-bonds for a given target selection, additional valences will be added to satisfy the requirement. Again, the join-bonds are deleted when fragment and target are joined as well as the target atom (on by default).
 
-Create Fragment Join-Bonds If Necessary: This option will allow most fragments to be attached to any target. If the fragment does not have enough join-bonds for a given target selection, additional valences will be added to satisfy the requirement. Again, the join-bonds are deleted when fragment and target are joined as well as the target atom (on by default).
+- Terminal Hot Atoms Define Join-Bonds: This option makes it easier to choose terminal atoms as hot atoms. Since most terminal atoms have no join-bonds, the option will use the one bond as the join-bond. However, the bond will not be deleted. This is useful when you have a central atom with more than one terminal bond, and you want to explicitly choose which terminal bond will be used to do the joining.
 
-- 
+- Bond to Target Atom Instead of Deleting It. This option allows you to bond the fragment to target atom itself, deleting only the join-bonds.
 
-Terminal Hot Atoms Define Join-Bonds: This option makes it easier to choose terminal atoms as hot atoms. Since most terminal atoms have no join-bonds, the option will use the one bond as the join-bond. However, the bond will not be deleted. This is useful when you have a central atom with more than one terminal bond, and you want to explicitly choose which terminal bond will be used to do the joining.
+- Delete Any Terminal Atoms Bonded to Target Atom: Remove extra terminal bonds.
 
-- 
-
-Bond to Target Atom Instead of Deleting It. This option allows you to bond the fragment to target atom itself, deleting only the join-bonds.
-
-- 
-
-Delete Any Terminal Atoms Bonded to Target Atom: Remove extra terminal bonds.
-
-- 
-
-Automatically Select Hot Atom: This item is designed for use with biological fragments (which is its default setting). It causes GaussView to determine the hot atom dynamically. This makes it easier to build amino acid residues, etc., by producing a sensible backbone as you add residues.
+- Automatically Select Hot Atom: This item is designed for use with biological fragments (which is its default setting). It causes GaussView to determine the hot atom dynamically. This makes it easier to build amino acid residues, etc., by producing a sensible backbone as you add residues.
 
 
 ![](imgs/p35_040.png)
@@ -1071,23 +881,15 @@ The options in this panel allow you to select actions for GaussView to perform a
 
 These are the items in the upper portion of the After panel:
 
-- 
-
-Use Fragment Join-Bond Type For New Bond: Normally, the bond connecting the fragment to the target bond type is determined by the original target bond. If this option is on, the fragment’s bond type is used instead. This option is useful when the Match Bond Types option is off.
+- Use Fragment Join-Bond Type For New Bond: Normally, the bond connecting the fragment to the target bond type is determined by the original target bond. If this option is on, the fragment’s bond type is used instead. This option is useful when the Match Bond Types option is off.
 
 The next three items activate electron bookkeeping at the target atom site. Note, however, that non-terminal atoms are not affected. Also, GaussView does not reduce or elevate the bond type to satisfy valency requirements.
 
-- 
+- Delete Terminal Valence Atoms to Satisfy Valency: Allows terminal valence atoms to be deleted to reduce overloaded valency at the target atom site.
 
-Delete Terminal Valence Atoms to Satisfy Valency: Allows terminal valence atoms to be deleted to reduce overloaded valency at the target atom site.
+- Delete Terminal Atoms to Satisfy Valency: Allows for any terminal atom to be deleted to reduce overloaded valency.
 
-- 
-
-Delete Terminal Atoms to Satisfy Valency: Allows for any terminal atom to be deleted to reduce overloaded valency.
-
-- 
-
-Add Hydrogens to Satisfy Valency: Automatically adds hydrogen atoms to satisfy valency requirements.
+- Add Hydrogens to Satisfy Valency: Automatically adds hydrogen atoms to satisfy valency requirements.
 
 The popup menu controls the treatment of the hot atom fragment placement. The options are shown in the illustration. The default is to retain the atom. The remaining options enable automatic cleaning operations, and they are self-explanatory: Optimize Dihedral Angle About New Bond, Apply “Clean” Around Hot Atoms, and Apply “Clean” to Whole Structure.
 
@@ -1103,25 +905,15 @@ The Positioning Toolbar
 
 For all of the tools, the view’s X, Y, and Z directions are the horizontal, vertical, and depth of the window, and the molecule X, Y, and Z directions are those indicated by the Cartesian axes. The various controls are described individually below (moving across the toolbar from left to right):
 
-- 
+- The Quick popup contains items that center the molecule in one or more view directions or align axes on the molecule the view’s. For example, the Center and Center X items center the molecule within the window and with respect to the window’s X-axis (i.e., horizontally), while the Mol X -> View Z item aligns the molecule’s X-axis with the View window’s Z-axis. Other items work analogously.
 
-The Quick popup contains items that center the molecule in one or more view directions or align axes on the molecule the view’s. For example, the Center and Center X items center the molecule within the window and with respect to the window’s X-axis (i.e., horizontally), while the Mol X -> View Z item aligns the molecule’s X-axis with the View window’s Z-axis. Other items work analogously.
+- The second popup menu indicates whether the molecule will be rotated or translated to perform the repositioning when the Apply button is pushed. The next two fields also control the operation.
 
-- 
+- The Around field specifies the axis about which the molecule will be rotated (active when the previous popup is set to Rotate). When Translate is selected in the initial field, then the label changes to Along.
 
-The second popup menu indicates whether the molecule will be rotated or translated to perform the repositioning when the Apply button is pushed. The next two fields also control the operation.
+- The By field specifies the amount of rotation or translation.
 
-- 
-
-The Around field specifies the axis about which the molecule will be rotated (active when the previous popup is set to Rotate). When Translate is selected in the initial field, then the label changes to Along.
-
-- 
-
-The By field specifies the amount of rotation or translation.
-
-- 
-
-The final slider provides another way to specify the amount of movement. As you adjust the slider, the molecule moves immediately in the direction and manner specified by the first two fields (and the By field is ignored).
+- The final slider provides another way to specify the amount of movement. As you adjust the slider, the molecule moves immediately in the direction and manner specified by the first two fields (and the By field is ignored).
 
 
 ![](imgs/p37_042.png)
@@ -1141,25 +933,17 @@ The Use Fog to Improve Depth Perception checkbox causes more distant atoms in th
 ![](imgs/p38_043.png)
 
 <!-- p.39 -->
-The Fog Depth Display Feature The left illustration shows the molecule with the fog feature disabled. In the right illustration,
-
-fog is turned on, and the frontmost atoms are much more distinct than more distant ones.
+The Fog Depth Display Feature The left illustration shows the molecule with the fog feature disabled. In the right illustration, fog is turned on, and the frontmost atoms are much more distinct than more distant ones.
 
 Compare the display types between the two windows to understand the effect of fog.
 
 The remaining checkboxes in this panel control the display of various labeling and comprehension tools with the View window. Their effects are illustrated in the displays below (which uses benzene with a dummy atom in the center of the ring as its example for most settings):
 
-- 
+- Show Hydrogens: Display hydrogen atoms in the View window. Default: On
 
-Show Hydrogens: Display hydrogen atoms in the View window. Default: On
+- Show Labels: Display numeric labels indicating atom sequence numbers. Default: Off
 
-- 
-
-Show Labels: Display numeric labels indicating atom sequence numbers. Default: Off
-
-- 
-
-Show Bonds: Display bonds between atoms. Default: On
+- Show Bonds: Display bonds between atoms. Default: On
 
 
 ![](imgs/p39_044.png)
@@ -1169,17 +953,11 @@ Show Bonds: Display bonds between atoms. Default: On
 ![](imgs/p39_046.png)
 
 <!-- p.40 -->
-- 
+- Show Stereochemistry: Display the chirality of any chiral centers. Default: Off
 
-Show Stereochemistry: Display the chirality of any chiral centers. Default: Off
+- Show Dummies: Display of dummy atoms if present. Default: On
 
-- 
-
-Show Dummies: Display of dummy atoms if present. Default: On
-
-- 
-
-Show Symbols: Display the chemical symbol for each atom. Default: Off
+- Show Symbols: Display the chemical symbol for each atom. Default: Off
 
 
 ![](imgs/p40_047.png)
@@ -1191,13 +969,9 @@ Show Symbols: Display the chemical symbol for each atom. Default: Off
 ![](imgs/p40_050.png)
 
 <!-- p.41 -->
-- 
+- Show Cartesian Axes: Display X,Y,Z axes. This feature is illustrated below. Initially, the origin of the axes is in an arbitrary position (sometimes located on atom 1), and it remains fixed despite changes to the molecule. Use the Edit=>Reorient menu item to move the origin to the molecule’s current center of mass. Display: Off
 
-Show Cartesian Axes: Display X,Y,Z axes. This feature is illustrated below. Initially, the origin of the axes is in an arbitrary position (sometimes located on atom 1), and it remains fixed despite changes to the molecule. Use the Edit=>Reorient menu item to move the origin to the molecule’s current center of mass. Display: Off
-
-- 
-
-Show Positioning Tools: Opening positioning toolbar in View window. Default: Off See this help entry
+- Show Positioning Tools: Opening positioning toolbar in View window. Default: Off See this help entry
 
 You can specify default values for these items via the General panel of the Display Format Preferences. You can also exclude labels and symbols on hydrogen atoms or hydrogen and carbon atoms using the Exclude View Labels and Exclude View Symbols items in the Text panel of the Display Format Preferences (both default to excluding no atom types). Finally, the size of textual labels can be adjusted using the Size field in the Text panel of the Display Format Preferences.
 
@@ -1235,25 +1009,15 @@ The Display Format Molecule Panel
 
 The various supported display types are:
 
-- 
+- Ball & Stick: Molecule appears as a ball and stick model, with all types of bonds represented by single sticks.
 
-Ball & Stick: Molecule appears as a ball and stick model, with all types of bonds represented by single sticks.
+- Ball & Bond Type: Molecule appears as a ball and stick model with single bonds represented by single sticks and multiple bonds represented by multiple sticks or, in the case of aromatic systems, by dotted lines. This is the default.
 
-- 
+- Tube: Molecule appears as a tube model with no indication as to bond type. Atom types are indicated by color bands on the tubes.
 
-Ball & Bond Type: Molecule appears as a ball and stick model with single bonds represented by single sticks and multiple bonds represented by multiple sticks or, in the case of aromatic systems, by dotted lines. This is the default.
+- Wireframe: Molecule appears as a series of thin lines, colored by atom type and indicating bond type via the number of lines.
 
-- 
-
-Tube: Molecule appears as a tube model with no indication as to bond type. Atom types are indicated by color bands on the tubes.
-
-- 
-
-Wireframe: Molecule appears as a series of thin lines, colored by atom type and indicating bond type via the number of lines.
-
-- 
-
-None: Atoms are invisible (useful only with multilayer models).
+- None: Atoms are invisible (useful only with multilayer models).
 
 The Use Bond Color checkbox controls whether bonds are partially or entirely colored by atom type in the tube display format. The two options are illustrated below:
 
@@ -1285,21 +1049,13 @@ The Text panel of the Display Format dialog controls the font and color of atom 
 
 The Text Panel of the Display Format Dialog
 
-- 
+- Font File: This menu allows you to select from several font files provided with GaussView.
 
-Font File: This menu allows you to select from several font files provided with GaussView.
+- Size: This field specifies the relative type size: type resizes with the molecule as you zoom in or out. Note that font sizes are generally limited to those included explicitly on the Size menu.
 
-- 
+- Render: This field specifies the type rendering method.
 
-Size: This field specifies the relative type size: type resizes with the molecule as you zoom in or out. Note that font sizes are generally limited to those included explicitly on the Size menu.
-
-- 
-
-Render: This field specifies the type rendering method.
-
-- 
-
-Color: This field specifies the type color.
+- Color: This field specifies the type color.
 
 
 ![](imgs/p46_057.png)
@@ -1319,95 +1075,55 @@ This dialog allows you to set up virtually all types of Gaussian calculations an
 
 The dialog contains the following panels:
 
-- 
+- Job Type: The specified type of job appears in the top popup menu. The default is a single point energy calculation. The remaining fields in the panel represent common options for the selected job type.
 
-Job Type: The specified type of job appears in the top popup menu. The default is a single point energy calculation. The remaining fields in the panel represent common options for the selected job type.
+- Method: This panel specifies the quantum mechanical method to be used in a calculation. The factory default method is a ground state, closed shell Hartree-Fock calculation using the 3-21G basis set, but you can modify this with the Gaussian Setup Preferences.
 
-- 
+- Title: This panel holds a field used for the Gaussian title section (designed to contain a brief description of the job). Type your description into the text box.
 
-Method: This panel specifies the quantum mechanical method to be used in a calculation. The factory default method is a ground state, closed shell Hartree-Fock calculation using the 3-21G basis set, but you can modify this with the Gaussian Setup Preferences.
+- Link 0: This panel is used for entering Link 0 commands for the job.
 
-- 
+- General: This panel allows you to select commonly used general calculation options.
 
-Title: This panel holds a field used for the Gaussian title section (designed to contain a brief description of the job). Type your description into the text box.
-
-- 
-
-Link 0: This panel is used for entering Link 0 commands for the job.
-
-- 
-
-General: This panel allows you to select commonly used general calculation options.
-
-- 
-
-Guess: This panel contains settings related to the initial guess. Consult the discussion of the Guess keyword in the Gaussian User’s Reference for full details on these options.
+- Guess: This panel contains settings related to the initial guess. Consult the discussion of the Guess keyword in the Gaussian User’s Reference for full details on these options.
 
 
 ![](imgs/p47_058.png)
 
 <!-- p.48 -->
-- 
+- Pop: This panel is used to select NBO analysis at the conclusion of the Gaussian job.
 
-Pop: This panel is used to select NBO analysis at the conclusion of the Gaussian job.
+- PBC: This panel is used to specify options to the Gaussian PBC keyword.
 
-- 
+- Preview: Preview the generated input file.
 
-PBC: This panel is used to specify options to the Gaussian PBC keyword.
+- Solvation: This panel allows you to specify that the calculation is to be performed in solution rather than in the gas phase.
 
-- 
-
-Preview: Preview the generated input file.
-
-- 
-
-Solvation: This panel allows you to specify that the calculation is to be performed in solution rather than in the gas phase.
-
-- 
-
-Additional Input Panel: The final panel in the Gaussian Calculation Setup dialog is labeled Add. Inp. It may be used to enter any additional input section(s) required by the calculation you plan to run.
+- Additional Input Panel: The final panel in the Gaussian Calculation Setup dialog is labeled Add. Inp. It may be used to enter any additional input section(s) required by the calculation you plan to run.
 
 The Additional Keywords field below the panel area is used to enter any desired Gaussian keyword and/or option. Note that you must include the keyword for every option in this field even if it already appears in the route section as a result of panel item selection.
 
 Below the panel area is the Calculation Scheme area. The controls have the following uses:
 
-- 
+- Scheme popup menu: Select and apply a calculation scheme.
 
-Scheme popup menu: Select and apply a calculation scheme.
+- (Schemes button): Open the Gaussian Calculation Schemes editor. This can also be accessed with the More Schemes selection from the Scheme menu.
 
-- 
-
-(Schemes button): Open the Gaussian Calculation Schemes editor. This can also be accessed with the More Schemes selection from the Scheme menu.
-
-- 
-
-Assign to Molecule Group: Apply the current settings to all members of the current molecule group. Saving multiple files is explained here. Submitting multiple jobs is explained here.
+- Assign to Molecule Group: Apply the current settings to all members of the current molecule group. Saving multiple files is explained here. Submitting multiple jobs is explained here.
 
 The buttons at the bottom of the dialog have the following effects:
 
-- 
+- Submit: Starts a Gaussian calculation using the current input file. You will be prompted to save the input file if you have not already done so.
 
-Submit: Starts a Gaussian calculation using the current input file. You will be prompted to save the input file if you have not already done so.
+- Quick Launch: Launches a Gaussian job without further ado (more information here).
 
-- 
+- Cancel: Closes the dialog box and returns all selections to their default values.
 
-Quick Launch: Launches a Gaussian job without further ado (more information here).
+- Edit: Allows direct access to the input file with an external text editor. The input file is not available for editing until it has been saved with GaussView.
 
-- 
+- Retain: Closes the dialog box. Current selections are retained, but the input file is not created/updated, and no Gaussian job is submitted.
 
-Cancel: Closes the dialog box and returns all selections to their default values.
-
-- 
-
-Edit: Allows direct access to the input file with an external text editor. The input file is not available for editing until it has been saved with GaussView.
-
-- 
-
-Retain: Closes the dialog box. Current selections are retained, but the input file is not created/updated, and no Gaussian job is submitted.
-
-- 
-
-Defaults: Returns all items to their default values.
+- Defaults: Returns all items to their default values.
 
 
 <!-- p.49 -->
@@ -1421,41 +1137,23 @@ The top dropdown menu selects the job type. The default is a single point energy
 
 The available job types are:
 
-- 
+- Energy: Performs a single point energy calculation.
 
-Energy: Performs a single point energy calculation.
+- Optimization: Performs a geometry optimization until a stationary point on the potential energy surface is found. More information...
 
-- 
+- Frequency: Computes Vibrational frequencies and intensities. More information...
 
-Optimization: Performs a geometry optimization until a stationary point on the potential energy surface is found. More information...
+- Opt+Freq: Performs a geometry optimization and then analyzes frequencies.
 
-- 
+- IRC: Specifies that a reaction path be followed by integrating the intrinsic reaction coordinate. More information...
 
-Frequency: Computes Vibrational frequencies and intensities. More information...
+- Scan: Perfoms a potential energy surface scan. More information...
 
-- 
+- Stability: Performs a calculation to test the stability of the Hartree-Fock or DFT wavefunction. More information...
 
-Opt+Freq: Performs a geometry optimization and then analyzes frequencies.
+- NMR: Predits NMR shielding tensors and magnetic susceptibilities. More information...
 
-- 
-
-IRC: Specifies that a reaction path be followed by integrating the intrinsic reaction coordinate. More information...
-
-- 
-
-Scan: Perfoms a potential energy surface scan. More information...
-
-- 
-
-Stability: Performs a calculation to test the stability of the Hartree-Fock or DFT wavefunction. More information...
-
-- 
-
-NMR: Predits NMR shielding tensors and magnetic susceptibilities. More information...
-
-- 
-
-blank: In order to select a job type other than those listed in the popup menu, select the blank menu item at the bottom of the list, and then type the appropriate Gaussian keyword into the Additional Keywords field in the lower section of the dialog.
+- blank: In order to select a job type other than those listed in the popup menu, select the blank menu item at the bottom of the list, and then type the appropriate Gaussian keyword into the Additional Keywords field in the lower section of the dialog.
 
 
 ![](imgs/p49_059.png)
@@ -1477,17 +1175,11 @@ The Method Panel
 
 The fields in the Method line specify the following items:
 
-- 
+- Whether the calculation is for a ground state (the default) or an excited state. If the latter, then the desired excited state method should be selected.
 
-Whether the calculation is for a ground state (the default) or an excited state. If the latter, then the desired excited state method should be selected.
+- The theoretical method. For some choices, a fourth field will appear. It is used to select the specific method of the given type. For example, in the figure above, the method field is set to DFT, and the fourth field selects the B3LYP functional.
 
-- 
-
-The theoretical method. For some choices, a fourth field will appear. It is used to select the specific method of the given type. For example, in the figure above, the method field is set to DFT, and the fourth field selects the B3LYP functional.
-
-- 
-
-The wavefunction type (closed shell vs. open shell). The default is an unspecified type. The Restricted, Unrestricted, and Restricted-Open selections prepend R, U, and RO to the method keyword (respectively).
+- The wavefunction type (closed shell vs. open shell). The default is an unspecified type. The Restricted, Unrestricted, and Restricted-Open selections prepend R, U, and RO to the method keyword (respectively).
 
 The Custom item on the second menu from the left—the theoretical method menu—can be used to specify a method other than those available via the menu(s). Place the desired method keyword in the text area that appears.
 
@@ -1533,17 +1225,17 @@ Item Link 0 Command Selections
 
 Memory Limit %Mem
 
-*Don't use: Do not include %Mem in the input file. value: Use the selected value (in megawords). Specify: Use the specified value and units (see the example above). Shared Processors %NProcShared
+- Don't use: Do not include %Mem in the input file. value: Use the selected value (in megawords). Specify: Use the specified value and units (see the example above). Shared Processors %NProcShared
 
-*Don't use: Do not include %NProcShared in the input file. value: Use the selected number of processors. Specify: Use the value specified in the text field that appears with the option. Chkpoint File %Chk
+- Don't use: Do not include %NProcShared in the input file. value: Use the selected number of processors. Specify: Use the value specified in the text field that appears with the option. Chkpoint File %Chk
 
-*Default name: Include %Chk with a name derived from the input filename. Specify: Use the name specified in the input field. Use the ... button to navigate to a file. Don't save: Do not include %Chk in the input file. See the note below. OldChk File %OldChk
+- Default name: Include %Chk with a name derived from the input filename. Specify: Use the name specified in the input field. Use the ... button to navigate to a file. Don't save: Do not include %Chk in the input file. See the note below. OldChk File %OldChk
 
-*No: Do not include %OldChk in the input file Default name: Include %OldChk with a name derived from the input filename. Specify: Use the name specified in the input field. Use the ... button to navigate to a file. Read-write File %RW
+- No: Do not include %OldChk in the input file Default name: Include %OldChk with a name derived from the input filename. Specify: Use the name specified in the input field. Use the ... button to navigate to a file. Read-write File %RW
 
-*Don't save: Do not include %RWF in the input file. Default name: Include %RWF with a name derived from the input filename. Specify: Use the name specified in the input field. Use the ... button to navigate to a file. Linda Workers %LindaWorkers
+- Don't save: Do not include %RWF in the input file. Default name: Include %RWF with a name derived from the input filename. Specify: Use the name specified in the input field. Use the ... button to navigate to a file. Linda Workers %LindaWorkers
 
-*Don't use: Do not include %LindaWorkers in the input file. Specify: Use the value specified in the text field. Kill Job %KJob
+- Don't use: Do not include %LindaWorkers in the input file. Specify: Use the value specified in the text field. Kill Job %KJob
 
 No: Run job normally. Lnnn: Stop after the specified link completes. Specify: Enter the desired link into the test field.
 
@@ -1615,29 +1307,17 @@ The Guess panel contains settings related to the initial guess. It is illustrate
 
 The Guess Method popup specifies the type of initial guess to use. It has the following options:
 
-- 
+- Default: Uses the default Harris initial guess.
 
-Default: Uses the default Harris initial guess.
+- Core Hamiltonian: Uses the Gaussian 98 default initial guess (Guess=INDO). Generally, we do not recomment its use except when recommended by Gaussian, Inc. technical support staff.
 
-- 
+- Extended Huckel: Uses the Huckel guess (Guess=Huckel).
 
-Core Hamiltonian: Uses the Gaussian 98 default initial guess (Guess=INDO). Generally, we do not recomment its use except when recommended by Gaussian, Inc. technical support staff.
+- Read checkpoint file: Retrieves the initial guess from the checkpoint file (Guess=Read).
 
-- 
+- Read checkpoint if possible; otherwise generate: Check checkpoint file for the initial guess; generate if not present (Guess=TCheck).
 
-Extended Huckel: Uses the Huckel guess (Guess=Huckel).
-
-- 
-
-Read checkpoint file: Retrieves the initial guess from the checkpoint file (Guess=Read).
-
-- 
-
-Read checkpoint if possible; otherwise generate: Check checkpoint file for the initial guess; generate if not present (Guess=TCheck).
-
-- 
-
-Read input checkpoint file: Read the guess from the checkpoint file whose name is specified in the input stream (Guess=Input).
+- Read input checkpoint file: Read the guess from the checkpoint file whose name is specified in the input stream (Guess=Input).
 
 Gaussian Initial Guess Options
 
@@ -1683,91 +1363,53 @@ The Biorthogonalize orbitals button will specify that the orbitals be biothogona
 
 Perform NBO calc
 
-- 
+- No NBO: This option will not perform an NBO calculation. This is the default option.
 
-No NBO: This option will not perform an NBO calculation. This is the default option.
+- Full NBO: This option will request a full Natural Bond Orbital analysis.
 
-- 
+- NPA only: This option just requests the Natural Population Analysis phase of NBO.
 
-Full NBO: This option will request a full Natural Bond Orbital analysis.
-
-- 
-
-NPA only: This option just requests the Natural Population Analysis phase of NBO.
-
-- 
-
-Full NBO (use NBO 6), NPA only (use NBO 6): These are the same as the options above, but use the separate NBO6 program via the external interface.
+- Full NBO (use NBO 6), NPA only (use NBO 6): These are the same as the options above, but use the separate NBO6 program via the external interface.
 
 
 ![](imgs/p60_067.png)
 
 <!-- p.61 -->
-- 
-
-Full NBO (use NBO 7), NPA only (use NBO 7): These are the same as the options above, but use the separate NBO7 program via the external interface.
+- Full NBO (use NBO 7), NPA only (use NBO 7): These are the same as the options above, but use the separate NBO7 program via the external interface.
 
 Save orbitals to chk file: This section allows you to select what orbitals you save to the checkpoint file. The options Save Mulliken, Save ESP, Save NPA, and Save Hirshfeld (CM5) can be can be used to save the corresponding charges.
 
-- 
+- Don't save (keep canonical orbitals): This will not save any orbitals to the checkpoint file. This is the default option.
 
-Don't save (keep canonical orbitals): This will not save any orbitals to the checkpoint file. This is the default option.
+- Save NLMOs: This will save natural localized molecular orbitals.
 
-- 
+- Save NBOs: This will save natural bond orbitals.
 
-Save NLMOs: This will save natural localized molecular orbitals.
+- Save Mixture of NLMOs and NBOs: This will save NBOs for the occupied orbitals and the NLMOs for the unoccupied orbitals.
 
-- 
+- Save NTOs: This will save the generated orbitals in the checkpoint file, replacing the canonical ones if the density was read-in from there.
 
-Save NBOs: This will save natural bond orbitals.
-
-- 
-
-Save Mixture of NLMOs and NBOs: This will save NBOs for the occupied orbitals and the NLMOs for the unoccupied orbitals.
-
-- 
-
-Save NTOs: This will save the generated orbitals in the checkpoint file, replacing the canonical ones if the density was read-in from there.
-
-- 
-
-Save Biorthogonalized orbitals: This will save biorthogonalized orbitals in the checkpoint file over the canonical MOs.
+- Save Biorthogonalized orbitals: This will save biorthogonalized orbitals in the checkpoint file over the canonical MOs.
 
 Save charges for later MM: This menu offers options for saving the charges for later Molecular Mechanics calculations.
 
 The Choose Density for Analysis section allows you select the Density used in the population analysis. The Select density for analysis drop-down menu specifies the density:
 
-- 
+- Default: This is the Hartree-Fock density for post-SCF methods; the DFT density for DFT jobs, and the CASSCF density for CAS jobs
 
-Default: This is the Hartree-Fock density for post-SCF methods; the DFT density for DFT jobs, and the CASSCF density for CAS jobs
+- Current: Use the density matrix for the current method.
 
-- 
+- SCF: Use the SCF density.
 
-Current: Use the density matrix for the current method.
+- MP2: Use the generalized density corresponding to the second-order energy.
 
-- 
+- Transition: Use the CIS transition density between state M and state N. These states can be specified in the corresponding fields. M defaults to 0, which corresponds to the ground state.
 
-SCF: Use the SCF density.
+- All Transitions: Use all available CIS transition densities.
 
-- 
+- CI: Use the generalized density corresponding to the CI energy.
 
-MP2: Use the generalized density corresponding to the second-order energy.
-
-- 
-
-Transition: Use the CIS transition density between state M and state N. These states can be specified in the corresponding fields. M defaults to 0, which corresponds to the ground state.
-
-- 
-
-All Transitions: Use all available CIS transition densities.
-
-- 
-
-CI: Use the generalized density corresponding to the CI energy.
-
-- 
-
-QCI/CC: Use the generalized density corresponding to the coupled cluster/ACI energy.
+- QCI/CC: Use the generalized density corresponding to the coupled cluster/ACI energy.
 
 Read density from checkpoint file: Enabling this option will ensure GaussView reads the density from the checkpoint file and apply it to the calculation.
 
@@ -1841,33 +1483,19 @@ The context menu for this panel's display area contains the following items:
 ![](imgs/p65_073.png)
 
 <!-- p.66 -->
-- 
+- Copy: Copy selected text to the clipboard.
 
-Copy: Copy selected text to the clipboard.
+- Select All: Select all text.
 
-- 
+- Find and Find Next: Search the generated input file.
 
-Select All: Select all text.
+- Font, Text Color and Background Color: Customize the display font and colors.
 
-- 
+- Print: Print the generated input file.
 
-Find and Find Next: Search the generated input file.
+- Help: Display help for this panel.
 
-- 
-
-Font, Text Color and Background Color: Customize the display font and colors.
-
-- 
-
-Print: Print the generated input file.
-
-- 
-
-Help: Display help for this panel.
-
-- 
-
-Run testrt: Equivalent to the Runtestrt button described above.
+- Run testrt: Equivalent to the Runtestrt button described above.
 
 # Special Considerations for Various Gaussian Job Types
 
@@ -1891,25 +1519,17 @@ You can set up jobs for Gaussian’s Periodic Boundary Conditions facility using
 
 GaussView contains several features for setting up ONIOM calculations.
 
-- 
-
-Assigning Atoms to Layers: The Layer Editor allows you to graphically assign atoms to various ONIOM layers. It is accessed via the toolbar’s Select Layer button or via the Tools=>Select Layer menu item.
+- Assigning Atoms to Layers: The Layer Editor allows you to graphically assign atoms to various ONIOM layers. It is accessed via the toolbar’s Select Layer button or via the Tools=>Select Layer menu item.
 
 
 ![](imgs/p66_074.png)
 
 <!-- p.67 -->
-- 
+- Assigning Molecular Mechanics Atoms Types: GaussView will assign Molecular Mechanics atoms types for UFF, Dreiding, and Amber (including Amber charges) to all atoms in the molecule automatically. You can view and modify these using the Atom List Editor (reached via the Atom List Editor button on the toolbar or the Tools=>Atom List menu path).
 
-Assigning Molecular Mechanics Atoms Types: GaussView will assign Molecular Mechanics atoms types for UFF, Dreiding, and Amber (including Amber charges) to all atoms in the molecule automatically. You can view and modify these using the Atom List Editor (reached via the Atom List Editor button on the toolbar or the Tools=>Atom List menu path).
+- Defining Link Atoms: GaussView will automatically assign minimal link atom information for the appropriate atoms in an ONIOM calculation. However, all link atoms are always handled in the same way, and they may require modification for your purposes. Link atoms generated by GaussView are always hydrogens (using the H_ UFF and Dreiding atom types and the HR Amber atom type, where R is the element of the linked-to atom). The only other link atom parameter that is included is the linked-to atom (the atom in the higher layer to which the current atom is bonded); all other parameters are left blank. The Atom List Editor is often a convenient way to examine and modify link atoms for ONIOM calculations. You can use the ONIOM Layers button to view and modify link atoms easily.
 
-- 
-
-Defining Link Atoms: GaussView will automatically assign minimal link atom information for the appropriate atoms in an ONIOM calculation. However, all link atoms are always handled in the same way, and they may require modification for your purposes. Link atoms generated by GaussView are always hydrogens (using the H_ UFF and Dreiding atom types and the HR Amber atom type, where R is the element of the linked-to atom). The only other link atom parameter that is included is the linked-to atom (the atom in the higher layer to which the current atom is bonded); all other parameters are left blank. The Atom List Editor is often a convenient way to examine and modify link atoms for ONIOM calculations. You can use the ONIOM Layers button to view and modify link atoms easily.
-
-- 
-
-Specifying the Model Chemistry for Each Layer: Once you have prepared the structure and specified all necessary parameters, you can set up an ONIOM calculation via the Method panel of the Gaussian Calculation Setup dialog. The Multilayer ONIOM Model checkbox indicates that this will be an ONIOM calculation.
+- Specifying the Model Chemistry for Each Layer: Once you have prepared the structure and specified all necessary parameters, you can set up an ONIOM calculation via the Method panel of the Gaussian Calculation Setup dialog. The Multilayer ONIOM Model checkbox indicates that this will be an ONIOM calculation.
 
 ## Specifying CASSCF Active Spaces Using Guess=Permute
 
@@ -2051,13 +1671,9 @@ You can save the files generated from a Quick Launch operation to temporary file
 
 GaussView has two facilities for managing the current job. Which one is active is controlled by the Job Setup Preferences. When available, the Use SC Job Manager item selects the internal SC Job Manager facility. The other choices all use the legacy Current Jobs facility. Additional information:
 
-- 
+- Current Jobs facility
 
-Current Jobs facility
-
-- 
-
-SC Job Manager
+- SC Job Manager
 
 # Specifying How the Gaussian Program is Executed
 
@@ -2067,9 +1683,7 @@ The Job Setup Preferences dialog allows you to examine and customize how Gaussia
 <!-- p.76 -->
 # Viewing and Controlling Gaussian Jobs
 
-The Calculate=>Current Jobs menu path opens the Job Manager dialog (shown below); the Current Jobs button on the
-
-toolbar performs the same function:
+The Calculate=>Current Jobs menu path opens the Job Manager dialog (shown below); the Current Jobs button on the toolbar performs the same function:
 
 . Note that GaussView 6 also includes a more sophisticated facility for managing calculations: the SC Job Manager.
 
@@ -2101,25 +1715,15 @@ Viewing and Modifying Calculation Schemes
 
 This dialog shows four schemes organized into two groups. The editable fields in this dialog are the following:
 
-- 
+- Name: The scheme name, which will appear in the Schemes menu.
 
-Name: The scheme name, which will appear in the Schemes menu.
+- Keywords: The keyword section for the Gaussian job.
 
-- 
+- Link 0: The Link 0 section for the Gaussian job. Multiple lines should be separated with spaces.
 
-Keywords: The keyword section for the Gaussian job.
+- Title: Job title.
 
-- 
-
-Link 0: The Link 0 section for the Gaussian job. Multiple lines should be separated with spaces.
-
-- 
-
-Title: Job title.
-
-- 
-
-Additional Input: Additional job input sections. The ORD scheme above includes the incident light frequencies for the CPHF=RdFreq option. When you edit this cell, another, larger window will open to allow for multiple input lines.
+- Additional Input: Additional job input sections. The ORD scheme above includes the incident light frequencies for the CPHF=RdFreq option. When you edit this cell, another, larger window will open to allow for multiple input lines.
 
 Any field within a scheme can be edited by clicking on it. Note that neither the Default scheme nor the Main group may be renamed or deleted.
 
@@ -2133,37 +1737,21 @@ Calculation Schemes Context Menu
 
 The items in this menu have the following meanings:
 
-- 
+- New Group: Add a new scheme group.
 
-New Group: Add a new scheme group.
+- New Scheme: Add a new scheme to the current scheme group.
 
-- 
+- Open File: Opens a previously saved scheme group.
 
-New Scheme: Add a new scheme to the current scheme group.
+- Save File: Saves the current scheme group in a location of your choice.
 
-- 
+- Edit Cell: Allows text editing of the currently selected cell in the scheme group.
 
-Open File: Opens a previously saved scheme group.
+- Cut, Copy, Paste, Delete: Simple text editing, same function as any other word-editing software.
 
-- 
+- Font, Text Color, Background Color: Allows changing of the font, text color, and background color of the scheme group.
 
-Save File: Saves the current scheme group in a location of your choice.
-
-- 
-
-Edit Cell: Allows text editing of the currently selected cell in the scheme group.
-
-- 
-
-Cut, Copy, Paste, Delete: Simple text editing, same function as any other word-editing software.
-
-- 
-
-Font, Text Color, Background Color: Allows changing of the font, text color, and background color of the scheme group.
-
-- 
-
-Show Grid: Displays the grid in the scheme group.
+- Show Grid: Displays the grid in the scheme group.
 
 
 ![](imgs/p78_088.png)
@@ -2197,35 +1785,21 @@ The Results=>Stream Output File menu item and the Stream Output button can both 
 
 The Molecule Group Table dialog is used to view and edit information about opened molecules. This is useful for creating tables of results:
 
-The Molecule Group Table dialog This window allows the user to arrange the molecules in the group by a variety of criteria and also allows for 3D navigation
-
-of individual molecules. Click on a column header to sort the table.
+The Molecule Group Table dialog This window allows the user to arrange the molecules in the group by a variety of criteria and also allows for 3D navigation of individual molecules. Click on a column header to sort the table.
 
 The Options drop-down menu has the following selections by default:
 
-- 
+- Constrain Row Heights to be Equal: When enabled, this option makes all of the rows equal height wise.
 
-Constrain Row Heights to be Equal: When enabled, this option makes all of the rows equal height wise.
+- Show Name Column: When enabled, the name for the item will be visible in the table. The name can be edited, and it defaults to the file name.
 
-- 
+- Show 3D View Column: When enabled, a 3D view of the molecule will be displayed in the table.
 
-Show Name Column: When enabled, the name for the item will be visible in the table. The name can be edited, and it defaults to the file name.
+- Show Source Column: When enabled, the source of the file will be displayed in the table.
 
-- 
+- Show Symbol Column: When enabled, a column for entering symbol text will be included.
 
-Show 3D View Column: When enabled, a 3D view of the molecule will be displayed in the table.
-
-- 
-
-Show Source Column: When enabled, the source of the file will be displayed in the table.
-
-- 
-
-Show Symbol Column: When enabled, a column for entering symbol text will be included.
-
-- 
-
-Show Comments Column: When enabled, a column for entering comments will be visible.
+- Show Comments Column: When enabled, a column for entering comments will be visible.
 
 
 ![](imgs/p83_091.png)
@@ -2243,43 +1817,25 @@ The Rename button enables the editing of the name of the selected molecule via t
 
 The Copy drop-down menu (shown in the example dialog above) allows you to copy data between cells and rows. It has the following options:
 
-- 
+- Copy selected cells: This option copies only the cells you have selected to the clipboard.
 
-Copy selected cells: This option copies only the cells you have selected to the clipboard.
+- Copy column headers and selected cells: This option copies all of the headers and cells that you have selected to the clipboard.
 
-- 
+- Copy all cells: This option copies all of the cells in the table to the clipboard.
 
-Copy column headers and selected cells: This option copies all of the headers and cells that you have selected to the clipboard.
-
-- 
-
-Copy all cells: This option copies all of the cells in the table to the clipboard.
-
-- 
-
-Copy column headers and all cells: This option copies all of the data in the table to the clipboard.
+- Copy column headers and all cells: This option copies all of the data in the table to the clipboard.
 
 The Print drop-down menu has the following options:
 
-- 
+- Page Setup: This option opens the operating system’s print setup dialog.
 
-Page Setup: This option opens the operating system’s print setup dialog.
+- Print Preview selected row: This option opens the operating system’s print preview dialog, displaying only thecurrently selected row.
 
-- 
+- Print selected row: This option opens the operating system’s printer selection dialog in order to print the currently selected row.
 
-Print Preview selected row: This option opens the operating system’s print preview dialog, displaying only thecurrently selected row.
+- Print Preview all rows: This option opens the operating system’s print preview dialog, displaying all rows.
 
-- 
-
-Print selected row: This option opens the operating system’s printer selection dialog in order to print the currently selected row.
-
-- 
-
-Print Preview all rows: This option opens the operating system’s print preview dialog, displaying all rows.
-
-- 
-
-Print all rows: This option opens the operating system’s printer selection dialog in order to print all rows.
+- Print all rows: This option opens the operating system’s printer selection dialog in order to print all rows.
 
 The Ok button will close the Molecule Group Table dialog.
 
@@ -2329,65 +1885,37 @@ Results Plot for a PES Scan over 2 Variables Only scan calculations over exactly
 
 The context menu is different for 3D scans than for other plots (as illustrated above). It has the following items:
 
-- 
+- Save Image File: Save image to a graphics file.
 
-Save Image File: Save image to a graphics file.
+- Save Data: Save graph data to a text file.
 
-- 
+- Show Surface: Choose surface display type. The default is filled mesh.
 
-Save Data: Save graph data to a text file.
+- Show Bars: Plot values as lines (bars) in the z-direction in several styles. Bars are most often combined with Wireframe or None surface diplays.
 
-- 
+- Show Nodes:Display the locations of all structures as white dots (All, which is the default), only the Active node (as a green dot) or without special marking at the intersection (None).
 
-Show Surface: Choose surface display type. The default is filled mesh.
+- The five remaining show items include or hide the corresponding items. These selections toggle.
 
-- 
+- The 4 Edit items allow you to modify various label text.
 
-Show Bars: Plot values as lines (bars) in the z-direction in several styles. Bars are most often combined with Wireframe or None surface diplays.
+- Invert Axis: Reverse the direction of the selected axis.
 
-- 
+- Axis Scale: Scale the values on the selected axis and adjust labels accordingly. The default is 1.0.
 
-Show Nodes:Display the locations of all structures as white dots (All, which is the default), only the Active node (as a green dot) or without special marking at the intersection (None).
+- Axis Origin: Change the origin for the selected axis and change labels to be relative to this new value. The default is 0.
 
-- 
+- Background Color: Set the window background color.
 
-The five remaining show items include or hide the corresponding items. These selections toggle.
-
-- 
-
-The 4 Edit items allow you to modify various label text.
-
-- 
-
-Invert Axis: Reverse the direction of the selected axis.
-
-- 
-
-Axis Scale: Scale the values on the selected axis and adjust labels accordingly. The default is 1.0.
-
-- 
-
-Axis Origin: Change the origin for the selected axis and change labels to be relative to this new value. The default is 0.
-
-- 
-
-Background Color: Set the window background color.
-
-- 
-
-Value Color: Specify the color scheme for the plotted surface.
+- Value Color: Specify the color scheme for the plotted surface.
 
 
 ![](imgs/p89_094.png)
 
 <!-- p.90 -->
-- 
+- Bar Color: Specify what the plotted bars (if visible) are colored according to the value color (as specified in value color) or all plotted in asingle common color. Use the choose common menu item to set the desired color in the second case.
 
-Bar Color: Specify what the plotted bars (if visible) are colored according to the value color (as specified in value color) or all plotted in asingle common color. Use the choose common menu item to set the desired color in the second case.
-
-- 
-
-Highlight Coordinate n Atoms i View: Highlight and label atoms which are used to define coordinate n (1 or 2) in the view window. These items toggle.
+- Highlight Coordinate n Atoms i View: Highlight and label atoms which are used to define coordinate n (1 or 2) in the view window. These items toggle.
 
 
 <!-- p.91 -->
@@ -2399,53 +1927,29 @@ Nuclear Kinetic Energy Plot from an ADMP Trajectory Calculation
 
 The following items are plotted:
 
-- 
+- Nuclear Kinetic Energy
 
-Nuclear Kinetic Energy
+- Electronic Kinetic Energy
 
-- 
+- Potential Energy
 
-Electronic Kinetic Energy
+- Total Energy
 
-- 
+- Total Angular
 
-Potential Energy
+- Momentum
 
-- 
+- Conservation of Alpha Electrons
 
-Total Energy
+- Average Alpha Idempotency
 
-- 
+- RMS Alpha Idempotency
 
-Total Angular
+- Conservation of Beta Electrons
 
-- 
+- Average Beta Idempotency
 
-Momentum
-
-- 
-
-Conservation of Alpha Electrons
-
-- 
-
-Average Alpha Idempotency
-
-- 
-
-RMS Alpha Idempotency
-
-- 
-
-Conservation of Beta Electrons
-
-- 
-
-Average Beta Idempotency
-
-- 
-
-RMS Beta Idempotency
+- RMS Beta Idempotency
 
 The latter three apply only to open shell calculations.
 
@@ -2459,9 +1963,7 @@ More information about this functionality is in Working with Plots.
 
 Related Information:
 
-- 
-
-Customizing Plots and Spectra
+- Customizing Plots and Spectra
 
 The Results=>Energy Plot menu item displays the energy as found by the GMMX Conformer Calculation in GaussView.
 
@@ -2491,21 +1993,13 @@ Customizing a Plot (left) or Spectrum (right)
 
 The various controls in the panel have the following effects:
 
-- 
+- Units: Specifies the units for the corresponding axis. Coordinates can also be scaled by selecting the Scale by from the popup menu and entering value into the text box (see the Y-axis above).
 
-Units: Specifies the units for the corresponding axis. Coordinates can also be scaled by selecting the Scale by from the popup menu and entering value into the text box (see the Y-axis above).
+- Origin: Specifies the value for the origin for the corresponding axis.
 
-- 
+- Current buttons: Causes the coordinate of the currently selected point to be used as the origin for the corresponding axis.
 
-Origin: Specifies the value for the origin for the corresponding axis.
-
-- 
-
-Current buttons: Causes the coordinate of the currently selected point to be used as the origin for the corresponding axis.
-
-- 
-
-Invert Axis: Invert the plot vertically (Y-axis) or horizontally (X-axis).
+- Invert Axis: Invert the plot vertically (Y-axis) or horizontally (X-axis).
 
 Additional fields may appear in the spectrum version of the window, e.g., the Scale Frequencies? and IR Peak Half-Width Height options.
 
@@ -2525,25 +2019,15 @@ Customizing the Title
 
 The various controls in the panel have the following effects:
 
-- 
+- Title: Change the title of the plot graph.
 
-Title: Change the title of the plot graph.
+- Title Color: Adjust the color of the title.
 
-- 
+- Font: Change the font of the title.
 
-Title Color: Adjust the color of the title.
+- X-Axis Title, Y-Axis Title: Edit the title of the X-Axis or Y-axis (respectively). You can include special characters as HTML entities (e.g. the Y-axis title for the IR spectrum above) as weel as the <sub> and <sup> tags for subscripts and superscripts (respectively).
 
-- 
-
-Font: Change the font of the title.
-
-- 
-
-X-Axis Title, Y-Axis Title: Edit the title of the X-Axis or Y-axis (respectively). You can include special characters as HTML entities (e.g. the Y-axis title for the IR spectrum above) as weel as the <sub> and <sup> tags for subscripts and superscripts (respectively).
-
-- 
-
-Axis Title Color: Adjust the color of both axis titles.
+- Axis Title Color: Adjust the color of both axis titles.
 
 Additional fields may appear in the spectrum version of the window: e.g., the Y2-Axis Title option above.
 
@@ -2563,33 +2047,19 @@ Customizing the Plot (left)/Spectrum (right) Appearance
 
 The various controls in the panel have the following effects:
 
-- 
+- Curve: Allows you to adjust the color and edit the width of the curve. There is also the option of removing the curve by unckecking the box.
 
-Curve: Allows you to adjust the color and edit the width of the curve. There is also the option of removing the curve by unckecking the box.
+- Points: Allows you to adjust the color and edit the size of the points. There is also the option of removing the points by unckecking the box.
 
-- 
+- Marker: This option allows you to adjust the color and edit the size of the marker. There is also the option of removing the marker by unckecking the box.
 
-Points: Allows you to adjust the color and edit the size of the points. There is also the option of removing the points by unckecking the box.
+- Grid: Adjust the color of the grid lines on the graph. There is also the option of removing the grid by unckecking the box.
 
-- 
+- Background Color: Change the background color of the graph.
 
-Marker: This option allows you to adjust the color and edit the size of the marker. There is also the option of removing the marker by unckecking the box.
+- Canvas Color: Adjust the canvas color of the graph.
 
-- 
-
-Grid: Adjust the color of the grid lines on the graph. There is also the option of removing the grid by unckecking the box.
-
-- 
-
-Background Color: Change the background color of the graph.
-
-- 
-
-Canvas Color: Adjust the canvas color of the graph.
-
-- 
-
-Transparent Background: This option allows for a transparent or non-transparent, background, but only when printing.
+- Transparent Background: This option allows for a transparent or non-transparent, background, but only when printing.
 
 
 ![](imgs/p101_102.png)
@@ -2607,25 +2077,15 @@ Customizing the Appearance of Numbers
 
 The various controls in the panel have the following effects:
 
-- 
+- Number Color: Adjust the color of the numbers.
 
-Number Color: Adjust the color of the numbers.
+- Font: Change the font of the numbers.
 
-- 
+- X-Axis: Max Precision: Change the X-Axis interval.
 
-Font: Change the font of the numbers.
+- Y-Axis: Max Precision: Change the Y-Axis interval.
 
-- 
-
-X-Axis: Max Precision: Change the X-Axis interval.
-
-- 
-
-Y-Axis: Max Precision: Change the Y-Axis interval.
-
-- 
-
-Exponential Format: Displays the numbers of the X and Y axes in exponential notation.
+- Exponential Format: Displays the numbers of the X and Y axes in exponential notation.
 
 Additional fields may appear in the spectrum version of the window, e.g., the Y2-Axis: Max Precision option above.
 
@@ -2641,17 +2101,13 @@ Restoring Saved or Factory Default Settings
 
 These controls have the following effects:
 
-- 
+- Default: Opens a drop-down menu of the following options:
 
-Default: Opens a drop-down menu of the following options:
+  - Saved Default: Restore the settings of the dialog to a previously saved default.
 
-• Saved Default: Restore the settings of the dialog to a previously saved default.
+  - Factory Default: Restore the settings of the dialog to the factory default.
 
-• Factory Default: Restore the settings of the dialog to the factory default.
-
-- 
-
-Make Default: Makes the current settings the default settings.
+- Make Default: Makes the current settings the default settings.
 
 
 ![](imgs/p105_105.png)
@@ -2665,27 +2121,19 @@ You can click on the various points in the plot, and the corresponding structure
 
 All plots can be manipulated for viewing in a variety of ways:
 
-- 
+- Scrolling and resizing: Typically, multiple plots/spectra are available in the same dialog and will not all be viewable at the same time. In that case, the dialog window can be resized to see more of them at the same time, or the user can use the scroll bar to scroll down to see the desired plot. If several plots are visible, then resizing the window expands/shrinks the X-axis while the plot height stays constant. In other words, only the height of the viewing area changes. When only one plot is visible—i.e., the dialog only contains one plot or the other plots have been hidden (see below)—then resizing the dialog expands/shrinks the plot along both axes. To focus on one or two plots, hide the other plots, using the Plots menu.
 
-Scrolling and resizing: Typically, multiple plots/spectra are available in the same dialog and will not all be viewable at the same time. In that case, the dialog window can be resized to see more of them at the same time, or the user can use the scroll bar to scroll down to see the desired plot. If several plots are visible, then resizing the window expands/shrinks the X-axis while the plot height stays constant. In other words, only the height of the viewing area changes. When only one plot is visible—i.e., the dialog only contains one plot or the other plots have been hidden (see below)—then resizing the dialog expands/shrinks the plot along both axes. To focus on one or two plots, hide the other plots, using the Plots menu.
-
-- 
-
-Zooming and unzooming: All of the plots support zooming. This feature is very handy for resolving fine details. To zoom in, click and hold the left mouse button to select one corner of the zoom field. While holding the mouse button down, move the mouse to opposite corner of the desired zoom area. The zoom area will be marked with a black dashed line, as seen in the figure below. Release the mouse button, and the selected area will be zoomed to fill the full area. This view is replicated in the plot below on the right. You can keep zooming in as much as you want. To unzoom (i.e., restore the original view), use the plot context menu’s Zoom Out item.
+- Zooming and unzooming: All of the plots support zooming. This feature is very handy for resolving fine details. To zoom in, click and hold the left mouse button to select one corner of the zoom field. While holding the mouse button down, move the mouse to opposite corner of the desired zoom area. The zoom area will be marked with a black dashed line, as seen in the figure below. Release the mouse button, and the selected area will be zoomed to fill the full area. This view is replicated in the plot below on the right. You can keep zooming in as much as you want. To unzoom (i.e., restore the original view), use the plot context menu’s Zoom Out item.
 
 
 ![](imgs/p106_106.png)
 
 <!-- p.107 -->
-- 
-
-Panning: Within a plot, the view can be moved along the X-axis or Y-axis by holding down the Shift key while dragging. This can be useful when used in conjunction with zooming, allowing you to follow the plot’s path.
+- Panning: Within a plot, the view can be moved along the X-axis or Y-axis by holding down the Shift key while dragging. This can be useful when used in conjunction with zooming, allowing you to follow the plot’s path.
 
 Zooming In on a Plot
 
-- 
-
-Hiding individual plots/spectra: The upper section of the Plots menu, illustrated in the figure below, contains a list of all currently available items. You can hide or reveal individual items within the list by removing/restoring the checkmark before the item name (respectively). The Show All Plots item will always reveal (check) all items. The Hide Other Plots on the context menu (see below) will hide all but the currently displayed item. The Hide This Plot item on the menu will hide the currently displayed item.
+- Hiding individual plots/spectra: The upper section of the Plots menu, illustrated in the figure below, contains a list of all currently available items. You can hide or reveal individual items within the list by removing/restoring the checkmark before the item name (respectively). The Show All Plots item will always reveal (check) all items. The Hide Other Plots on the context menu (see below) will hide all but the currently displayed item. The Hide This Plot item on the menu will hide the currently displayed item.
 
 The Plots Menu
 
@@ -2725,29 +2173,17 @@ The menu on the left appears when you right click within a plot or spectrum.
 <!-- p.109 -->
 Right clicking in the plot or spectrum, including the gray section containing the title and axis labels, will bring up a context menu for that specific plot/spectrum. The options in the menu generally apply only to the current item. The context menu is illustrated above. The items have the following meanings:
 
-- 
+- Show All Plots and Hide Other Plots reveal all items and hide all but the current item, respectively.
 
-Show All Plots and Hide Other Plots reveal all items and hide all but the current item, respectively.
+- Zoom Out restores the original plot appearance, undoing all zooming. Undo Last Zoom reverses only the most recent zoom operation.
 
-- 
+- Print prints the current plot or spectrum.
 
-Zoom Out restores the original plot appearance, undoing all zooming. Undo Last Zoom reverses only the most recent zoom operation.
+- Save Data allows you to save the plot or spectrum data to a text file (see below).
 
-- 
+- Save Picture allows you to save the plot or spectrum as a graphics file.
 
-Print prints the current plot or spectrum.
-
-- 
-
-Save Data allows you to save the plot or spectrum data to a text file (see below).
-
-- 
-
-Save Picture allows you to save the plot or spectrum as a graphics file.
-
-- 
-
-Properties allows you to customize many aspects of the plot. It is discussed in detail here.
+- Properties allows you to customize many aspects of the plot. It is discussed in detail here.
 
 ## Saving Numerical Plot Data
 
@@ -2755,7 +2191,9 @@ The context menu for plots contains the Save Data item. Data from plots of geome
 
 # Total Energy along IRC # X-Axis: Intrinsic Reaction Coordinate # Y-Axis: Total Energy (Hartree) #         X                   Y
 
+```text
 -0.5999778220      -289.5812430000 -0.4999857200      -289.5768190000 -0.3999923250      -289.5728940000 ...
+```
 
 
 <!-- p.110 -->
@@ -2851,13 +2289,9 @@ The Scale frequencies? area can be used to scale frequency values by a uniform a
 
 The two vector-related checkboxes in the lower section of the dialog have the following meanings (see figure below for examples):
 
-- 
+- Show Displacement Vectors: Display the motion associated with the vibration as vectors on each atom.
 
-Show Displacement Vectors: Display the motion associated with the vibration as vectors on each atom.
-
-- 
-
-Show Dipole Derivative Unit Vector: Display the dipole derivative unit as a vector.
+- Show Dipole Derivative Unit Vector: Display the dipole derivative unit as a vector.
 
 
 <!-- p.117 -->
@@ -2939,23 +2373,15 @@ GaussView adds this menu at the top of the Vibrations window for frequency-depen
 
 The results from Gaussian anharmonic frequency calculations can be reported by GaussView via the Results=>Vibrations menu path. The following figure illustrates the form of this dialog when anharmonic frequency results are available:
 
-Anharmonic Frequency Results The usual frequency table now has three tabs. The selected frequencies in the Harmonic and Anharmonic tabs are
-
-coordinated, and the anharmonic modes involving the selected mode are listed in the Anharmonic, mode tab (mode 6 in this example).
+Anharmonic Frequency Results The usual frequency table now has three tabs. The selected frequencies in the Harmonic and Anharmonic tabs are coordinated, and the anharmonic modes involving the selected mode are listed in the Anharmonic, mode tab (mode 6 in this example).
 
 The following tabs are available in the frequency data table:
 
-- 
+- Harmonic: reports the harmonic frequency data.
 
-Harmonic: reports the harmonic frequency data.
+- Anharmonic, mode N: the table of anharmonic data for the Nth normal mode, where N is the currently selected mode in the harmonic table.
 
-- 
-
-Anharmonic, mode N: the table of anharmonic data for the Nth normal mode, where N is the currently selected mode in the harmonic table.
-
-- 
-
-Anharmonic: gives the table of anharmonic data for all normal modes.
+- Anharmonic: gives the table of anharmonic data for all normal modes.
 
 The spectra window contains a two controls at the top. The Show Harmonic and Show Anharmonic check boxes toggle the visibility of the corresponding spectra data. The anharmonic spectrum is displayed in red.
 
@@ -3021,39 +2447,23 @@ The Mixture Editor
 
 The Mixture Editor dialog is used to modify plots when more than one data set is plotted. The dialog contains two sections:
 
-- 
+- The spreadsheet-like list contains controls for each available data set. The list may be sorted by clicking on any column header. You can select multiple data sets using the control command and shift keys. Any changes made will apply to all selected items.
 
-The spreadsheet-like list contains controls for each available data set. The list may be sorted by clicking on any column header. You can select multiple data sets using the control command and shift keys. Any changes made will apply to all selected items.
-
-- 
-
-The Combination region below the list contains the options for modifying the plot line corresponding to the combined and (possibly) weighted data.
+- The Combination region below the list contains the options for modifying the plot line corresponding to the combined and (possibly) weighted data.
 
 The leftmost columns in the file list are as follows:
 
-- 
+- Active: Whether the data set is included in the plot. Inactive data does not contribute Boltzmann Populations calculations. For the combination plot, the Active box controls whether this data is considered when GaussView determines plot scaling. The presence of the Combination data is controlled by its Plot Style (None hides it).
 
-Active: Whether the data set is included in the plot. Inactive data does not contribute Boltzmann Populations calculations. For the combination plot, the Active box controls whether this data is considered when GaussView determines plot scaling. The presence of the Combination data is controlled by its Plot Style (None hides it).
+- ID: This displays the identification number given to the file. Numbering starts at 0. This column may be used to restore the original ordering.
 
-- 
+- Molecule: This displays the name of the output file.
 
-ID: This displays the identification number given to the file. Numbering starts at 0. This column may be used to restore the original ordering.
+- Data Name: Contains a string describing the data set (used for plot legends). This may be edited.
 
-- 
+- Free Energy: This displays the free energy of the molecule. The units for this field are hartrees. When free energies are not available, the label changes to Energy and the field displays the total energy.
 
-Molecule: This displays the name of the output file.
-
-- 
-
-Data Name: Contains a string describing the data set (used for plot legends). This may be edited.
-
-- 
-
-Free Energy: This displays the free energy of the molecule. The units for this field are hartrees. When free energies are not available, the label changes to Energy and the field displays the total energy.
-
-- 
-
-Boltz. ID: Identification number for the set's Boltzmann group (see below). IDs start at 0.
+- Boltz. ID: Identification number for the set's Boltzmann group (see below). IDs start at 0.
 
 
 ![](imgs/p128_132.png)
@@ -3061,35 +2471,21 @@ Boltz. ID: Identification number for the set's Boltzmann group (see below). IDs 
 ![](imgs/p128_133.png)
 
 <!-- p.129 -->
-- 
+- Boltz. Pop.: This displays the conformer’s contribution to the Boltzmann population.
 
-Boltz. Pop.: This displays the conformer’s contribution to the Boltzmann population.
+- Weight: This displays the weight given to each molecule’s data in the plot. By default, GaussView will weight all data sets at 1. These values can be edited.
 
-- 
+- Plot Style and Pen Fields: See below.
 
-Weight: This displays the weight given to each molecule’s data in the plot. By default, GaussView will weight all data sets at 1. These values can be edited.
-
-- 
-
-Plot Style and Pen Fields: See below.
-
-- 
-
-Y Offset (%): This option allows you to shift the Y-axis for the data by the amount you specify, expressed as a percentage.
+- Y Offset (%): This option allows you to shift the Y-axis for the data by the amount you specify, expressed as a percentage.
 
 Checking the Use Boltzmann Populations as Weights box will set Boltzmann weighting for all items and remove Weight column from table. Right-clicking within the file list brings up a menu with the following options which also modify the values in the Weight column:
 
-- 
+- Assign Boltzmann Populations to Weights: Copy the Boltzmann populations into the Weight column (where they may be edited).
 
-Assign Boltzmann Populations to Weights: Copy the Boltzmann populations into the Weight column (where they may be edited).
+- Assign 1.0 Weights: Assigns each data set a weight of 1.0 (restoring it to the GaussView default).
 
-- 
-
-Assign 1.0 Weights: Assigns each data set a weight of 1.0 (restoring it to the GaussView default).
-
-- 
-
-Assign Equal, Normalized Weights: Assigns each data set an equal weight that is normalized over all Active data sets.
+- Assign Equal, Normalized Weights: Assigns each data set an equal weight that is normalized over all Active data sets.
 
 Boltzmann Populations are computed from all Active data sets having the Boltzmann ID, including ones with Plot Style set to None. Vibration data of isomes (including nuclear mass) that match the same incident frequency from a Boltzmann group. Harmonic and anharmonic data are in different groups. This field is editable to allow you to redefine Boltzmann groups.
 
@@ -3099,17 +2495,11 @@ Boltzmann Groups: Static Limit (0) and 18797nm(1)
 
 The following controls are located in both the Combination area and in each data set row:
 
-- 
+- The Plot Style menu determines how the corresponding line is displayed. For the combination plot, the default style is None (it is not visible); the default for the individual data sets is Sticks and Curve which displays as both Stick (plotted as pillars) and Curve (a sloped line connecting each of the plot points).
 
-The Plot Style menu determines how the corresponding line is displayed. For the combination plot, the default style is None (it is not visible); the default for the individual data sets is Sticks and Curve which displays as both Stick (plotted as pillars) and Curve (a sloped line connecting each of the plot points).
+- The Stick Pen option allows you to customize the display when the Stick or Sticks and Curve options are selected. It has options to change the color, width, and line style (see below).
 
-- 
-
-The Stick Pen option allows you to customize the display when the Stick or Sticks and Curve options are selected. It has options to change the color, width, and line style (see below).
-
-- 
-
-The Curve Pen option allows you to customize the line displayed when the Curve or Sticks and Curve option are selected. It has options to change the color, width, and line style (see below).
+- The Curve Pen option allows you to customize the line displayed when the Curve or Sticks and Curve option are selected. It has options to change the color, width, and line style (see below).
 
 On the bottom of this dialog, the Add New Data button allows you to add more data to the current plot, and it opens the OS default file opening system. The OK button will close the Mixture Editor dialog, and the Apply button will apply all changes you have made to the plot without closing the dialog.
 
@@ -3157,25 +2547,17 @@ More information about this functionality is in Working with Plots here.
 
 All spectra can be manipulated for viewing in a variety of ways:
 
-- 
+- Scrolling and resizing: Typically multiple plots/spectra are available in the same dialog and will not all be viewable at the same time. In that case, the dialog window can be resized to see more of them at the same time, or the user can use the scroll bar to scroll down to see the desired spectra. If several spectra are visible, then resizing the window expands/shrinks the X-axis while the plot height stays constant. In other words, only the height of the viewing area changes. When only one spectrum is visible—i.e., the dialog only contains one spectrum or the other plots have been hidden (see below)—then resizing the dialog expands/shrinks the spectrum along both axes. To focus on one or two spectra, hide the other spectra using the Plots menu.
 
-Scrolling and resizing: Typically multiple plots/spectra are available in the same dialog and will not all be viewable at the same time. In that case, the dialog window can be resized to see more of them at the same time, or the user can use the scroll bar to scroll down to see the desired spectra. If several spectra are visible, then resizing the window expands/shrinks the X-axis while the plot height stays constant. In other words, only the height of the viewing area changes. When only one spectrum is visible—i.e., the dialog only contains one spectrum or the other plots have been hidden (see below)—then resizing the dialog expands/shrinks the spectrum along both axes. To focus on one or two spectra, hide the other spectra using the Plots menu.
+- Hiding individual spectra: The upper section of the Plots menu, illustrated below, contains a list of all currently available items. You can hide or reveal individual items within the list by removing/restoring the checkmark before the item name (respectively). The Show All Plots item will always reveal (check) all items. The Hide Other Plots on the context menu (see below) will hide all but the currently displayed item.
 
-- 
-
-Hiding individual spectra: The upper section of the Plots menu, illustrated below, contains a list of all currently available items. You can hide or reveal individual items within the list by removing/restoring the checkmark before the item name (respectively). The Show All Plots item will always reveal (check) all items. The Hide Other Plots on the context menu (see below) will hide all but the currently displayed item.
-
-- 
-
-Panning: Within a spectrum, the view can be moved along the X-axis or Y-axis by holding down the Shift key while dragging. This can be useful when used in conjunction with zooming, allowing you to follow the spectra’s path.
+- Panning: Within a spectrum, the view can be moved along the X-axis or Y-axis by holding down the Shift key while dragging. This can be useful when used in conjunction with zooming, allowing you to follow the spectra’s path.
 
 The Plots Menu for Spectra Displays
 
 This menu is found in all plot and spectra windows. This particular example comes from the plots window displayed for an IRC calculation. Currently, all available spectra are visible.
 
-- 
-
-Zooming and unzooming: All of the spectra support zooming. This feature is very handy for resolving fine details. To zoom in, click and hold the left mouse button to select one corner of the zoom field. While holding the mouse button down, move the mouse to opposite corner of the desired zoom area. The zoom area will be marked with a green rectangle (see Figure 109). Release the mouse button, and the selected area will be zoomed to fill the full area. You can keep zooming in as much as you want. To unzoom (i.e., restore the original view), use the plot context menu’s Zoom Out item.
+- Zooming and unzooming: All of the spectra support zooming. This feature is very handy for resolving fine details. To zoom in, click and hold the left mouse button to select one corner of the zoom field. While holding the mouse button down, move the mouse to opposite corner of the desired zoom area. The zoom area will be marked with a green rectangle (see Figure 109). Release the mouse button, and the selected area will be zoomed to fill the full area. You can keep zooming in as much as you want. To unzoom (i.e., restore the original view), use the plot context menu’s Zoom Out item.
 
 
 ![](imgs/p133_138.png)
@@ -3191,29 +2573,17 @@ The menu on the right appears when you right click within a spectrum.
 
 The options in the context menu generally apply only to the current spectrum. They have the following meanings:
 
-- 
+- Show All Plots and Hide Other Plots reveal all items and hide all but the current item, respectively.
 
-Show All Plots and Hide Other Plots reveal all items and hide all but the current item, respectively.
+- Zoom Out restores the original spectrum appearance, undoing all zooming. Undo Last Zoom reverses only the most recent zoom operation.
 
-- 
+- Print prints the current plot or spectrum.
 
-Zoom Out restores the original spectrum appearance, undoing all zooming. Undo Last Zoom reverses only the most recent zoom operation.
+- Save Data allows you to save the plot or spectrum data to a text file (see below).
 
-- 
+- Save Picture allows you to save the plot or spectrum as a graphics file.
 
-Print prints the current plot or spectrum.
-
-- 
-
-Save Data allows you to save the plot or spectrum data to a text file (see below).
-
-- 
-
-Save Picture allows you to save the plot or spectrum as a graphics file.
-
-- 
-
-Properties allows you to customize many aspects of the spectrum. It is discussed in detail here.
+- Properties allows you to customize many aspects of the spectrum. It is discussed in detail here.
 
 
 ![](imgs/p134_139.png)
@@ -3249,13 +2619,9 @@ For NMR spectra, an additional summary file may also be written, using the NMR S
 
 The Results=>Surfaces/Contours menu item opens the GaussView Surfaces and Contours dialog (illustrated below). It allows you to display various chemical data in three dimensions. The volumetric data may be generated from a Gaussian checkpoint file or be read in from a cube file. Note that there are two steps involved in actually displaying a surface:
 
-- 
+- Obtaining a cube by generating it or reading it in.
 
-Obtaining a cube by generating it or reading it in.
-
-- 
-
-Generating the actual surface or contour for display.
+- Generating the actual surface or contour for display.
 
 This dialog allows you to select cubes for display as surfaces and/or contours and also to manipulate currently displayed surfaces and contours.
 
@@ -3267,25 +2633,17 @@ The three areas of the dialog control cubes (sets of volumetric data such as mol
 
 The Cube Actions menu contains the following items:
 
-- 
+- New Cube: Opens the Generate Cube dialogue, which allows you to choose which type of cube you wish to create for the file and specify its properties. The new cube is then added to the list of available cubes from which surfaces and contours are generated.
 
-New Cube: Opens the Generate Cube dialogue, which allows you to choose which type of cube you wish to create for the file and specify its properties. The new cube is then added to the list of available cubes from which surfaces and contours are generated.
+- Load Cube: Read in cube data from an external file. The cube may have been saved earlier from GaussView or generated independently by the cubegen utility.
 
-- 
-
-Load Cube: Read in cube data from an external file. The cube may have been saved earlier from GaussView or generated independently by the cubegen utility.
-
-- 
-
-Save Cube: Allows you to save a cube for later use.
+- Save Cube: Allows you to save a cube for later use.
 
 
 ![](imgs/p136_142.png)
 
 <!-- p.137 -->
-- 
-
-Remove Cube: Remove an item from the list. If the cube was loaded from an external file or saved, the file is unaffected. If the cube was generated during this session and not saved, the data is discarded and must be regenerated for future viewing.
+- Remove Cube: Remove an item from the list. If the cube was loaded from an external file or saved, the file is unaffected. If the cube was generated during this session and not saved, the data is discarded and must be regenerated for future viewing.
 
 # Visualizing Volumetric Data
 
@@ -3293,37 +2651,23 @@ The New … items on the Surface Actions and Contour Actions menus apply to the 
 
 The checkboxes at the bottom of the dialog apply to both surfaces and contours:
 
-- 
+- Add views for new surfaces/contours:
 
-Add views for new surfaces/contours:
-
-- 
-
-Apply actions to molecule group:
+- Apply actions to molecule group:
 
 # Surfaces
 
 The Surface Actions menu contains the following items:
 
-- 
+- New Surface: Generates a new surface from the currently selected cube and adds it to the list of available surfaces to view.
 
-New Surface: Generates a new surface from the currently selected cube and adds it to the list of available surfaces to view.
+- New Mapped Surface: Opens the Surface Mapping dialogue, which allows you to decide which type of surface to generate and from which cube to generate it. The surface generated is a scaled heat map of the specified properties. After being created, it is added to the list of surfaces that can be displayed.
 
-- 
+- Show Surface: Reveals a hidden surface.
 
-New Mapped Surface: Opens the Surface Mapping dialogue, which allows you to decide which type of surface to generate and from which cube to generate it. The surface generated is a scaled heat map of the specified properties. After being created, it is added to the list of surfaces that can be displayed.
+- Hide Surface: Hides a surface.
 
-- 
-
-Show Surface: Reveals a hidden surface.
-
-- 
-
-Hide Surface: Hides a surface.
-
-- 
-
-Remove Surface: Removes a surface from the list of surfaces that can be displayed. To view it again, it must be generated again.
+- Remove Surface: Removes a surface from the list of surfaces that can be displayed. To view it again, it must be generated again.
 
 The |Isovalue| for new surfaces fields below the surfaces list control the characteristics of the generated surface. Modifying their values will apply to subsequently generated surfaces but will not affect existing ones. Generally, the values should not be changed. Note: Comparing surfaces from different molecules that used different isovalues is usually misleading.
 
@@ -3331,21 +2675,13 @@ The |Isovalue| for new surfaces fields below the surfaces list control the chara
 
 The Contour Actions menu contains the following items:
 
-- 
+- New Contour: Opens the Generate Contours window. This is used to create a new contour.
 
-New Contour: Opens the Generate Contours window. This is used to create a new contour.
+- Show Contour: Reveals a hidden contour.
 
-- 
+- Hide Contour: Hides a contour.
 
-Show Contour: Reveals a hidden contour.
-
-- 
-
-Hide Contour: Hides a contour.
-
-- 
-
-Remove Contour: Removes a contour from the list of contours that can be displayed. To view it again, it must be generated again.
+- Remove Contour: Removes a contour from the list of contours that can be displayed. To view it again, it must be generated again.
 
 # Generating and Manipulating Cubes
 
@@ -3383,13 +2719,9 @@ Creating a Mapped Surface
 
 The fields in this dialog have the following purposes:
 
-- 
+- Use an existing cube: Use one of the current cubes as the colorization data. Select the desired surface from the list that is present when this item is selected.
 
-Use an existing cube: Use one of the current cubes as the colorization data. Select the desired surface from the list that is present when this item is selected.
-
-- 
-
-Generate values only at surface points: Generate the colorization data on the fly at each surface point. This is generally a faster choice. Specify the desired surface for colorization data in the popup menu and other fields.
+- Generate values only at surface points: Generate the colorization data on the fly at each surface point. This is generally a faster choice. Specify the desired surface for colorization data in the popup menu and other fields.
 
 View windows display mapped surfaces and include a color mapping toolbar at the top (as in the window on the right in the figure above). The colors used in rendering a mapped surface are based on a uniform scaling between minimum and maximum values, as specified in the text boxes to the left and right of the spectrum (respectively). Changing the values in these boxes will change the color scale and correspondingly change the coloring on the mapped surface. Like other toolbars, this color-mapping toolbar can be moved by clicking and holding on the grip bar and dragging it around the window.
 
@@ -3407,17 +2739,11 @@ For transparent surfaces, the Transparent Options slider varies the opacity of t
 
 The remaining controls are present in the dialog for all surface types.
 
-- 
+- The IsoValues popup controls whether the positive values, negative values, or both (the default) are displayed.
 
-The IsoValues popup controls whether the positive values, negative values, or both (the default) are displayed.
+- The Hide backside checkbox controls whether the back side of surfaces are displayed. Checking it results in increased transparency for transparent surfaces. Try turning it on and off with the Format set to Mesh to see exactly what is being hidden or revealed.
 
-- 
-
-The Hide backside checkbox controls whether the back side of surfaces are displayed. Checking it results in increased transparency for transparent surfaces. Try turning it on and off with the Format set to Mesh to see exactly what is being hidden or revealed.
-
-- 
-
-The Z-Clip slider may be used to remove the frontmost portions of the image to allow views into the interior of the molecular display.
+- The Z-Clip slider may be used to remove the frontmost portions of the image to allow views into the interior of the molecular display.
 
 Defaults for surface properties can be set via the Display Format Preferences’ Surface panel, which contains the same controls.
 
@@ -3429,9 +2755,7 @@ Defaults for surface properties can be set via the Display Format Preferences’
 
 Contours are two dimension projections of cube data into a plane. They also use the cubes generated in the Surfaces and Contours dialog. You can use the items on the Contour Actions menu to create a new contour (New Contour), to display or hide a contour (Show Contour and Hide Contour), and to remove a contour (Remove Contour). The figure below illustrates an example contour display.
 
-Example Contour Plot This contour projects the HOMO into a
-
-plane perpendicular to the C=O bond.
+Example Contour Plot This contour projects the HOMO into a plane perpendicular to the C=O bond.
 
 The figure below illustrates the dialog that results from selecting Contour Actions=>New Contour.
 
@@ -3443,21 +2767,13 @@ The Generate Contours Dialog
 
 This dialog will generate a contour from an existing cube created or loaded previously via the Cube Actions menu in the Surfaces and Contours dialog. It contains four subareas:
 
-- 
+- 2-D Grid: Specifies characteristics of the grid used to compute the contour points. You specify the units for the values in this area with the popup menu. The U and V fields specify the minimum and maximum values in the two grid directions, and the Resolution field specifies the distance between grid points.
 
-2-D Grid: Specifies characteristics of the grid used to compute the contour points. You specify the units for the values in this area with the popup menu. The U and V fields specify the minimum and maximum values in the two grid directions, and the Resolution field specifies the distance between grid points.
+- Plane: Specifies the plane in which the contour will be drawn. This item is discussed below.
 
-- 
+- Cube: Selects the source of the contour data: either an existing cube (select it from the list) or values generated explicitly for the planar grid. The former is illustrated in the figure above; the latter is similar to the analogous feature for mapped surfaces.
 
-Plane: Specifies the plane in which the contour will be drawn. This item is discussed below.
-
-- 
-
-Cube: Selects the source of the contour data: either an existing cube (select it from the list) or values generated explicitly for the planar grid. The former is illustrated in the figure above; the latter is similar to the analogous feature for mapped surfaces.
-
-- 
-
-IsoValues: Specifies the series of isovalues at which the contour will be computed. You can add or remove items from this list as desired.
+- IsoValues: Specifies the series of isovalues at which the contour will be computed. You can add or remove items from this list as desired.
 
 # Defining the Contour Plane
 
@@ -3549,9 +2865,7 @@ The Fixed Range for Color checkbox will enable you to enter your own values in t
 ![](imgs/p147_154.png)
 
 <!-- p.148 -->
-Coloring by Bond Order This example colors the bonds in ball-and-stick display mode by bond
-
-order: red=single bond, green=double bond, black=resonant bond.
+Coloring by Bond Order This example colors the bonds in ball-and-stick display mode by bond order: red=single bond, green=double bond, black=resonant bond.
 
 You can leave the dialog with either the Close or Cancel buttons. Close maintains the atomic properties display after the dialog closes while Cancel restores the normal View display.
 
@@ -3563,29 +2877,19 @@ You can leave the dialog with either the Close or Cancel buttons. Close maintain
 
 The Results=>Charge Distribution menu item opens the Display Atomic Charges dialog (see figure below). This tool manages the display of partial charge density as computed by various methods in Gaussian. Displays are available in the Atomic Charges area of the dialog for the default Mulliken charges and other computed charges that are available for this job. The Type menu lists the available choices.
 
-Displaying Atomic Charges The dialog on the left is used to control what charges are shown and how they are displayed. The window in the middle shows the numeric charge numbers display, and the one on the right shows the atoms colored by
-
-charge (reflecting the settings in the dialog on the left), as well as the dipole moment vector.
+Displaying Atomic Charges The dialog on the left is used to control what charges are shown and how they are displayed. The window in the middle shows the numeric charge numbers display, and the one on the right shows the atoms colored by charge (reflecting the settings in the dialog on the left), as well as the dipole moment vector.
 
 By default, the color spectrum for charge display is set by reading the maximum charge computed for the molecule and setting the range to match the charge. The range can also be adjusted manually by entering values into the Color Range fields.
 
 The remaining checkboxes in the top portion of this dialog have the following meanings:
 
-- 
+- Show Numbers: Place atomic charge values next to each atom.
 
-Show Numbers: Place atomic charge values next to each atom.
+- Color Atoms by Charge: Recolor each atom by atomic charge according to the specifications of the Color Range fields and the Symmetric Color Range checkbox.
 
-- 
+- Symmetric Color Range: Forces the positive and negative limits of the charge range to have the same absolute magnitude (regardless of the actual range of the atomic charge values).
 
-Color Atoms by Charge: Recolor each atom by atomic charge according to the specifications of the Color Range fields and the Symmetric Color Range checkbox.
-
-- 
-
-Symmetric Color Range: Forces the positive and negative limits of the charge range to have the same absolute magnitude (regardless of the actual range of the atomic charge values).
-
-- 
-
-Fixed Color Range: Force the charge display to use the default fixed range. This range is set to -1.0 to 1.0 by default, and it can be modified in the Charge Distribution Preferences.
+- Fixed Color Range: Force the charge display to use the default fixed range. This range is set to -1.0 to 1.0 by default, and it can be modified in the Charge Distribution Preferences.
 
 The Dipole Moment area of the dialog controls whether a vector representing the dipole moment is included in the display. When the vector is displayed, you can specify the scaling factor for the vector’s length (the default is about 1.0) as well as its origin. The available values for the latter are illustrated in the preceding figure.
 
@@ -3601,25 +2905,15 @@ The buttons at the bottom of the Display Charge Distribution dialog control whet
 
 GaussView has a wide variety of different methods and techniques for selecting atoms within molecular structures. Groups of selected atoms are used for many purposes in building structures and setting up Gaussian jobs. This section will discuss the various alternatives, which are summarized in the following list:
 
-- 
+- Selection-related toolbar icons: Select by Clicking, Select by Rubberband/Marquee, Select by Brush, Select All, and Select None
 
-Selection-related toolbar icons: Select by Clicking, Select by Rubberband/Marquee, Select by Brush, Select All, and Select None
+- View window selection keystrokes
 
-- 
+- Selecting with the Atom List Editor, the PDB Residue Editor, and the PDB Secondary Structures Editor
 
-View window selection keystrokes
+- Using the Atom Group Editor
 
-- 
-
-Selecting with the Atom List Editor, the PDB Residue Editor, and the PDB Secondary Structures Editor
-
-- 
-
-Using the Atom Group Editor
-
-- 
-
-The Atom Selection Editor
+- The Atom Selection Editor
 
 # Selection-Related Toolbar Icons
 
@@ -3655,17 +2949,11 @@ The Atom List Editor
 
 There are three main selection-related features in these dialogs:
 
-- 
+- All of these tools have the ability to highlight various parts/substructures of the molecule, controlled via the Highlight column. Highlighted atoms can be selected and deselected via the Add/Remove Highlighted Atoms to/from General-Selction items on the View menu in the Atom List Editor and the similar Select/Deselect Highlighted Residues and Select/Deselect Highlighted Secondary Structures items in the View menus of the other tools.
 
-All of these tools have the ability to highlight various parts/substructures of the molecule, controlled via the Highlight column. Highlighted atoms can be selected and deselected via the Add/Remove Highlighted Atoms to/from General-Selction items on the View menu in the Atom List Editor and the similar Select/Deselect Highlighted Residues and Select/Deselect Highlighted Secondary Structures items in the View menus of the other tools.
+- The Rows menus of these three tools all contain the Generally-Select Atoms of Selected Rows item. Choosing it will cause all atoms corresponding to selected rows in the spreadsheet to be added to the current selection.
 
-- 
-
-The Rows menus of these three tools all contain the Generally-Select Atoms of Selected Rows item. Choosing it will cause all atoms corresponding to selected rows in the spreadsheet to be added to the current selection.
-
-- 
-
-The Invert Selection and Select All items on the Rows menus modify the selection to include all unselected atoms and to include all atoms, respectively.
+- The Invert Selection and Select All items on the Rows menus modify the selection to include all unselected atoms and to include all atoms, respectively.
 
 Selection functionality is also present in the Group Actions menu of the Atom Group Editor:
 
@@ -3791,29 +3079,19 @@ In general, atoms in View windows can be selected or unselected. Selected atoms 
 ![](imgs/p157_167.png)
 
 <!-- p.158 -->
-Atom Selection, Highlighting and Hiding The View on the left has 6 selected atoms, 2 highlighted atoms, and 4 hidden atoms (an invisible methyl group bonded to the
-
-seemingly bare ring carbon). The latter two properties are indicated in the corresponding columns of the Atom List Editor.
+Atom Selection, Highlighting and Hiding The View on the left has 6 selected atoms, 2 highlighted atoms, and 4 hidden atoms (an invisible methyl group bonded to the seemingly bare ring carbon). The latter two properties are indicated in the corresponding columns of the Atom List Editor.
 
 The dot in the Highlight column controls the highlighting of the the corresponding atom in the molecule’s View window. If an atom is both selected and highlighted, it appears as light blue.
 
 The items on each of the popup menus in the Display column control whether each atom is visible in the View window. They have the following meanings when applied to a single atom:
 
-- 
+- Show: Display this atom.
 
-Show: Display this atom.
+- Hide: Hide this atom.
 
-- 
+- Hide Others: Hide all atoms except this one.
 
-Hide: Hide this atom.
-
-- 
-
-Hide Others: Hide all atoms except this one.
-
-- 
-
-Show Others: Display all atoms except this one.
+- Show Others: Display all atoms except this one.
 
 When multiple rows in the atom list are selected, then turning highlighting on or off or changing the Display menu selection for any atom with the selection will affect all of the corresponding atoms.
 
@@ -3827,17 +3105,11 @@ If you select one or more rows of the table and them click in an isotopologue fi
 
 The various menu items in the Atom List Editor window are described below. The File menu includes items related to saving and printing the data in the table:
 
-- 
+- Print: Print the atom list table.
 
-Print: Print the atom list table.
+- Export Data: Save the data as a tab-separated format text file.
 
-- 
-
-Export Data: Save the data as a tab-separated format text file.
-
-- 
-
-Close: Close the Atom List Editor dialog.
+- Close: Close the Atom List Editor dialog.
 
 
 ![](imgs/p158_168.png)
@@ -3845,89 +3117,61 @@ Close: Close the Atom List Editor dialog.
 <!-- p.159 -->
 The Edit menu items allow you to modify the contents of the molecule specification:
 
-- 
+- Undo: Undo the previous action.
 
-Undo: Undo the previous action.
+- Redo: Restore the previous “undone” operation.
 
-- 
+- Copy Data: Copy the data from the current row to the clipboard.
 
-Redo: Restore the previous “undone” operation.
+- Delete: Delete atoms based on the selected submenu item: Selected Atoms (all selected atoms), Selected Hydrogen Atoms (all hydrogens which are selected), Selected Redundant Atoms (duplicate rows within the selection), All Atoms (delete all atoms), All Hydrogen Atoms (delete all hydrogen atoms), All Redundant Atoms (removes all duplicate rows within the molecule specification).
 
-- 
+- Reorder: Modify the atom labels (tags) of the table according to the item selected from the submenu:
 
-Copy Data: Copy the data from the current row to the clipboard.
+  - Selected Atoms by Bonding: Order selected atoms so that bonded atoms are consecutive.
 
-- 
+  - Selected Atoms by Rows: Order selected atoms by atom number (i.e., Tag column).
 
-Delete: Delete atoms based on the selected submenu item: Selected Atoms (all selected atoms), Selected Hydrogen Atoms (all hydrogens which are selected), Selected Redundant Atoms (duplicate rows within the selection), All Atoms (delete all atoms), All Hydrogen Atoms (delete all hydrogen atoms), All Redundant Atoms (removes all duplicate rows within the molecule specification).
+  - Selected Atoms: Hydrogens Last: Order hydrogen atoms last within their respective bonding group for selected atoms.
 
-- 
+  - All Atoms (Except the First) by Bonding: Order atoms so that bonded atoms are consecutive.
 
-Reorder: Modify the atom labels (tags) of the table according to the item selected from the submenu:
+  - All Atoms by Row: Order entire table by atom number (i.e., Tag column).
 
-• Selected Atoms by Bonding: Order selected atoms so that bonded atoms are consecutive.
+  - All Atoms: Hydrogens Last: Place all hydrogen atoms last within their respective bonding group.
 
-• Selected Atoms by Rows: Order selected atoms by atom number (i.e., Tag column).
+  - All Atoms by PDB Residue: Order entire table by residue assignment as specified in the PDB file.
 
-• Selected Atoms: Hydrogens Last: Order hydrogen atoms last within their respective bonding group for
+- Z-Matrix: Contains items useful for working with Z-matrix molecule specifications:
 
-selected atoms.
+  - Standardize: Modify the Z-matrix into a form conforming to typical usage.
 
-• All Atoms (Except the First) by Bonding: Order atoms so that bonded atoms are consecutive.
+  - Reconnect Selected Atoms by Bonding: Regenerate Z-matrix entries for selected atoms by analyzing bonding.
 
-• All Atoms by Row: Order entire table by atom number (i.e., Tag column).
+  - Reconnect Selected Atoms with a Nearly Invalid Dihedral: Regenerate Z-matrix entries for selected atoms where the dihedral angle is nearly invalid by analyzing bonding (rarely needed for Gaussian jobs).
 
-• All Atoms: Hydrogens Last: Place all hydrogen atoms last within their respective bonding group.
+  - Reconnect All Atoms by Bonding: Regenerate Z-matrix entries for all atoms by analyzing bonding.
 
-• All Atoms by PDB Residue: Order entire table by residue assignment as specified in the PDB file.
+- Optimization Flags: Freeze/unfreeze atoms for a subsequent optimization. The “Yes” and “No” below refer to whether the item should be optimized.
 
-- 
+  - Opt All Coords (“Yes”) of Selected Atoms: Unfreeze selected atoms as necessary.
 
-Z-Matrix: Contains items useful for working with Z-matrix molecule specifications:
+  - Freeze All Coords (“No”) of Selected Atoms: Freeze the selected atoms.
 
-• Standardize: Modify the Z-matrix into a form conforming to typical usage.
+  - Opt All Coords (“Yes”) of All Atoms: Unfreeze all atoms as necessary.
 
-• Reconnect Selected Atoms by Bonding: Regenerate Z-matrix entries for selected atoms by analyzing bonding.
+  - Freeze All Coords (“No”) of All Atoms: Freeze all atoms.
 
-• Reconnect Selected Atoms with a Nearly Invalid Dihedral: Regenerate Z-matrix entries for selected atoms
+- PBC=>Delete All Atoms Outside Cell: Remove atoms not inside the unit cell.
 
-where the dihedral angle is nearly invalid by analyzing bonding (rarely needed for Gaussian jobs).
+- PBC=>Translate All Atoms Inside Cell: Translate all atoms outisde the unit cell boundary to equivalnet positions inside the cell, and then delete any redundant atoms.
 
-• Reconnect All Atoms by Bonding: Regenerate Z-matrix entries for all atoms by analyzing bonding.
+- Add Hydrogens for All Atoms: Add hydrogen atoms to the structure (typically used with PDB files).
 
-- 
-
-Optimization Flags: Freeze/unfreeze atoms for a subsequent optimization. The “Yes” and “No” below refer to whether the item should be optimized.
-
-• Opt All Coords (“Yes”) of Selected Atoms: Unfreeze selected atoms as necessary.
-
-• Freeze All Coords (“No”) of Selected Atoms: Freeze the selected atoms.
-
-• Opt All Coords (“Yes”) of All Atoms: Unfreeze all atoms as necessary.
-
-• Freeze All Coords (“No”) of All Atoms: Freeze all atoms.
-
-- 
-
-PBC=>Delete All Atoms Outside Cell: Remove atoms not inside the unit cell.
-
-- 
-
-PBC=>Translate All Atoms Inside Cell: Translate all atoms outisde the unit cell boundary to equivalnet positions inside the cell, and then delete any redundant atoms.
-
-- 
-
-Add Hydrogens for All Atoms: Add hydrogen atoms to the structure (typically used with PDB files).
-
-- 
-
-Update MM Types and Charges: Regenerate the Molecular Mechanics atoms types for the molecule. The scope of the operation, Selected Atoms or All Atoms, is specified by the submenu selection.
+- Update MM Types and Charges: Regenerate the Molecular Mechanics atoms types for the molecule. The scope of the operation, Selected Atoms or All Atoms, is specified by the submenu selection.
 
 
 <!-- p.160 -->
-- 
-
-MM Charges: Open the MM Charges dialog, shown below, which allows you to assign charges to atoms for use with Molecular Mechanics methods (typically, as part of the low-accuracy layer in an ONIOM job). The Clear option on the Action menu will remove any assigned charges from the specified atoms.
+- MM Charges: Open the MM Charges dialog, shown below, which allows you to assign charges to atoms for use with Molecular Mechanics methods (typically, as part of the low-accuracy layer in an ONIOM job). The Clear option on the Action menu will remove any assigned charges from the specified atoms.
 
 Assigning MM Charges with the Atom List Editor
 
@@ -3935,61 +3179,37 @@ This dialog is used to automatically assign charges to atoms for use in Molecula
 
 The View menu controls atom highlighting within view windows while the Atom List Editor is in use. Each item in the first section is a toggle, and a check mark next to it within the menu indicates that it is enabled:
 
-- 
+- Exclusive Highlighting: Only allow one row within the table to be highlighted (i.e. one atom in the View Window).
 
-Exclusive Highlighting: Only allow one row within the table to be highlighted (i.e. one atom in the View Window).
+- Z-Matrix Connectivity Highlighting: For each highlighted atom, also highlight the other atoms used to define its Z-matrix entry (i.e., bond, angle, and dihedral specification).
 
-- 
-
-Z-Matrix Connectivity Highlighting: For each highlighted atom, also highlight the other atoms used to define its Z-matrix entry (i.e., bond, angle, and dihedral specification).
-
-- 
-
-ONIOM Link Highlighting: Display atoms for which the highlighted atom functions as a link atom for ONIOM calculations, based on the contents of the row’s ONIOM layer data.
+- ONIOM Link Highlighting: Display atoms for which the highlighted atom functions as a link atom for ONIOM calculations, based on the contents of the row’s ONIOM layer data.
 
 The remaining items on the View menu have the following effects:
 
-- 
+- Center Highlighted Atoms in View: Reposition the structure in the active View window so that highlighted atoms appear in the center.
 
-Center Highlighted Atoms in View: Reposition the structure in the active View window so that highlighted atoms appear in the center.
+- Add/Remove Highlighted Atoms to/from General Selection: Add/remove highlighted atoms from the current selection.
 
-- 
-
-Add/Remove Highlighted Atoms to/from General Selection: Add/remove highlighted atoms from the current selection.
-
-- 
-
-Check for Crowded Atoms: Turn on highlighting for atoms that are unphysically close to one another (within 0.75 Angstroms).
+- Check for Crowded Atoms: Turn on highlighting for atoms that are unphysically close to one another (within 0.75 Angstroms).
 
 The Rows menu controls whether some or all atoms within the molecule are visible in the table and also provides some shortcuts for selecting groups of atoms:
 
-- 
+- Sublist Filters: Open the Sublist Filters dialog for defining atom filter expressions (described here). Sublist filters are used to limit the display; they make using this tool manageable for very large molecules.
 
-Sublist Filters: Open the Sublist Filters dialog for defining atom filter expressions (described here). Sublist filters are used to limit the display; they make using this tool manageable for very large molecules.
-
-- 
-
-Sort Selected: Sort highlighted atom list rows, according to the active column and criterion selected in the submenu: Ascending by..., or Descending by.... The up and down arrow buttons in the toolbar are equivalent to these submenu items.
+- Sort Selected: Sort highlighted atom list rows, according to the active column and criterion selected in the submenu: Ascending by..., or Descending by.... The up and down arrow buttons in the toolbar are equivalent to these submenu items.
 
 
 ![](imgs/p160_169.png)
 
 <!-- p.161 -->
-- 
+- Sublist: Toggle display of atoms in and/or not in the active sublist, depending on the submenu item that is chosen (Show Sublist Atoms or Show Non-Sublist Atoms). Current selections are indicated by a check mark next to the corresponding item on the submenu.
 
-Sublist: Toggle display of atoms in and/or not in the active sublist, depending on the submenu item that is chosen (Show Sublist Atoms or Show Non-Sublist Atoms). Current selections are indicated by a check mark next to the corresponding item on the submenu.
+- Select All: Select all atoms unconditionally.
 
-- 
+- Invert Selection: Deselect all currently selected atoms, and select all deselected ones.
 
-Select All: Select all atoms unconditionally.
-
-- 
-
-Invert Selection: Deselect all currently selected atoms, and select all deselected ones.
-
-- 
-
-Select Rows of Generally-Selected Atoms and Generally-Select Atoms of Selected Rows: Cause the selected (i.e. yellow) atoms in the View and the selected rows in the table to be similar. The first of these gives priority to currently selected atoms in the View Window, selecting corresponding table rows in addition to rows already selected, while the second causes the View selection to the rows selected within the table.
+- Select Rows of Generally-Selected Atoms and Generally-Select Atoms of Selected Rows: Cause the selected (i.e. yellow) atoms in the View and the selected rows in the table to be similar. The first of these gives priority to currently selected atoms in the View Window, selecting corresponding table rows in addition to rows already selected, while the second causes the View selection to the rows selected within the table.
 
 The Columns menu allows you to specify which columns appear in the table on an individual column basis. The first few items in the menu correspond to the default columns in the table, which are independent of the various column display buttons. You can select which columns appear for the Z-Matrix Coordinates and Connectivity, Cartesian Coordinates, Optimization Flags, Isotope Mass, Fractional Coordinates, ONIOM Data, MM Types, and PDB Data buttons via the corresponding submenus. The Cartesian Coordinates item has the same function as the corresponding button—although, individual coordinates cannot be selected separately.
 
@@ -4011,29 +3231,19 @@ Criteria within filters are combined with an OR logic: any atom matching any cri
 
 The available Criteria categories are:
 
-- 
+- Select one or more atom tag numbers (serial numbers).
 
-Select one or more atom tag numbers (serial numbers).
+- Tag List: Select a list of atom tags.
 
-- 
+- Elements: Select atoms by element type.
 
-Tag List: Select a list of atom tags.
-
-- 
-
-Elements: Select atoms by element type.
-
-- 
-
-ONIOM: Select atoms by ONIOM layer, layer boundary, and/or link atom presence.
+- ONIOM: Select atoms by ONIOM layer, layer boundary, and/or link atom presence.
 
 
 ![](imgs/p162_170.png)
 
 <!-- p.163 -->
-- 
-
-Select atoms having undefined Molecular Mechanics atoms types and/or MM charges.
+- Select atoms having undefined Molecular Mechanics atoms types and/or MM charges.
 
 Filters are specific to individual molecule groups, and they do not persist across different sessions for the corresponding input file. In other words, if you close and reopen the input file or if you exit and restart GaussView, current filters are lost.
 
@@ -4053,79 +3263,47 @@ The menus in these editors are very similar to those in the Atom List Editor dis
 
 The File menu includes items related to saving and printing the data in the table:
 
-- 
+- Print: Print the atom list table.
 
-Print: Print the atom list table.
-
-- 
-
-Export Data: Save the data as a tab-separated format text file.
+- Export Data: Save the data as a tab-separated format text file.
 
 
 ![](imgs/p164_171.png)
 
 <!-- p.165 -->
-- 
-
-Close: Close the Atom List Editor dialog.
+- Close: Close the Atom List Editor dialog.
 
 Edit: Contains menu items allow you to modify the contents of the molecule specification:
 
-- 
+- Undo: Undo the previous action.
 
-Undo: Undo the previous action.
+- Redo: Restore the previous “undone” operation.
 
-- 
+- Copy Data: Copy the data from the current row to the clipboard.
 
-Redo: Restore the previous “undone” operation.
+- Delete: Delete atoms based on the selected submenu item: Selected Atoms (all selected atoms), Selected Hydrogen Atoms (all hydrogens which are selected), Selected Redundant Atoms (duplicate rows within the selection), All Atoms (delete all atoms), All Hydrogen Atoms (delete all hydrogen atoms), All Redundant Atoms (removes all duplicate rows within the molecule specification).
 
-- 
-
-Copy Data: Copy the data from the current row to the clipboard.
-
-- 
-
-Delete: Delete atoms based on the selected submenu item: Selected Atoms (all selected atoms), Selected Hydrogen Atoms (all hydrogens which are selected), Selected Redundant Atoms (duplicate rows within the selection), All Atoms (delete all atoms), All Hydrogen Atoms (delete all hydrogen atoms), All Redundant Atoms (removes all duplicate rows within the molecule specification).
-
-- 
-
-Add Hydrogens: Adds hydrogen atoms to the residue where needed.
+- Add Hydrogens: Adds hydrogen atoms to the residue where needed.
 
 View: Atoms can be difficult to distinguish, as they are already highlighted and thus blue. Use this menu’s controls over atom highlighting to alleviate this problem. Each item in the first section is a toggle, and a check mark next to it within the menu indicates that it is enabled:
 
-- 
+- Exclusive Highlighting: Only allow one row within the table to be highlighted (i.e. one atom in the View Window).
 
-Exclusive Highlighting: Only allow one row within the table to be highlighted (i.e. one atom in the View Window).
+- Center Highlighted Residues in View: Reposition the structure in the active View window so that highlighted residues appear in the center.
 
-- 
+- Select Atoms of Highlighted Residues: Select all atoms that are present in the currently highlighted residues. This operation adds to the current selection.
 
-Center Highlighted Residues in View: Reposition the structure in the active View window so that highlighted residues appear in the center.
-
-- 
-
-Select Atoms of Highlighted Residues: Select all atoms that are present in the currently highlighted residues. This operation adds to the current selection.
-
-- 
-
-Deselect Atoms of Highlighted Residues: Deselect all atoms present in highlighted residues.
+- Deselect Atoms of Highlighted Residues: Deselect all atoms present in highlighted residues.
 
 Rows: Controls whether some or all atoms within the molecule are visible in the table and also provides shortcuts for selecting groups of atoms:
 
-- 
+- Sort Selected: Sort highlighted atom list rows, according to the active column and criterion selected in the submenu: Ascending or Descending. The up and down arrow buttons in the toolbar are equivalent to these submenu items.
 
-Sort Selected: Sort highlighted atom list rows, according to the active column and criterion selected in the submenu: Ascending or Descending. The up and down arrow buttons in the toolbar are equivalent to these submenu items.
+- Select All: Select all atoms unconditionally.
 
-- 
+- Invert Selection: Deselect all currently selected atoms, and select all deselected ones.
 
-Select All: Select all atoms unconditionally.
-
-- 
-
-Invert Selection: Deselect all currently selected atoms, and select all deselected ones.
-
-- 
-
-Select Rows of Generally-Selected Atoms and Generally-Select Atoms of Selected Rows: Cause the selected (i.e. yellow) atoms in the View and the selected rows in the table to be similar. The first of these gives priority to currently selected atoms in the View window, selecting corresponding table rows in addition to rows already selected, while the second causes the View selection to the rows selected within the table.
+- Select Rows of Generally-Selected Atoms and Generally-Select Atoms of Selected Rows: Cause the selected (i.e. yellow) atoms in the View and the selected rows in the table to be similar. The first of these gives priority to currently selected atoms in the View window, selecting corresponding table rows in addition to rows already selected, while the second causes the View selection to the rows selected within the table.
 
 Columns: Allows you to specify which columns appear in the table on an individual column basis via checking or unchecking their respective boxes.
 
@@ -4143,85 +3321,51 @@ Note that this dialog serves only to assign atoms to named groups. None of the i
 
 The various columns in the spreadsheet hold the following data:
 
-- 
+- Group ID holds a name for each atom group, typically the class names with a number.
 
-Group ID holds a name for each atom group, typically the class names with a number.
+- When the checkbox in the Highlight column is checked, the atoms in the corresponding group are encircled with the indicated highlight color.
 
-- 
+- The menus in the Display column allows you to hide the atoms belonging to one or more groups.
 
-When the checkbox in the Highlight column is checked, the atoms in the corresponding group are encircled with the indicated highlight color.
+- The Atom Tags field lists the serial numbers of the atoms in each group. You can define groups by entering atom numbers here directly, and the field is also updated when atoms are added to or removed from groups by other methods.
 
-- 
+- The Atom Count column lists the number of atoms in the group and the Electrons column lists the number of electrons (both are read-only).
 
-The menus in the Display column allows you to hide the atoms belonging to one or more groups.
-
-- 
-
-The Atom Tags field lists the serial numbers of the atoms in each group. You can define groups by entering atom numbers here directly, and the field is also updated when atoms are added to or removed from groups by other methods.
-
-- 
-
-The Atom Count column lists the number of atoms in the group and the Electrons column lists the number of electrons (both are read-only).
-
-- 
-
-The Charge, Spin Mult, and Unpaired Spins columns may be used to set per-fragment charges and spin multiplicities (an example is described later).
+- The Charge, Spin Mult, and Unpaired Spins columns may be used to set per-fragment charges and spin multiplicities (an example is described later).
 
 
 ![](imgs/p166_172.png)
 
 <!-- p.167 -->
-- 
-
-The plus and minus sign buttons in each row may be used to add or remove all currently selected atoms from the corresponding group.
+- The plus and minus sign buttons in each row may be used to add or remove all currently selected atoms from the corresponding group.
 
 Once atom groups are defined, the Select Atoms and Deselect Atoms items on the Group Actions menu can be used to select/deselect atoms within an atom group. The other items on this menu have the following uses:
 
-- 
+- New Group: Add another group of the current group class. For example, selecting this item in the preceding figure will add another Gaussian Fragment group.
 
-New Group: Add another group of the current group class. For example, selecting this item in the preceding figure will add another Gaussian Fragment group.
+- Remove “item”: Removes the selected atom group. Any atoms in the group are assigned to the first group.
 
-- 
-
-Remove “item”: Removes the selected atom group. Any atoms in the group are assigned to the first group.
-
-- 
-
-Add Selected Atoms to/Remove Selected Atoms from: Equivalent to the plus and minus buttons in the Selected Atoms column.
+- Add Selected Atoms to/Remove Selected Atoms from: Equivalent to the plus and minus buttons in the Selected Atoms column.
 
 There are two other important controls in this dialog:
 
-- 
+- The Exclusive checkbox causes each atom to belong to exactly one atom group. When checked, if an atom is placed into an atom group, it is removed from its present group automatically. It is required for all of the atom group types used for various Gaussian calculation types. It is off by default for the Gaussian Fragment class, but the setting sticks once you enable it.
 
-The Exclusive checkbox causes each atom to belong to exactly one atom group. When checked, if an atom is placed into an atom group, it is removed from its present group automatically. It is required for all of the atom group types used for various Gaussian calculation types. It is off by default for the Gaussian Fragment class, but the setting sticks once you enable it.
-
-- 
-
-The Persistent Visuals checkbox controls whether the highlighting and show/hide display settings are retained in the View window when the Atom Group Editor is closed. It is unchecked by default.
+- The Persistent Visuals checkbox controls whether the highlighting and show/hide display settings are retained in the View window when the Atom Group Editor is closed. It is unchecked by default.
 
 ## Types of Atom Groups
 
 The defined classes of atom groups are as follows:
 
-- 
+- Gaussian Fragment: Define atom fragments for use in molecule specifications, for a fragment guess, and the like. Gaussian Calculation Setup Use: Guess panel: Use fragments (atom groups) for generating guess
 
-Gaussian Fragment: Define atom fragments for use in molecule specifications, for a fragment guess, and the like. Gaussian Calculation Setup Use: Guess panel: Use fragments (atom groups) for generating guess
+- ONIOM Layer: Define regions using different model chemistries for ONIOM calculations. Gaussian Calculation Setup Use: Method panel: Multilayer ONIOM Model
 
-- 
+- Freeze: Specify frozen atoms for geometry optimizations. Gaussian Calculation Setup Use: Adds freeze status column to the molecule specification.
 
-ONIOM Layer: Define regions using different model chemistries for ONIOM calculations. Gaussian Calculation Setup Use: Method panel: Multilayer ONIOM Model
+- NMR Spin-Spin: Specify atoms for which to perform spin-spin coupling calculations during an NMR job. Gaussian Calculation Setup Use: Job Type panel for NMR: compute spin-spin couplings
 
-- 
-
-Freeze: Specify frozen atoms for geometry optimizations. Gaussian Calculation Setup Use: Adds freeze status column to the molecule specification.
-
-- 
-
-NMR Spin-Spin: Specify atoms for which to perform spin-spin coupling calculations during an NMR job. Gaussian Calculation Setup Use: Job Type panel for NMR: compute spin-spin couplings
-
-- 
-
-Select Normal Modes: Specify atoms with which to select normal modes in frequency calculations. Gaussian Calculation Setup Use: Job Type panel for Frequency or Opt+Freq: Select Normal Modes
+- Select Normal Modes: Specify atoms with which to select normal modes in frequency calculations. Gaussian Calculation Setup Use: Job Type panel for Frequency or Opt+Freq: Select Normal Modes
 
 The Class Actions menu allows you to create a new type of atom group, to reset the atom group assignments to the default (all in the first group), to remove an atom group class, and to rename a class.
 
@@ -4235,17 +3379,11 @@ Assigning Atoms to ONIOM Layers
 
 There are several methods for selecting atoms for layer assignment:
 
-- 
+- You can use one of the buttons at the top of the dialog. The Select All button selects all atoms in the molecule, and the Select None button deselects all atoms. The Select Layer button selects all atoms currently assigned to the specified layer. The Select PDB Residues opens another selection dialog which allows you to select atoms by residue if this information was present in the PDB file corresponding to the current model.
 
-You can use one of the buttons at the top of the dialog. The Select All button selects all atoms in the molecule, and the Select None button deselects all atoms. The Select Layer button selects all atoms currently assigned to the specified layer. The Select PDB Residues opens another selection dialog which allows you to select atoms by residue if this information was present in the PDB file corresponding to the current model.
+- Use the left mouse button to select or deselect atoms manually, continuing until all the atoms that you want have been selected. Hold down the Shift key to add to the current selection.
 
-- 
-
-Use the left mouse button to select or deselect atoms manually, continuing until all the atoms that you want have been selected. Hold down the Shift key to add to the current selection.
-
-- 
-
-Proximity-based selection: Select an atom, and then use the Expand Selection slider and proceed until you have selected all the atoms you need. Moving it to the right increases the distance used when selecting atoms.
+- Proximity-based selection: Select an atom, and then use the Expand Selection slider and proceed until you have selected all the atoms you need. Moving it to the right increases the distance used when selecting atoms.
 
 
 ![](imgs/p168_173.png)
@@ -4255,13 +3393,9 @@ This dialog allows you to assign atoms to layers for ONIOM calculations. Differe
 
 For distance-based atom selection, the distance between atoms to be selected depends on the following criteria, selected in the Using popup menu:
 
-- 
+- Bond: selects only atoms that are bonded to one another.
 
-Bond: selects only atoms that are bonded to one another.
-
-- 
-
-Distance: selects atom(s) based solely on proximity to a current selection, regardless of bonding.
+- Distance: selects atom(s) based solely on proximity to a current selection, regardless of bonding.
 
 
 <!-- p.170 -->
@@ -4273,17 +3407,11 @@ Imposing Symmetry on a Molecular Structure
 
 The controls in the upper section of the dialog have the following meanings:
 
-- 
+- Enable point group symmetry: Enable GaussView’s symmetry features.
 
-Enable point group symmetry: Enable GaussView’s symmetry features.
+- Constrain to subgroup: Select a point group to which to constrain the structure.
 
-- 
-
-Constrain to subgroup: Select a point group to which to constrain the structure.
-
-- 
-
-For: Select All changes to impose symmetry on future structural changes. None disables symmetry constrains.
+- For: Select All changes to impose symmetry on future structural changes. None disables symmetry constrains.
 
 The Approximate higher-order point groups area displays and allows you to apply higher symmetry subgroups to the current molecular structure. It contains the following controls:
 
@@ -4291,17 +3419,11 @@ The Approximate higher-order point groups area displays and allows you to apply 
 ![](imgs/p170_174.png)
 
 <!-- p.171 -->
-- 
+- The popup menu on the left lists applicable point groups having higher symmetry than the current structure (if any). Select the desired point group before clicking Symmetrize.
 
-The popup menu on the left lists applicable point groups having higher symmetry than the current structure (if any). Select the desired point group before clicking Symmetrize.
+- Tolerance menu: Cutoff level below which to consider structural parameters equal. Larger cutoffs make higher symmetry groups easier to identify. Thus, increasing the tolerance may cause additional point groups to appear in the popup menu on the left.
 
-- 
-
-Tolerance menu: Cutoff level below which to consider structural parameters equal. Larger cutoffs make higher symmetry groups easier to identify. Thus, increasing the tolerance may cause additional point groups to appear in the popup menu on the left.
-
-- 
-
-Symmetrize button: Impose the selected higher-order point group on the molecular structure immediately.
+- Symmetrize button: Impose the selected higher-order point group on the molecular structure immediately.
 
 The Always track point group symmetry: Tells GaussView to continuously compute point group assignments as the geometry changes. Use this item in conjunction with a symmetry constraint setting of None in order to view point group changes continuously as you adjust structural parameters (e.g., use the bond length slider). Normally, the point group is identified only after the change is completed. For very large molecules on slower systems, enabling this item may cause noticeable delays in response time.
 
@@ -4327,11 +3449,7 @@ The Redundant Coordinate Editor allows you to create and edit redundant coordina
 
 The central feature of this dialog is a scrollable list containing information on each of the coordinates. A pencil icon in the status column marks that coordinate as the currently active coordinate. A warning sign in the status column indicates that that coordinate is incomplete or invalid. When the currently active coordinate is invalid or incomplete, the status bar at the bottom describes the nature of the warning. The coordinate column contains a brief description of the coordinate and its parameters.
 
-The Redundant Coordinate Editor We are adding the bond coordinates for the two selected atoms so that its distance will be reported in the optimization
-
-output (even though the atoms are not in fact bonded to one another). The list in the window also shows 2 other coordinates we
-
-added.
+The Redundant Coordinate Editor We are adding the bond coordinates for the two selected atoms so that its distance will be reported in the optimization output (even though the atoms are not in fact bonded to one another). The list in the window also shows 2 other coordinates we added.
 
 A toolbar at the top provides buttons for adding a new coordinate, deleting a coordinate, and moving an item up or down in the list. Adding a new coordinate creates an unidentified coordinate, which is placed in the list just after the currently active coordinate and becomes the active coordinate.
 
@@ -4361,17 +3479,11 @@ The Connection Editor is used to verify and assign atom equivalences in two mole
 
 Atoms can also be manually reordered by using the mouse. These operations use a reference atom as their basis (see the first bullet):
 
-- 
+- Left clicking: Designate the atom as the reference atom. This can also be done using the Reference Atom control.
 
-Left clicking: Designate the atom as the reference atom. This can also be done using the Reference Atom control.
+- Middle clicking: Assign the tag one greater than the reference’s item to the selected atom.
 
-- 
-
-Middle clicking: Assign the tag one greater than the reference’s item to the selected atom.
-
-- 
-
-Right clicking: Swap tags with the atom and the reference atom. The atom then becomes the new reference atom.
+- Right clicking: Swap tags with the atom and the reference atom. The atom then becomes the new reference atom.
 
 
 ![](imgs/p175_177.png)
@@ -4381,29 +3493,17 @@ The Apply to Molecule Group checkbox determines whether the Connection Editor’
 
 The ZMat Tools popup allows you to perform some Z-matrix operations on the molecule or molecule group:
 
-- 
+- Standardize: Reconstruct the Z-matrix in standard form.
 
-Standardize: Reconstruct the Z-matrix in standard form.
+- Sort H: Move hydrogen atoms to the end of the atom ordering.
 
-- 
+- Reorder: Reapply standard Z-matrix ordering.
 
-Sort H: Move hydrogen atoms to the end of the atom ordering.
+- Reconnect: Regenerate connectivity data.
 
-- 
+- Opt All: Optimize all atoms.
 
-Reorder: Reapply standard Z-matrix ordering.
-
-- 
-
-Reconnect: Regenerate connectivity data.
-
-- 
-
-Opt All: Optimize all atoms.
-
-- 
-
-Opt None: Optimize no atoms; i.e., freeze all atoms.
+- Opt None: Optimize no atoms; i.e., freeze all atoms.
 
 Any other items that may be present on this popup menu do not apply to Gaussian.
 
@@ -4413,11 +3513,7 @@ Any other items that may be present on this popup menu do not apply to Gaussian.
 
 The Tools=>MOs menu path and the MO Editor button both open the MOs window. It is used to inspect molecular orbitals (MOs) from Gaussian calculations—MO energy and occupancy diagrams, visualized MO isovalue surfaces—as well as to quickly generate new MOs and/or visually select active-space MOs to be used for CASSCF calculations.
 
-The MO Editor This window is used for examining molecular orbitals visually and potentially rearranging
-
-their occupancies and/or ordering for a subsequent Gaussian calculation. Here we are
-
-viewing MO 20, one of 5 available surfaces (and 2 selected MOs).
+The MO Editor This window is used for examining molecular orbitals visually and potentially rearranging their occupancies and/or ordering for a subsequent Gaussian calculation. Here we are viewing MO 20, one of 5 available surfaces (and 2 selected MOs).
 
 The MOs dialog has its own embedded View window for displaying the molecule and surface corresponding to the currently selected MO (if available). This embedded view is read-only and cannot be used to edit the molecule. In viewing functionality, it functions almost identically to a standard View window in terms of including keyboard and mouse controls for translating, rotating, and zooming the molecule, accessing the context menu, and so on. (See the discussion of manipulating views earlier in this chapter and that concerning surfaces in “Viewing Gaussian Results” for details.)
 
@@ -4427,25 +3523,17 @@ MOs can be selected for visualization, inclusion in future calculation, and othe
 
 The bottom portion of the window contains four panels:
 
-- 
+- The New MOs panel is used to read-in or generate molecular orbitals.
 
-The New MOs panel is used to read-in or generate molecular orbitals.
-
-- 
-
-The Visualize panel allows you to generate surfaces for desired MOs.
+- The Visualize panel allows you to generate surfaces for desired MOs.
 
 
 ![](imgs/p177_178.png)
 
 <!-- p.178 -->
-- 
+- The Calculation panel allows you to modify the order of MOs for future Gaussian jobs.
 
-The Calculation panel allows you to modify the order of MOs for future Gaussian jobs.
-
-- 
-
-The Diagram panel controls the energy level and orbital occupancy display to the right of the view area.
+- The Diagram panel controls the energy level and orbital occupancy display to the right of the view area.
 
 The Visualize panel is visible in the figure above. The various fields in it specify which orbitals should be visualized, along with two surface generation parameters (the isodensity value and the grid density, via the Isovalue and Cube Grid fields, respectively). The Add Type popup contains items which specify which MOs to visualize; its options are generally selfexplanatory with the possible exception of Current List (regenerates the orbitals listed in the Current List field) and Other explanatory with the possible exception of Current List (regenerates the orbitals listed in the Current List field) and Other (specifies the arbitrary list of orbitals present in the editable Add List field). Note that GaussView attempts to keep the Add List and Add Type fields synchronized. Clicking the Update button will generate the requested orbital surfaces.
 
@@ -4469,13 +3557,9 @@ the Charge and Spin fields. These fields can also be edited directly, and any ch
 
 Controls in the Calculation panel also serve this purpose. The Adjust Occupancies popup contains two choices:
 
-- 
+- Aufbau: Fill MOs with electrons in order of increasing orbital energy, in keeping with the current settings of Charge, Spin, and Wavefunction.
 
-Aufbau: Fill MOs with electrons in order of increasing orbital energy, in keeping with the current settings of Charge, Spin, and Wavefunction.
-
-- 
-
-Original: Restore the original read-in or computed orbital occupancies, modifying the Charge, Spin, and/or Wavefunction if appropriate.
+- Original: Restore the original read-in or computed orbital occupancies, modifying the Charge, Spin, and/or Wavefunction if appropriate.
 
 ### Controlling the Orbitals Display
 
@@ -4499,29 +3583,19 @@ Reference for more information on the various fields and choices. Clicking Gener
 
 The Permutation List control in the Calculation panel displays the current orbital reordering at any given moment; it is initially empty. The popup in this area offers three choices for orbital reordering:
 
-- 
+- Occupancy (Alpha): Reorder orbitals based on the current occupancies of the alpha orbitals. This will order filled orbitals below unfilled ones and fully occupied orbitals below partially occupied ones. Within each group, orbitals are arranged according to increasing energy.
 
-Occupancy (Alpha): Reorder orbitals based on the current occupancies of the alpha orbitals. This will order filled orbitals below unfilled ones and fully occupied orbitals below partially occupied ones. Within each group, orbitals are arranged according to increasing energy.
+- Occupancy (Beta): Reorder orbitals based on the current beta orbital occupancies (as in the previous item). Only available for unrestricted wavefunctions.
 
-- 
-
-Occupancy (Beta): Reorder orbitals based on the current beta orbital occupancies (as in the previous item). Only available for unrestricted wavefunctions.
-
-- 
-
-CI: Reorder orbitals so that all occupied and all unoccupied orbitals are contiguous, with each group arranged in increasing energy order. This choice is appropriate for a CAS calculation.
+- CI: Reorder orbitals so that all occupied and all unoccupied orbitals are contiguous, with each group arranged in increasing energy order. This choice is appropriate for a CAS calculation.
 
 ### Miscellaneous Options
 
 The Diagram panel contains two additional controls:
 
-- 
+- Save Data: Save the molecular orbital information from the MO diagram to a simple text file: orbital number, occupancy, orbital energy for each orbital, and the number of frozen orbitals. For unrestricted wavefunctions, alpha and beta information will be saved in separate blocks.
 
-Save Data: Save the molecular orbital information from the MO diagram to a simple text file: orbital number, occupancy, orbital energy for each orbital, and the number of frozen orbitals. For unrestricted wavefunctions, alpha and beta information will be saved in separate blocks.
-
-- 
-
-Save Picture: Save a graphic image of the MO diagram. You will be prompted for the filename and desired graphics format.
+- Save Picture: Save a graphic image of the MO diagram. You will be prompted for the filename and desired graphics format.
 
 
 <!-- p.181 -->
@@ -4539,17 +3613,11 @@ The Force Field dropdown menu allows you to choose what type of force field to u
 <!-- p.182 -->
 The Method dropdown menu specifies what kind of calculation to run:
 
-- 
+- Conformer Search: Perform a conformational search based on the parameters specified in the dialog.
 
-Conformer Search: Perform a conformational search based on the parameters specified in the dialog.
+- Optimization: Optimize the current structure with molecular mechanics.
 
-- 
-
-Optimization: Optimize the current structure with molecular mechanics.
-
-- 
-
-Grid Search: Perform a systematic conformational search in torsion space. The selected rotatable bonds are all set to an initial configuration and then stepped by the specified bond angle through 360 degrees. At each step, the current structure is minimized.
+- Grid Search: Perform a systematic conformational search in torsion space. The selected rotatable bonds are all set to an initial configuration and then stepped by the specified bond angle through 360 degrees. At each step, the current structure is minimized.
 
 The Energy Window field specifies the tolerance level of the energy difference between the results and the lowest energy conformer (in kcal/mol). When the calculation is run, conformers that fall outside of this range will be discarded.
 
@@ -4563,17 +3631,11 @@ When checked, the Exclude Double Bond Stereoisomers checkbox will remove stereoi
 
 The Search Method options allow you to choose how you want GaussView to search for conformations. You can choose from Bonds, Cartesians, or Both at the same time:
 
-- 
+- In a Cartesian search, each of the heavy atoms is moved by some random distance in each of the X, Y and Z dimensions. This is a good method for exploring the conformational space about a local minima.
 
-In a Cartesian search, each of the heavy atoms is moved by some random distance in each of the X, Y and Z dimensions. This is a good method for exploring the conformational space about a local minima.
+- In the Bonds method, each of the selected rotatable bonds is rotated by some random amount. This normally provides large changes in the conformation of the molecule, and is a good method for hopping between local minima.
 
-- 
-
-In the Bonds method, each of the selected rotatable bonds is rotated by some random amount. This normally provides large changes in the conformation of the molecule, and is a good method for hopping between local minima.
-
-- 
-
-For ring systems, the Ringmaker strategy of Still is used with the Bonds method. This involves breaking one bond in a ring, rotating about the remaining bonds, and then trying to reclose the ring. If the bond length or the bond angles of the reclosed ring are not reasonable, the conformation is rejected, and a new attempt is made. This method works well with flexible rings of size 8 or larger. Rings of limited flexibility, such as fused rings or rings with double bonds, do not work well and should not be included in a ring search. These systems will work fine with just a Cartesian search.
+- For ring systems, the Ringmaker strategy of Still is used with the Bonds method. This involves breaking one bond in a ring, rotating about the remaining bonds, and then trying to reclose the ring. If the bond length or the bond angles of the reclosed ring are not reasonable, the conformation is rejected, and a new attempt is made. This method works well with flexible rings of size 8 or larger. Rings of limited flexibility, such as fused rings or rings with double bonds, do not work well and should not be included in a ring search. These systems will work fine with just a Cartesian search.
 
 The two lists in the bottom of the window specify the bonds and rings to use in the search for conformers. The top list has three columns: Highlight, Bond and Angle. Clicking on the grey dot in the Highlight column will highlight that bond in the view window. The Bond column lists the atom numbers for each identified bond. The checkbox controls whether the bond is used during the calculation. The Angle column displays the increment in degrees for rotations about that bond.
 
@@ -4613,89 +3675,59 @@ The Tools=>PBC menu path and the Crystal Editor button both bring up the PBC win
 
 There are four buttons at the bottom of the window:
 
-- 
+- Ok, which finalizes your selections and exits the window.
 
-Ok, which finalizes your selections and exits the window.
+- What's this?, which tells you about the functionality of the next menu option you click.
 
-- 
+- Undo, which reverts the settings to as they were before your most recent selection.
 
-What's this?, which tells you about the functionality of the next menu option you click.
-
-- 
-
-Undo, which reverts the settings to as they were before your most recent selection.
-
-- 
-
-Redo, which restores an undone selection.
+- Redo, which restores an undone selection.
 
 The window contains five panels:
 
-- 
+- Symmetry: Specifies the dimensionality of the unit cell, the lattice system, and space group constraints.
 
-Symmetry: Specifies the dimensionality of the unit cell, the lattice system, and space group constraints.
+- Cell: Specifies dimensions of the unit cell and contains controls for repositioning and reducing cell contents.
 
-- 
+- View: Specifies how many cells are displayed in each direction in the View window, as well as controlling the display/non-display of various items.
 
-Cell: Specifies dimensions of the unit cell and contains controls for repositioning and reducing cell contents.
+- Contents: Contains a list of atoms in the cell as an embedded mini Atom List Editor. Its popup also allows you to modify bonding.
 
-- 
-
-View: Specifies how many cells are displayed in each direction in the View window, as well as controlling the display/non-display of various items.
-
-- 
-
-Contents: Contains a list of atoms in the cell as an embedded mini Atom List Editor. Its popup also allows you to modify bonding.
-
-- 
-
-Reduce: Allows you to reduce the dimensionality of a unit cell (e.g., from a 3D system to a surface).
+- Reduce: Allows you to reduce the dimensionality of a unit cell (e.g., from a 3D system to a surface).
 
 From the highest-level view, a typical process of building a periodic system might proceed as follows:
 
-1: Use the Symmetry panel to specify the number of dimensions and desired space group.
+1. Use the Symmetry panel to specify the number of dimensions and desired space group.
 
-2: Add atoms to the cell, using the mouse or via the Contents panel.
+2. Add atoms to the cell, using the mouse or via the Contents panel.
 
-3: Remove any unwanted atoms (e.g., if you used a fragment as a shortcut to creating the necessary atoms).
+3. Remove any unwanted atoms (e.g., if you used a fragment as a shortcut to creating the necessary atoms).
 
-4: Set the unit cell size, using the Cell panel.
+4. Set the unit cell size, using the Cell panel.
 
-5: Adjust bonding, using the Contents panel if appropriate.
+5. Adjust bonding, using the Contents panel if appropriate.
 
-6: Reduce cell contents if appropriate.
+6. Reduce cell contents if appropriate.
 
-7: Specify display properties, using the View panel as desired.
+7. Specify display properties, using the View panel as desired.
 
 ## PBC Building Tutorials
 
 Consult the PBC tutorials for more detailed instructions:
 
-- 
+- Build a Trans-Polyacetylene Polymer From Ethylene
 
-Build a Trans-Polyacetylene Polymer From Ethylene
-
-- 
-
-Build a Graphite Sheet From Benzene
+- Build a Graphite Sheet From Benzene
 
 
 <!-- p.186 -->
-- 
+- Build a Primitive Unit Cell of Diamond Crystal From Methane
 
-Build a Primitive Unit Cell of Diamond Crystal From Methane
+- Build a Face-Centered Cubic Unit Cell for Diamond Crystal Using Space Group Symmetry
 
-- 
+- Transform a Primitive Unit Cell of Diamond Crystal to a Face-Centered Cubic Unit Cell
 
-Build a Face-Centered Cubic Unit Cell for Diamond Crystal Using Space Group Symmetry
-
-- 
-
-Transform a Primitive Unit Cell of Diamond Crystal to a Face-Centered Cubic Unit Cell
-
-- 
-
-Transform a Face-Centered Unit Cell of Diamond Crystal to a Primitive Unit Cell
+- Transform a Face-Centered Unit Cell of Diamond Crystal to a Primitive Unit Cell
 
 
 <!-- p.187 -->
@@ -4721,65 +3753,37 @@ The divider between these two list boxes can be moved by clicking and dragging i
 
 The Files of type popup is also used to limit the kinds of files included in the file list. Supported file types are:
 
-- 
+- Known Files (.gjf, .com, .log, .out, .fch, .chk, .gfrq, .cub, .dat, .adat, .aout, .arc, .aarc, .pdb, .pdb1, .mol, .rxn, .sdf, .gmmx, .mol2, .ml2, .cif)
 
-Known Files (.gjf, .com, .log, .out, .fch, .chk, .gfrq, .cub, .dat, .adat, .aout, .arc, .aarc, .pdb, .pdb1, .mol, .rxn, .sdf, .gmmx, .mol2, .ml2, .cif)
+- Gaussian Files (.gjf, .com, .log, .out, .fch, .chk, .gfrq)
 
-- 
+- Gaussian Input Files (.com or .gjf)
 
-Gaussian Files (.gjf, .com, .log, .out, .fch, .chk, .gfrq)
+- Gaussian Output Files (.log or .out)
 
-- 
+- Gaussian Formatted Checkpoint Files (.fch or .fchk)
 
-Gaussian Input Files (.com or .gjf)
+- Gaussian Checkpoint Files (.chk)
 
-- 
+- Gaussian Frequency Files (.gfrq)
 
-Gaussian Output Files (.log or .out)
+- Cube Files (.cub or .cube)
 
-- 
-
-Gaussian Formatted Checkpoint Files (.fch or .fchk)
-
-- 
-
-Gaussian Checkpoint Files (.chk)
-
-- 
-
-Gaussian Frequency Files (.gfrq)
-
-- 
-
-Cube Files (.cub or .cube)
-
-- 
-
-Brookhaven PDB Files (.pdb or .pdb1)
+- Brookhaven PDB Files (.pdb or .pdb1)
 
 
 ![](imgs/p188_187.png)
 
 <!-- p.189 -->
-- 
+- MDL Mol Files (.mol, .rxn or .sdf)
 
-MDL Mol Files (.mol, .rxn or .sdf)
+- MDL SDF Files (.sdf)
 
-- 
+- GMMX Files (.gmmx)
 
-MDL SDF Files (.sdf)
+- Sybyl Mol2 Files (.mol2 or .ml2)
 
-- 
-
-GMMX Files (.gmmx)
-
-- 
-
-Sybyl Mol2 Files (.mol2 or .ml2)
-
-- 
-
-CIF Files (.cif)
+- CIF Files (.cif)
 
 All files may also be displayed if desired by selecting the All Files item.
 
@@ -4787,25 +3791,15 @@ The Open as popup is used to force an input file to be interpreted as the specif
 
 The Target popup specifies where the read-in structure should be placed:
 
-- 
+- Separate new molecule group for each file: Create a new, one-member molecule group for each file that is read in. This is the default.
 
-Separate new molecule group for each file: Create a new, one-member molecule group for each file that is read in. This is the default.
+- Single new molecule group for all files: Create one new molecule group, and make each file a molecule within it. When opening a single file, this is equivalent to the first option.
 
-- 
+- Append all files to active molecule: Place the structures from all opened files into the current molecule (in the current molecule group). This will result in additional fragments being added.
 
-Single new molecule group for all files: Create one new molecule group, and make each file a molecule within it. When opening a single file, this is equivalent to the first option.
+- Add all files to active molecule group: Add each file as a separate new molecule within the current molecule group. The current molecule is left unchanged.
 
-- 
-
-Append all files to active molecule: Place the structures from all opened files into the current molecule (in the current molecule group). This will result in additional fragments being added.
-
-- 
-
-Add all files to active molecule group: Add each file as a separate new molecule within the current molecule group. The current molecule is left unchanged.
-
-- 
-
-Add single new molecule for all files: Add the structures from all files into a single one-member molecule group (similar to the third option but creates a new molecule).
+- Add single new molecule for all files: Add the structures from all files into a single one-member molecule group (similar to the third option but creates a new molecule).
 
 In general, only the first structure present in a file is input. Thus, only the structure in the first job step of Gaussian input files is retrieved. However, when selected, the Read Intermediate Geometries (Optimizations) checkbox causes GaussView to retrieve all geometries that are present in some Gaussian results files as separate models within the designated target. This box applies to results files from geometry optimizations, IRC jobs, ADMP and BOMD trajectory calculations, and potential energy surface scans: all jobs with an optimization component. It is not valid with the Append all files to active molecule choice.
 
@@ -4823,29 +3817,17 @@ Opening Files: Right-Click Dialog
 
 The context menu has the following items:
 
-- 
+- Rename: Allows the user to rename a file.
 
-Rename: Allows the user to rename a file.
+- Delete: Allows a user to delete a file or a group of selected files.
 
-- 
+- Show Hidden Files: Reveals hidden files.
 
-Delete: Allows a user to delete a file or a group of selected files.
+- New Folder: Creates a new sub-folder in the the current directory.
 
-- 
+- Auto-Refresh Directory Views: Refreshes the directory view automatically when appropriate.
 
-Show Hidden Files: Reveals hidden files.
-
-- 
-
-New Folder: Creates a new sub-folder in the the current directory.
-
-- 
-
-Auto-Refresh Directory Views: Refreshes the directory view automatically when appropriate.
-
-- 
-
-Refresh Directory View: Refreshes the view of the current directory.
+- Refresh Directory View: Refreshes the view of the current directory.
 
 
 ![](imgs/p190_188.png)
@@ -4861,27 +3843,17 @@ File Opening Options
 
 Two options appear in the Gaussian Log and Checkpoint Files section:
 
-- 
+- Read Intermediate Geometries (Optimizations): When checked, all of the geometries in an Optimization calculation will be loaded, instead of only the final one.
 
-Read Intermediate Geometries (Optimizations): When checked, all of the geometries in an Optimization calculation will be loaded, instead of only the final one.
-
-- 
-
-Read Intermediate Geometries (Scans/IRCs): When checked, all of the geometries in a Scan or IRC calculation will be loaded, instead of only the final one.
+- Read Intermediate Geometries (Scans/IRCs): When checked, all of the geometries in a Scan or IRC calculation will be loaded, instead of only the final one.
 
 The Save Formatted Checkpoint File menu in the Gaussian Checkpoint Files area controls saving the formatted checkpoint file:
 
-- 
+- No: When selected, the formatted checkpoint file will not be saved.
 
-No: When selected, the formatted checkpoint file will not be saved.
+- Yes, use same base file name: When selected, the formatted checkpoint file will be saved with the same base name as the file being opened.
 
-- 
-
-Yes, use same base file name: When selected, the formatted checkpoint file will be saved with the same base name as the file being opened.
-
-- 
-
-Yes, prompt for file name: When selected, a window will open when the formatted checkpoint file is ready to be saved, allowing the user to input a name.
+- Yes, prompt for file name: When selected, a window will open when the formatted checkpoint file is ready to be saved, allowing the user to input a name.
 
 The Use Bond Table menu in the Gaussian Checkpoint Files area controls how bonding is assigned when retrieving structures from the checkpoint file. Checkpoint files contain a bond table listing the bonds within the structure. Bonding can be assigned following this table or calculated from internuclear distances and standard atomic covalent radii. By default, GaussView uses the bond table to assign bonding for all retrieved geometries from checkpoint files created by optimizations and relaxed scans. It uses the bond table to assign bonding for the first geometry only with checkpoint files created by IRC or
 
@@ -4891,107 +3863,67 @@ The Use Bond Table menu in the Gaussian Checkpoint Files area controls how bondi
 <!-- p.192 -->
 molecular dynamics calculation, and it uses the bond table to assign bonding for the final geometry only for checkpoint files created by all other types of calculation types. This behavior corresponds to the Auto selection on this menu. The other items on the Use Bond Table menu are:
 
-- 
+- First Geometry: Use the Bond Table to assign bonding for first geometry only. The bonding for any other retrieved structures is calculated.
 
-First Geometry: Use the Bond Table to assign bonding for first geometry only. The bonding for any other retrieved structures is calculated.
+- Last Geometry: Use the Bond Table to assign bonding for last geometry only. The bonding for any other retrieved structures is calculated.
 
-- 
+- All Geometries: Use the Bond Table to assign bonding for all retrieved geometries.
 
-Last Geometry: Use the Bond Table to assign bonding for last geometry only. The bonding for any other retrieved structures is calculated.
-
-- 
-
-All Geometries: Use the Bond Table to assign bonding for all retrieved geometries.
-
-- 
-
-No Geometries: Don't use Bond Table to assign bonding for any geometries. In other words, calculate the bonding for all geometries.
+- No Geometries: Don't use Bond Table to assign bonding for any geometries. In other words, calculate the bonding for all geometries.
 
 The Skip Weak Bonds checkbox controls whether bonds with an assigned/calculated order < 0.75 are included. When it is checked, such bonds are skipped. Weak bonds can also be removed from a structure using the Edit=>Remove Weak Bonds menu path. Weak bonds may be added to a structure using the Bond SmartSlide using the dashed line bond type.
 
 The Multiple Jobs in File menu in the Gaussian Log File area controls what happens when a log file contains results from multiple calculations:
 
-- 
+- Ask: When selected, GaussView will open a window to prompt the user to select what to do with the multiple jobs contained in the file.
 
-Ask: When selected, GaussView will open a window to prompt the user to select what to do with the multiple jobs contained in the file.
+- Load First: When selected, GaussView will load the first job in the file and delete the rest.
 
-- 
+- Load Last: When selected, GaussView will load the last job in the file and delete the rest.
 
-Load First: When selected, GaussView will load the first job in the file and delete the rest.
-
-- 
-
-Load Last: When selected, GaussView will load the last job in the file and delete the rest.
-
-- 
-
-Load All: When selected, GaussView will load all of the jobs in the file as seperate windows, allowing each to be run.
+- Load All: When selected, GaussView will load all of the jobs in the file as seperate windows, allowing each to be run.
 
 The Gaussian Input File area has two options:
 
-- 
+- Multiple Jobs in File: controls what happens when an input file contains more than one job.
 
-Multiple Jobs in File: controls what happens when an input file contains more than one job.
+  - Ask: When selected, GaussView will open a window to prompt the user to select what to do with the multiple jobs contained in the file.
 
-• Ask: When selected, GaussView will open a window to prompt the user to select what to do with the multiple jobs contained in the file.
+  - Load First: When selected, GaussView will load the first job in the file and delete the rest, unless the checkbox, explain below, is checked.
 
-• Load First: When selected, GaussView will load the first job in the file and delete the rest, unless the checkbox, explain below, is checked.
+  - Load Last: When selected, GaussView will load the last job in the file and delete the rest, unless the checkbox, explain below, is checked.
 
-• Load Last: When selected, GaussView will load the last job in the file and delete the rest, unless the checkbox, explain below, is checked.
+  - Load All: When selected, GaussView will load all of the jobs in the file as seperate windows, allowing each to be run.
 
-• Load All: When selected, GaussView will load all of the jobs in the file as seperate windows, allowing each to be run.
-
-- 
-
-Include Subsequent Job Steps as Additional Data: When checked, GaussView will place the input for all jobs after the first into the Additional Data tab in the Gaussian Calculation Setup window.
+- Include Subsequent Job Steps as Additional Data: When checked, GaussView will place the input for all jobs after the first into the Additional Data tab in the Gaussian Calculation Setup window.
 
 The options under PDB Files apply specifically to opening PDF files:
 
-- 
+- Load Structure as: Specifies handling of crystallographic structures, interpreting them as an asymmetric unit, a unit cell, or a biological unit.
 
-Load Structure as: Specifies handling of crystallographic structures, interpreting them as an asymmetric unit, a unit cell, or a biological unit.
+- Standard Bonding for Standard Residues: If unchecked, GaussView determines connectivity, using the default distance cutoffs-based method. When checked, applies connectivity based on the contained residue specifications.
 
-- 
-
-Standard Bonding for Standard Residues: If unchecked, GaussView determines connectivity, using the default distance cutoffs-based method. When checked, applies connectivity based on the contained residue specifications.
-
-- 
-
-Skip CONECT Records: Ignore connectivity records.
+- Skip CONECT Records: Ignore connectivity records.
 
 
 <!-- p.193 -->
-- 
-
-Skip Water Molecules: If checked, ignores any water molecules present in the PDB file (specifically, HOH, WAT, and/or H2O).
+- Skip Water Molecules: If checked, ignores any water molecules present in the PDB file (specifically, HOH, WAT, and/or H2O).
 
 The following option applies to Sybyl Mol2 files:
 
-- 
-
-Lone Pairs (LP): Determines whether lone pairs are skipped or replaced with open valence atoms.
+- Lone Pairs (LP): Determines whether lone pairs are skipped or replaced with open valence atoms.
 
 The PDB, MDL, and Sybyl Mol2 files section at the bottom of the panel has one option, Add Hydrogens, which specifies how hydrogen atoms are dealt with when opening files:
 
-- 
+- Ask, if none present: Prompt whether to add hydrogens when a file is opened and no hydrogens are present.
 
-Ask, if none present: Prompt whether to add hydrogens when a file is opened and no hydrogens are present.
+- Yes, if none present: Automatically add hydrogens to the file when it is opened if it does not already have hydrogens.
 
-- 
+- Ask: Ask the user whether hydrogens should be added regardless if there are any present in the file.
 
-Yes, if none present: Automatically add hydrogens to the file when it is opened if it does not already have hydrogens.
+- No: The file is opened, and no attempt is made to add any missing hydrogen atoms.
 
-- 
-
-Ask: Ask the user whether hydrogens should be added regardless if there are any present in the file.
-
-- 
-
-No: The file is opened, and no attempt is made to add any missing hydrogen atoms.
-
-- 
-
-Yes: Missing hydrogens are always added where necessary when a file is opened.
+- Yes: Missing hydrogens are always added where necessary when a file is opened.
 
 
 <!-- p.194 -->
@@ -5015,33 +3947,25 @@ The Add Recent File List button will display a drop-down menu of prevoiusly open
 
 The Actions button contains the following menu items:
 
-- 
+- Selected Items: options apply only to selected (highlighted) files.
 
-Selected Items: options apply only to selected (highlighted) files.
+  - Clear: This option removes the current files that have been selected.
 
-• Clear: This option removes the current files that have been selected.
+  - Check: This option checks the box to the left of the screen, selecting them.
 
-• Check: This option checks the box to the left of the screen, selecting them.
+  - Uncheck: This option removes the check from the box in the “ID” column, unselecting them.
 
-• Uncheck: This option removes the check from the box in the “ID” column, unselecting them.
+  - Toggle: This option switches the current state of the checkbox. It will add the check to the left of the screen if it is unchecked, and it removes the check from the left of the screen if it currently is checked.
 
-• Toggle: This option switches the current state of the checkbox. It will add the check to the left of the screen if it
+- All Items: options apply to all files in the list.
 
-is unchecked, and it removes the check from the left of the screen if it currently is checked.
+  - Clear: This option removes all the files in the current list.
 
-- 
+  - Check: This option checks the box to the left of the screen on all items in the current list.
 
-All Items: options apply to all files in the list.
+  - Uncheck: This option removes the checks from all boxes on all items in the current list.
 
-• Clear: This option removes all the files in the current list.
-
-• Check: This option checks the box to the left of the screen on all items in the current list.
-
-• Uncheck: This option removes the checks from all boxes on all items in the current list.
-
-• Toggle: This option switches the current state of all the items in the current list. If the box is checked, it becomes
-
-empty, and if it is empty, it becomes checked.
+  - Toggle: This option switches the current state of all the items in the current list. If the box is checked, it becomes empty, and if it is empty, it becomes checked.
 
 The Sorting checkbox controls the ability for the items in the file list to be sorted. When it is checked, clicking on any column header will sort the items based upon the field. The caret character (^), used for ascending order, or a “v” character, used for descending order, appears at the top of the current sort column:
 
@@ -5059,25 +3983,15 @@ The Open as button displays a drop-down menu that specifies how GaussView will o
 
 The Target button displays a drop-down menu which gives the following options:
 
-- 
+- Separate new molecule group for each file: Create a new one-member molecule group for each file that is read in. This is the default.
 
-Separate new molecule group for each file: Create a new one-member molecule group for each file that is read in. This is the default.
+- Single new molecule group for all files: Create one new molecule group, and make each file a molecule within it. When opening a single file, this is equivalent to the first option.
 
-- 
+- Append all files to active molecule: Place the structures from all opened files into the current molecule (in the current molecule group). This will result in additional fragments being added.
 
-Single new molecule group for all files: Create one new molecule group, and make each file a molecule within it. When opening a single file, this is equivalent to the first option.
+- Add all files to active molecule group: Add each file as a separate new molecule within the current molecule group. The current molecule is left unchanged.
 
-- 
-
-Append all files to active molecule: Place the structures from all opened files into the current molecule (in the current molecule group). This will result in additional fragments being added.
-
-- 
-
-Add all files to active molecule group: Add each file as a separate new molecule within the current molecule group. The current molecule is left unchanged.
-
-- 
-
-Single new molecule for all files: Add the structures from all files into a single one-member molecule group (similar to the third option but creates a new molecule).
+- Single new molecule for all files: Add the structures from all files into a single one-member molecule group (similar to the third option but creates a new molecule).
 
 The Retain File List checkbox is used to retain the list of files used.
 
@@ -5099,31 +4013,23 @@ The UI Options Panel
 
 The UI Options panel allows you to use the options:
 
-- 
+- Use Native File Browser: When checked, GaussView will use the operating system’s native file browser when adding items to the file list.
 
-Use Native File Browser: When checked, GaussView will use the operating system’s native file browser when adding items to the file list.
-
-- 
-
-Start with File Browser if Initial File List is Empty: When checked, GaussView will automatically open the file browser instead of the File List panel when the file list is empty (i.e., you are opening a new file).
+- Start with File Browser if Initial File List is Empty: When checked, GaussView will automatically open the file browser instead of the File List panel when the file list is empty (i.e., you are opening a new file).
 
 
 ![](imgs/p197_192.png)
 
 <!-- p.198 -->
-- 
+- File List Detail: The following options are available for displaying file information on the File List tab.
 
-File List Detail: The following options are available for displaying file information on the File List tab.
+  - Low: This shows only basic amount of information about the file(s) being opened: molecule group and structure (if any), filename, and directory.
 
-• Low: This shows only basic amount of information about the file(s) being opened: molecule group and structure (if any), filename, and directory.
+  - Medium: This displays more information about the file being opened: adds the file type.
 
-• Medium: This displays more information about the file being opened: adds the file type.
+  - High: This displays the highest level of detail of a file that is being opened: adds the file size and creation and modification dates.
 
-• High: This displays the highest level of detail of a file that is being opened: adds the file size and creation and modification dates.
-
-- 
-
-Allow Duplicate Files: Checking this option allows GaussView to open the same file multiple times. If it is unchecked, you will not be allowed to add the same file to the file list more than once.
+- Allow Duplicate Files: Checking this option allows GaussView to open the same file multiple times. If it is unchecked, you will not be allowed to add the same file to the file list more than once.
 
 
 <!-- p.199 -->
@@ -5145,29 +4051,17 @@ The divider between these two list boxes can be moved by clicking and dragging i
 <!-- p.200 -->
 Right clicking on a file in the right list gives you the following options:
 
-- 
+- Rename: Allows the user to rename a file.
 
-Rename: Allows the user to rename a file.
+- Delete: Allows a user to delete a file or a group of selected files.
 
-- 
+- Show Hidden Files: Reveals hidden files.
 
-Delete: Allows a user to delete a file or a group of selected files.
+- New Folder: Creates a new sub-folder in the the current directory.
 
-- 
+- Auto-Refresh Directory Views: Refreshes the directory view automatically when appropriate.
 
-Show Hidden Files: Reveals hidden files.
-
-- 
-
-New Folder: Creates a new sub-folder in the the current directory.
-
-- 
-
-Auto-Refresh Directory Views: Refreshes the directory view automatically when appropriate.
-
-- 
-
-Refresh Directory View: Refreshes the view of the current directory.
+- Refresh Directory View: Refreshes the view of the current directory.
 
 The File name input line allows you to enter a file name of your choice. You can fill this field in automatically by clicking on an existing file in the list on the right.
 
@@ -5219,51 +4113,29 @@ The selected directory will set in the save dialog that opens.
 
 The Actions button, as well as right-clicking in the file list, contains the following top-level menu items:
 
-- 
+- Selected Items: The operations apply only to the selected—highlighted—items in the file list.
 
-Selected Items: The operations apply only to the selected—highlighted—items in the file list.
-
-- 
-
-All Items: These operations will be applied to all files in the list.
+- All Items: These operations will be applied to all files in the list.
 
 Both of these menus contain the following submenu items, which apply to the selected files or all files (respectively):
 
-- 
+- Set Files: This option allows you to specify a file name for the relevant files. Prefixes and/or molecule numbers can be added to the names using other options on this menu.
 
-Set Files: This option allows you to specify a file name for the relevant files. Prefixes and/or molecule numbers can be added to the names using other options on this menu.
+- Set Directory: This option changes the destination directory for the relevant files.
 
-- 
+- Clear: This option removes the names given to the files.
 
-Set Directory: This option changes the destination directory for the relevant files.
+- Check: This option marks the relevant files for saving.
 
-- 
+- Uncheck: This option removes the check from the box to the left of the relevant file names, removing them from the save operation.
 
-Clear: This option removes the names given to the files.
+- Toggle: This option switches the current state of the checkbox for each relevant file.
 
-- 
+- Add prefix: This option adds a prefix which you designate to each relevant file name.
 
-Check: This option marks the relevant files for saving.
+- Include molecule numbers in file name: When saving multiple structures, this option adds a molecule number to the base filename for the relevant files.
 
-- 
-
-Uncheck: This option removes the check from the box to the left of the relevant file names, removing them from the save operation.
-
-- 
-
-Toggle: This option switches the current state of the checkbox for each relevant file.
-
-- 
-
-Add prefix: This option adds a prefix which you designate to each relevant file name.
-
-- 
-
-Include molecule numbers in file name: When saving multiple structures, this option adds a molecule number to the base filename for the relevant files.
-
-- 
-
-Remove molecule numbers in file name: This option removes any molecule numbers in the filenames of relevant items.
+- Remove molecule numbers in file name: This option removes any molecule numbers in the filenames of relevant items.
 
 The Sorting checkbox control whether the items in the filelist can be sorted. When it is checked, then clicking on any column header will sort the items based upon the field. A caret character ^ (ascending order) or a “v”? character (descending order)
 
@@ -5283,35 +4155,23 @@ The New Molecule Group checkbox, when enabled, creates a new molecule group cont
 
 The Save Molecule Group dropdown menu controls how molecule groups containing more than one structure are handled. It includes the following options:
 
-• No: Save only the current structure in the molecule group.
+  - No: Save only the current structure in the molecule group.
 
-• Yes, seperate file for each molecule: Save all molecules in the molecule group, creating a separate file for each
+  - Yes, seperate file for each molecule: Save all molecules in the molecule group, creating a separate file for each molecule.
 
-molecule.
-
-• Yes, single file for all molecules: Save all molecules in the molecule group into a single file.
+  - Yes, single file for all molecules: Save all molecules in the molecule group into a single file.
 
 The items in the bottom bar of this dialog displays have the following uses:
 
-- 
+- The Save button will save the file list.
 
-The Save button will save the file list.
+- The Preview button will open a new window that displays the file to be saved.
 
-- 
+- The Cancel button will close the Save Files dialog without saving anything.
 
-The Preview button will open a new window that displays the file to be saved.
+- The Default Settings button will restore all options to the GaussView defaults.
 
-- 
-
-The Cancel button will close the Save Files dialog without saving anything.
-
-- 
-
-The Default Settings button will restore all options to the GaussView defaults.
-
-- 
-
-The Retain Settings checkbox will save the current settings after the save operation. The next use of this dialog will start from the saved settings.
+- The Retain Settings checkbox will save the current settings after the save operation. The next use of this dialog will start from the saved settings.
 
 The Save and Preview buttons are inactive unless a file is checked (marked for saving) and a filename has been specified for it.
 
@@ -5325,17 +4185,11 @@ The File Save Options Panel
 
 The File Save Options panel allows you to specify the following options for image files:
 
-- 
+- Enlarge Width and Height by: This option will enlarge the image size by the specified amount.
 
-Enlarge Width and Height by: This option will enlarge the image size by the specified amount.
+- Background Color: This option will change the color of the background for the saved image.
 
-- 
-
-Background Color: This option will change the color of the background for the saved image.
-
-- 
-
-Gray Scale: Checking this option will capture the image in grayscale.
+- Gray Scale: Checking this option will capture the image in grayscale.
 
 This panel is inactive for all other file types.
 
@@ -5349,25 +4203,17 @@ The Save File UI Options Panel
 
 The UI Options panel allows you to use the options:
 
-- 
+- Use Native File Browser: When checked, GaussView will use the operating system’s native file browser when adding items to the file list.
 
-Use Native File Browser: When checked, GaussView will use the operating system’s native file browser when adding items to the file list.
+- Start with File Browser if Initial File List is Empty: When checked, GaussView will automatically open the file browser instead of the File List panel when the file list is empty (i.e., you are saving a new file).
 
-- 
+- File List Detail: The following options are available for displaying details on the File List tab.
 
-Start with File Browser if Initial File List is Empty: When checked, GaussView will automatically open the file browser instead of the File List panel when the file list is empty (i.e., you are saving a new file).
+  - Low: This shows only basic amount of information about the file(s) being saved: molecule group and structure, filename, and directory.
 
-- 
+  - Medium: This displays more information about the file being saved: file type and checkpoint file names.
 
-File List Detail: The following options are available for displaying details on the File List tab.
-
-• Low: This shows only basic amount of information about the file(s) being saved: molecule group and structure,
-
-filename, and directory.
-
-• Medium: This displays more information about the file being saved: file type and checkpoint file names.
-
-• High: This displays the highest level of detail of a file that is being saved: adds the file size and creation and
+  - High: This displays the highest level of detail of a file that is being saved: adds the file size and creation and
 
 modification dates.
 
@@ -5381,17 +4227,11 @@ Save Image Dialog Additional Fields (Layout Varies)
 
 When you are saving an image file, the Save File dialog is customized for this file type. The Files of type and Save as popups will contain the supported image file formats. The additional fields shown above will also be present. They have the following meanings:
 
-- 
+- Enlarge Width and Height by: Set the image scaling factor.
 
-Enlarge Width and Height by: Set the image scaling factor.
+- Background Color: Background color for the image. Note that the current background in the View window is ignored when generating the image file.
 
-- 
-
-Background Color: Background color for the image. Note that the current background in the View window is ignored when generating the image file.
-
-- 
-
-Gray Scale: When checked, converts the image to gray scale (i.e., black and white) before capturing. The default is to save a color image.
+- Gray Scale: When checked, converts the image to gray scale (i.e., black and white) before capturing. The default is to save a color image.
 
 
 ![](imgs/p206_199.png)
@@ -5447,17 +4287,11 @@ Open a checkpoint file of the molecule you wish to save a movie of. Navigate to 
 <!-- p.211 -->
 Using this menu, you can start and stop the animation in the GaussView window, in order to preview it before saving the video. Below the Start Animation and Save Movie... buttons are the options that you can use to modify the movie settings:
 
-- 
+- The Repeats: button controls how often, if at all, the animation in both GaussView and the video will repeat.
 
-The Repeats: button controls how often, if at all, the animation in both GaussView and the video will repeat.
+- The Frames per Cycle: button determines how many seperate frames are in each cycle of the movie.
 
-- 
-
-The Frames per Cycle: button determines how many seperate frames are in each cycle of the movie.
-
-- 
-
-The Frame Delay (msec): button determines how long, in miliseconds, each frame is shown before displaying the next frame.
+- The Frame Delay (msec): button determines how long, in miliseconds, each frame is shown before displaying the next frame.
 
 The Displacement Amplitude: slider determines how extreme the vibrations will be shown. Dragging it to the left will make the vibrations more subtle, while moving it to the right will make the vibrations more pronounced.
 
@@ -5525,13 +4359,9 @@ The dialog presents options for:
 ![](imgs/p214_210.png)
 
 <!-- p.215 -->
-- 
+- Customizing the job before submission (i.e., changing the queue): Confirm submission of Job at SCJobMan (default: unchecked).
 
-Customizing the job before submission (i.e., changing the queue): Confirm submission of Job at SCJobMan (default: unchecked).
-
-- 
-
-Requesting notification when the job completes: Notify when Job is finished (default: checked).
+- Requesting notification when the job completes: Notify when Job is finished (default: checked).
 
 By default, the job is submitted immediately to the default SC Job Manager queue, and you will be notified when it completes.
 
@@ -5551,101 +4381,65 @@ The Add Recent File List button will display a drop-down menu of prevoiusly open
 
 The Actions button contains the following menu items:
 
-- 
+- Selected Items: Options apply only to selected (highlighted) files.
 
-Selected Items: Options apply only to selected (highlighted) files.
-
-- 
-
-All Items: Options apply to all files in the list whether selected or not.
+- All Items: Options apply to all files in the list whether selected or not.
 
 Each of these menus contains the following items:
 
-- 
+- Clear: This option removes selected/all files.
 
-Clear: This option removes selected/all files.
-
-- 
-
-Check: This option checks the box at the beginning of the line for selected/all items. Checking the box marks the items for submission.
+- Check: This option checks the box at the beginning of the line for selected/all items. Checking the box marks the items for submission.
 
 
 ![](imgs/p215_211.png)
 
 <!-- p.216 -->
-- 
+- Uncheck: This option removes the check from the box for selected/all items, unselecting them (excluding them from submission).
 
-Uncheck: This option removes the check from the box for selected/all items, unselecting them (excluding them from submission).
-
-- 
-
-Toggle: This option switches the current state of the checkbox for selected/all items.
+- Toggle: This option switches the current state of the checkbox for selected/all items.
 
 The Sorting checkbox controls whether the items in the file list can be sorted. When it is checked, then clicking on any column header will sort the items based upon the field. A caret character ^ (ascending order) or a “v” character (descending order) appears at the top of the current sort column:
 
 The controls at the bottom of the dialog have the following uses:
 
-- 
+- The Submit as: dropdown menu specifies what type of job will be submitted. By default, Auto is selected, and the job type is determined from the file extension. In the above dialog, Gaussian was selected.
 
-The Submit as: dropdown menu specifies what type of job will be submitted. By default, Auto is selected, and the job type is determined from the file extension. In the above dialog, Gaussian was selected.
-
-- 
-
-The Target: dropdown menu allows you to specify which SC Job Manager queue the job is added to.
+- The Target: dropdown menu allows you to specify which SC Job Manager queue the job is added to.
 
 ## Modfying the UI Options
 
 The UI Options panel allows you to set the following options:
 
-- 
+- Use Native File Browser: When checked, GaussView will use the operating system’s native file browser when adding items to the file list.
 
-Use Native File Browser: When checked, GaussView will use the operating system’s native file browser when adding items to the file list.
+- Start with File Browser if Initial File List is Empty: When checked, GaussView will automatically open the file browser instead of the File List panel when the file list is empty (i.e., you are opening a new file).
 
-- 
+- File List Detail: The following options are available for displaying file information on the File List tab.
 
-Start with File Browser if Initial File List is Empty: When checked, GaussView will automatically open the file browser instead of the File List panel when the file list is empty (i.e., you are opening a new file).
+  - Low: This shows only basic amount of information about the file(s) being opened: molecule group and structure (if any), filename, and directory.
 
-- 
+  - Medium: This displays more information about the file being opened: adds the file type.
 
-File List Detail: The following options are available for displaying file information on the File List tab.
+  - High: This displays the highest level of detail of a file that is being opened: adds the file size and creation and modification dates.
 
-• Low: This shows only basic amount of information about the file(s) being opened: molecule group and structure (if any), filename, and directory.
-
-• Medium: This displays more information about the file being opened: adds the file type.
-
-• High: This displays the highest level of detail of a file that is being opened: adds the file size and creation and modification dates.
-
-- 
-
-Allow Duplicate Files: Checking this option allows GaussView to open the same file multiple times. If it is unchecked, you will not be allowed to add the same file to the file list more than once.
+- Allow Duplicate Files: Checking this option allows GaussView to open the same file multiple times. If it is unchecked, you will not be allowed to add the same file to the file list more than once.
 
 # The SC Job Manager Dialog
 
 The SC dialog has five panels:
 
-- 
+- Long Jobs Queue: The Long Jobs Queue is where all of the files that have been targeted as such in the Submit Jobs dialog will appear.
 
-Long Jobs Queue: The Long Jobs Queue is where all of the files that have been targeted as such in the Submit Jobs dialog will appear.
+- Short Jobs Queue: The Short Jobs Queue is where all of the files that have been targeted as such in the Submit Jobs dialog will appear.
 
-- 
+- Queueless Jobs: The Queueless Jobs Queue is where all of the files that have been targeted as such in the Submit Jobs dialog will appear.
 
-Short Jobs Queue: The Short Jobs Queue is where all of the files that have been targeted as such in the Submit Jobs dialog will appear.
+- Running Jobs: This panel provides information on the jobs that are currently running or are queued to run.
 
-- 
+- Finished Jobs: This panel provides information on jobs that have finished running.
 
-Queueless Jobs: The Queueless Jobs Queue is where all of the files that have been targeted as such in the Submit Jobs dialog will appear.
-
-- 
-
-Running Jobs: This panel provides information on the jobs that are currently running or are queued to run.
-
-- 
-
-Finished Jobs: This panel provides information on jobs that have finished running.
-
-- 
-
-Job Types: This panel provides information on the type of jobs that can be run using the SC Job Manager.
+- Job Types: This panel provides information on the type of jobs that can be run using the SC Job Manager.
 
 
 ![](imgs/p216_212.png)
@@ -5655,17 +4449,11 @@ The various panels in this control panel are discussed below in several separate
 
 The buttons at the bottom of the dialog have the following meanings:
 
-- 
+- Submit Jobs: This button will open the Submit Jobs dialog.
 
-Submit Jobs: This button will open the Submit Jobs dialog.
+- Hide: This button will hide the SC Job Manager from your view, but it will not stop the jobs that are running, and it will continue to run jobs that have been queued up.
 
-- 
-
-Hide: This button will hide the SC Job Manager from your view, but it will not stop the jobs that are running, and it will continue to run jobs that have been queued up.
-
-- 
-
-Exit: This button will close the SC Job Manager. Jobs that are currently running will continue, but no new jobs will be started. If the SC Job Manager is not exited, it will remain running as a seperate process even when GaussView is closed, continuing to process jobs.
+- Exit: This button will close the SC Job Manager. Jobs that are currently running will continue, but no new jobs will be started. If the SC Job Manager is not exited, it will remain running as a seperate process even when GaussView is closed, continuing to process jobs.
 
 ## Exiting from the SC Job Manager
 
@@ -5675,47 +4463,29 @@ When you restart the SC Job Manager after having saved the data, all previously 
 
 # The Long Jobs Queue, Short Jobs Queue, and Queueless Jobs Panels
 
-The SC Job Manager The panels corresponding to queued and queueless jobs all contain the same controls for and information about relevant
-
-jobs
+The SC Job Manager The panels corresponding to queued and queueless jobs all contain the same controls for and information about relevant jobs
 
 The queue panels show current jobs controlled by the SC Job Manager. The fields in the various job lists contain the following information:
 
-- 
+- Job ID: This is the ID given to the job. Jobs within the SC Job Manager are numbered sequentially across queues starting from 1.
 
-Job ID: This is the ID given to the job. Jobs within the SC Job Manager are numbered sequentially across queues starting from 1.
-
-- 
-
-Name: This is the name of the job file.
+- Name: This is the name of the job file.
 
 
 ![](imgs/p217_213.png)
 
 <!-- p.218 -->
-- 
+- Status: This field specifies whether the job is running or it is queued to run in the future. Note that finished jobs do not appear in this list.
 
-Status: This field specifies whether the job is running or it is queued to run in the future. Note that finished jobs do not appear in this list.
+- Job Type: This field specifies the type of job.
 
-- 
+- Executable Path: This field shows what program is being used to run the job.
 
-Job Type: This field specifies the type of job.
+- Command Line: This field shows the command line used to run the job.
 
-- 
+- Submitted: This field gives you the time and date when the job was submitted to the SC Job Manager.
 
-Executable Path: This field shows what program is being used to run the job.
-
-- 
-
-Command Line: This field shows the command line used to run the job.
-
-- 
-
-Submitted: This field gives you the time and date when the job was submitted to the SC Job Manager.
-
-- 
-
-Started: This field gives you the time and date when the job was started.
+- Started: This field gives you the time and date when the job was started.
 
 Double clicking on an item in the file list corresponding to a running job will stream the output for that job. Double clicking on a pending job will open the input file for the job.
 
@@ -5723,39 +4493,23 @@ Right clicking on an item in the job lists opens the context menu:
 
 The items on the context menu have the following meanings:
 
-- 
+- Remove: Removes the selected job from the queue. If the job is running, it stops the job (after a confirmation prompt).
 
-Remove: Removes the selected job from the queue. If the job is running, it stops the job (after a confirmation prompt).
+- Show Input File: Displays the contents of the input file for the selected job.
 
-- 
+- Stream Output File: Streams the output file as the job runs, allowing you to observe its progress.
 
-Show Input File: Displays the contents of the input file for the selected job.
+- Show stdout and stderr: Displays the current standard output and standard error data from the operating system. The data is not refreshed.
 
-- 
+- Stream stdout and stderr: Streams the standard output and standard error streams from the operating system.
 
-Stream Output File: Streams the output file as the job runs, allowing you to observe its progress.
-
-- 
-
-Show stdout and stderr: Displays the current standard output and standard error data from the operating system. The data is not refreshed.
-
-- 
-
-Stream stdout and stderr: Streams the standard output and standard error streams from the operating system.
-
-- 
-
-Maximum Number of Running Jobs Allowed (Currently 1)...: Allows you to change the number of jobs which can be running in each queue at one time. By default, it is 1.
+- Maximum Number of Running Jobs Allowed (Currently 1)...: Allows you to change the number of jobs which can be running in each queue at one time. By default, it is 1.
 
 The following items appear only on the context menus for queues:
 
-- 
+- Maximum Number: Specifies how many jobs the SC Job Manager can be running at one time. By default, it is set to 1.
 
-Maximum Number: Specifies how many jobs the SC Job Manager can be running at one time. By default, it is set to 1.
-
-- 
-
-Pause Queue: Pauses the current queue of jobs, preventing any more from being started, but it will not end the job this is currently running.
+- Pause Queue: Pauses the current queue of jobs, preventing any more from being started, but it will not end the job this is currently running.
 
 # The Running Jobs Panel
 
@@ -5767,33 +4521,19 @@ Selecting the Running Jobs panel results in the dialog below:
 <!-- p.219 -->
 SC Job Manager: Running Jobs The fields have the following meanings:
 
-- 
+- User: This field displays the user who is running the job.
 
-User: This field displays the user who is running the job.
+- Process ID: This field displays the OS process ID assigned to the job by the underlying operating system.
 
-- 
+- Parent Process ID: This field displays the OS process ID of the parent process for the job.
 
-Process ID: This field displays the OS process ID assigned to the job by the underlying operating system.
+- App Name: This field displays the name of the application that is being used to run the job.
 
-- 
+- Status: This field displays the current status of the job.
 
-Parent Process ID: This field displays the OS process ID of the parent process for the job.
+- App Path: This field displays the path to the application that is being used to run the job.
 
-- 
-
-App Name: This field displays the name of the application that is being used to run the job.
-
-- 
-
-Status: This field displays the current status of the job.
-
-- 
-
-App Path: This field displays the path to the application that is being used to run the job.
-
-- 
-
-Command Line: This field displays the command line used to run the job.
+- Command Line: This field displays the command line used to run the job.
 
 The Refresh button will update the job list to reflect all jobs’ current status.
 
@@ -5813,65 +4553,37 @@ SC Job Manager: List of Completed Jobs
 
 The columns hold the following information:
 
-- 
+- Job ID: This is the ID given to the job that is running. It is numbered sequentially, starting from 1. The Job ID number will be reused once the job is cleared.
 
-Job ID: This is the ID given to the job that is running. It is numbered sequentially, starting from 1. The Job ID number will be reused once the job is cleared.
+- Name: This is the name of the file that is running, which includes its file extension.
 
-- 
+- Status: This field specifies the currrent job status. There are several different statuses that can appear here. Completed indicates that the job finished successfully, and an output file can be open. Failed indicates that the job had an issue, and stopped running, and it may or may not produce a partial output file. Crashed indicates that the job failed without output (often before computation had started). Killed indicates that the job was stopped by the user.
 
-Name: This is the name of the file that is running, which includes its file extension.
+- Job Type: This field specifies the type of job.
 
-- 
+- Queue: This field displays what queue the job ran in.
 
-Status: This field specifies the currrent job status. There are several different statuses that can appear here. Completed indicates that the job finished successfully, and an output file can be open. Failed indicates that the job had an issue, and stopped running, and it may or may not produce a partial output file. Crashed indicates that the job failed without output (often before computation had started). Killed indicates that the job was stopped by the user.
+- Executable Path: This field shows what program was used to run the job.
 
-- 
+- Command Line: This field shows the full command line used to run the job.
 
-Job Type: This field specifies the type of job.
+- Submitted: This field gives you the time and date when the job was submitted to the SC Job Manager.
 
-- 
+- Started: This field gives you the time and date when the job was started.
 
-Queue: This field displays what queue the job ran in.
-
-- 
-
-Executable Path: This field shows what program was used to run the job.
-
-- 
-
-Command Line: This field shows the full command line used to run the job.
-
-- 
-
-Submitted: This field gives you the time and date when the job was submitted to the SC Job Manager.
-
-- 
-
-Started: This field gives you the time and date when the job was started.
-
-- 
-
-Finished: This field gives you the time and date when the job was finished.
+- Finished: This field gives you the time and date when the job was finished.
 
 Double clicking on an item in the file list will attempt to open the output file for that job.
 
 Right clicking brings up a shortened version of the context menu used in the queue panels. It has these options:
 
-- 
+- Remove: This button will remove the file from the list.
 
-Remove: This button will remove the file from the list.
+- Show Input File: This button displays the input file used to run the job.
 
-- 
+- Show Output File: This button displays the output file from the completed job.
 
-Show Input File: This button displays the input file used to run the job.
-
-- 
-
-Show Output File: This button displays the output file from the completed job.
-
-- 
-
-Show stdout and stderr: This button displays the standard output and standard error streams from the operating system.
+- Show stdout and stderr: This button displays the standard output and standard error streams from the operating system.
 
 # The Job Types Panel
 
@@ -5883,47 +4595,27 @@ Selecting the Job Types tab will display the following dialog:
 <!-- p.221 -->
 The columns in the table have the following meanings:
 
-- 
+- DBID: This is the database ID for the job type (separate numbering from the jobs themselves).
 
-DBID: This is the database ID for the job type (separate numbering from the jobs themselves).
+- Name: This is the display name of the application used for running jobs.
 
-- 
+- Application Name: This is the file name of the application executable used for running jobs.
 
-Name: This is the display name of the application used for running jobs.
+- Executable Path: This displays the path to the executable.
 
-- 
+- Default Queue: This displays which queue this job type uses by default.
 
-Application Name: This is the file name of the application executable used for running jobs.
+- Input File Filter: This specifies what type of input file the job type uses.
 
-- 
+- Output File Filter: This specifies what type of output file this job type produces.
 
-Executable Path: This displays the path to the executable.
+- Environment Variables: Relevant environment variables for this job type.
 
-- 
-
-Default Queue: This displays which queue this job type uses by default.
-
-- 
-
-Input File Filter: This specifies what type of input file the job type uses.
-
-- 
-
-Output File Filter: This specifies what type of output file this job type produces.
-
-- 
-
-Environment Variables: Relevant environment variables for this job type.
-
-- 
-
-Generic Command Line: Command line template for launching this job type. This is defined in the Job Setup Preferences.
+- Generic Command Line: Command line template for launching this job type. This is defined in the Job Setup Preferences.
 
 Right-clicking an item in the Job Types dialog displays the panel’s context menu, which is seen above:
 
-- 
-
-Add Job Type: This allows you add a new job type to the list.
+- Add Job Type: This allows you add a new job type to the list.
 
 
 ![](imgs/p221_217.png)
@@ -5931,49 +4623,27 @@ Add Job Type: This allows you add a new job type to the list.
 ![](imgs/p221_218.png)
 
 <!-- p.222 -->
-- 
+- Edit Selected Job Type: This allows you to edit the job type (see below).
 
-Edit Selected Job Type: This allows you to edit the job type (see below).
+- Remove Selected Job Type: This removes the selected job type from the current list.
 
-- 
+- Remove All Job Types: This removes all of the job types in the current list.
 
-Remove Selected Job Type: This removes the selected job type from the current list.
+- Add Default Job Types: This option adds all of the default job types that the SCJM begins with.
 
-- 
+- Add Default Ampac Job Types: This option adds default Ampac jobs.
 
-Remove All Job Types: This removes all of the job types in the current list.
+- Add Default Gaussian Job Types: This option adds default Gaussian jobs.
 
-- 
+- Add Default GMMX Job Types: This option adds default GMMX jobs.
 
-Add Default Job Types: This option adds all of the default job types that the SCJM begins with.
+- Add Default Cubegen Job Types: This option adds default Cubegen jobs.
 
-- 
+- Add Default Formchk Job Types: This option adds default Formchk jobs.
 
-Add Default Ampac Job Types: This option adds default Ampac jobs.
+- Add Default Freqchk Job Types: This option adds default Freqchk jobs.
 
-- 
-
-Add Default Gaussian Job Types: This option adds default Gaussian jobs.
-
-- 
-
-Add Default GMMX Job Types: This option adds default GMMX jobs.
-
-- 
-
-Add Default Cubegen Job Types: This option adds default Cubegen jobs.
-
-- 
-
-Add Default Formchk Job Types: This option adds default Formchk jobs.
-
-- 
-
-Add Default Freqchk Job Types: This option adds default Freqchk jobs.
-
-- 
-
-Add Default Cubman Job Types: This option adds default Cubman jobs.
+- Add Default Cubman Job Types: This option adds default Cubman jobs.
 
 ## Edit Job Type
 
@@ -5983,41 +4653,25 @@ Example Job Type: Cubegen Jobs
 
 The dialog contains the following fields:
 
-- 
+- Name: This is the display name of the application used for running jobs.
 
-Name: This is the display name of the application used for running jobs.
+- Default Queue: This displays which queue this job type uses by default.
 
-- 
+- Application Name: This is the program name of the application used for running jobs.
 
-Default Queue: This displays which queue this job type uses by default.
+- Executable Path: This displays the path where the application is.
 
-- 
+- Generic Command Line: Command line template for launching this job type. This is defined in the Job Setup Preferences.
 
-Application Name: This is the program name of the application used for running jobs.
+- Input File Filter: This specifies what type of input file the job type uses.
 
-- 
-
-Executable Path: This displays the path where the application is.
-
-- 
-
-Generic Command Line: Command line template for launching this job type. This is defined in the Job Setup Preferences.
-
-- 
-
-Input File Filter: This specifies what type of input file the job type uses.
-
-- 
-
-Output File Filter: This specifies what type of output file this job type produces.
+- Output File Filter: This specifies what type of output file this job type produces.
 
 
 ![](imgs/p222_219.png)
 
 <!-- p.223 -->
-- 
-
-Environment Variables: Relevant environment variables for this job type.
+- Environment Variables: Relevant environment variables for this job type.
 
 Note: This functionality should only be used by someone who has detailed knowledge running Gaussian and its utilities. If you are unsure of what these options are, it is recommended that you not use the Edit Job Type dialog.
 
@@ -6033,29 +4687,17 @@ The Job Setup Preferences dialog allows you to examine and customize how Gaussia
 ![](imgs/p223_220.png)
 
 <!-- p.224 -->
-Job Setup Preferences This example elects to run Gaussian directly on the local computer via the command line. The grey
-
-box shows the command used to do so (which can be edited). The variables used in the command
-
-line—in uppercase, starting with @—are defined below the Command Line area.
+Job Setup Preferences This example elects to run Gaussian directly on the local computer via the command line. The grey box shows the command used to do so (which can be edited). The variables used in the command line—in uppercase, starting with @—are defined below the Command Line area.
 
 For each job type, there are several launch choices:
 
-- 
+- Execute directly using default command line: The job will be started on the local system using the command line specified in the lower area.
 
-Execute directly using default command line: The job will be started on the local system using the command line specified in the lower area.
+- Execute indirectly through script using default command line: The job will be started on the local system using a GaussView-provided script. These scripts are located in the bin subdirectory of the GaussView installation directory. Their names are listed below. The associated command line appears in the lower area of the dialog. You can customize the script if desired, using a text editor. To use a different script, define a custom command line (see the next bullet).
 
-- 
+- Execute using custom command line: Use the command line specified in the box to start the job. You can enter whatever command line is appropriate for your situation. The GaussView-provided scripts may be called if desired. Successfully using this feature depends on a clear understanding of the command line invocation of Gaussian and its utilities under the current operating system. Consult the Gaussian User’s Reference for details.
 
-Execute indirectly through script using default command line: The job will be started on the local system using a GaussView-provided script. These scripts are located in the bin subdirectory of the GaussView installation directory. Their names are listed below. The associated command line appears in the lower area of the dialog. You can customize the script if desired, using a text editor. To use a different script, define a custom command line (see the next bullet).
-
-- 
-
-Execute using custom command line: Use the command line specified in the box to start the job. You can enter whatever command line is appropriate for your situation. The GaussView-provided scripts may be called if desired. Successfully using this feature depends on a clear understanding of the command line invocation of Gaussian and its utilities under the current operating system. Consult the Gaussian User’s Reference for details.
-
-- 
-
-Use SC Job Manager: This functionailty is described in this current document.
+- Use SC Job Manager: This functionailty is described in this current document.
 
 The following figure illustrates the command line and other information displayed for running the Gaussian program using the second launch choice:
 
@@ -6327,75 +4969,43 @@ The Toolbar Configuration Panel
 
 The Actions field allows you to select features from several lists corresponding to the eight default toolbar sections: Builder, Calculate Gaussian, Calculation Options, Edit, File, Tools, View, and Windows. These sections appear in the Toolbars field.
 
-- 
+- Builder: Contains the functions associated with constructing molecules.
 
-Builder: Contains the functions associated with constructing molecules.
+- Calculate Gaussian: Contains the functions associated with performing a Guassian calculation.
 
-- 
+- Calculation Options: Contains the functions used to track Gaussian calculations.
 
-Calculate Gaussian: Contains the functions associated with performing a Guassian calculation.
-
-- 
-
-Calculation Options: Contains the functions used to track Gaussian calculations.
-
-- 
-
-Edit: Contains standard editing operations such as Undo and Redo as well as model-cleaning functions.
+- Edit: Contains standard editing operations such as Undo and Redo as well as model-cleaning functions.
 
 
 ![](imgs/p236_225.png)
 
 <!-- p.237 -->
-- 
+- File: Contains functions to save and load files as well as generate image and movie files.
 
-File: Contains functions to save and load files as well as generate image and movie files.
+- Tools: Contains functions to view and edit atom properties like position and bonding as well as view molecular orbital information.
 
-- 
+- View: Contains functions to control the display of currently in-view atoms and molecular groups as well as switch which windows are active.
 
-Tools: Contains functions to view and edit atom properties like position and bonding as well as view molecular orbital information.
-
-- 
-
-View: Contains functions to control the display of currently in-view atoms and molecular groups as well as switch which windows are active.
-
-- 
-
-Windows: Contains functions that control how windows are displayed and how to switch between active ones.
+- Windows: Contains functions that control how windows are displayed and how to switch between active ones.
 
 The Toolbars field contains the following selections:
 
-- 
+- Builder: Clicking this allows you to move functions into and out of the Builder toolbar section via the Current Toolbar Actions field.
 
-Builder: Clicking this allows you to move functions into and out of the Builder toolbar section via the Current Toolbar Actions field.
+- Calculate Gaussian: Clicking this allows you to move functions into and out of the Calculate Gaussian toolbar section via the Current Toolbar Actions field.
 
-- 
+- Calculation Options: Clicking this allows you to move functions into and out of the Calculation Options toolbar section via the Current Toolbar Actions field.
 
-Calculate Gaussian: Clicking this allows you to move functions into and out of the Calculate Gaussian toolbar section via the Current Toolbar Actions field.
+- Edit: Clicking this allows you to move functions into and out of the Edit toolbar section via the Current Toolbar Actions field.
 
-- 
+- File: Clicking this allows you to move functions into and out of the File toolbar section via the Current Toolbar Actions field.
 
-Calculation Options: Clicking this allows you to move functions into and out of the Calculation Options toolbar section via the Current Toolbar Actions field.
+- Tools: Clicking this allows you to move functions into and out of the Tools toolbar section via the Current Toolbar Actions field.
 
-- 
+- View: Clicking this allows you to move functions into and out of the View toolbar section via the Current Toolbar Actions field.
 
-Edit: Clicking this allows you to move functions into and out of the Edit toolbar section via the Current Toolbar Actions field.
-
-- 
-
-File: Clicking this allows you to move functions into and out of the File toolbar section via the Current Toolbar Actions field.
-
-- 
-
-Tools: Clicking this allows you to move functions into and out of the Tools toolbar section via the Current Toolbar Actions field.
-
-- 
-
-View: Clicking this allows you to move functions into and out of the View toolbar section via the Current Toolbar Actions field.
-
-- 
-
-Windows: Clicking this allows you to move functions into and out of the Windows toolbar section via the Current Toolbar Actions field.
+- Windows: Clicking this allows you to move functions into and out of the Windows toolbar section via the Current Toolbar Actions field.
 
 The left and right arrow buttons located between the Actions and the Current Toolbar Actions fields allow you to remove or add (respectively) an action to the toolbar, and the up and down arrows allow you to control the currently selected action’s placement.
 
@@ -6425,37 +5035,21 @@ Fragments within a fragment library are organized into a series of user-defined 
 
 The Custom Fragment context menu, reached by right-clicking within the fragment list area in the center of the palette, is used to manage and modify fragment libraries. It has the following selections:
 
-- 
+- New Group: Create a new group within the current library. The group is initially given a generic name that you can modify. Control-G is equivalent to this menu selection (Command-N under Mac OS X).
 
-New Group: Create a new group within the current library. The group is initially given a generic name that you can modify. Control-G is equivalent to this menu selection (Command-N under Mac OS X).
+- New Fragment From Active Molecule: Add the current molecule within the currently selected group within the current fragment library. A generic label and description will be set, which you should edit as appropriate. In this context, Control-N/Command-N has the same function as this menu item.
 
-- 
+- Edit Cell: Edit the text within the current item (group name, fragment name, fragment description). Note that the top-level group name cannot be modified.
 
-New Fragment From Active Molecule: Add the current molecule within the currently selected group within the current fragment library. A generic label and description will be set, which you should edit as appropriate. In this context, Control-N/Command-N has the same function as this menu item.
+- Delete: Delete the currently selected fragment or fragment group. Note that the top-level fragment group cannot be deleted. The Delete key is equivalent to this menu item.
 
-- 
+- Font: Change the font style, font style, and font size.
 
-Edit Cell: Edit the text within the current item (group name, fragment name, fragment description). Note that the top-level group name cannot be modified.
+- Text Color: Change the color of the text.
 
-- 
+- Background Color: Change the color of the background.
 
-Delete: Delete the currently selected fragment or fragment group. Note that the top-level fragment group cannot be deleted. The Delete key is equivalent to this menu item.
-
-- 
-
-Font: Change the font style, font style, and font size.
-
-- 
-
-Text Color: Change the color of the text.
-
-- 
-
-Background Color: Change the color of the background.
-
-- 
-
-Show Grid: Displays the grid.
+- Show Grid: Displays the grid.
 
 Note that fragments within a library can be updated only by removing and then re-adding them (there is no way to modify an existing fragment).
 
@@ -6769,33 +5363,19 @@ Charge Distribution Preferences
 
 This preference panel specifies how atomic charge results are visualized, using these options:
 
-- 
+- Show Numbers: Place atomic charge values next to each atom.
 
-Show Numbers: Place atomic charge values next to each atom.
+- Color Atoms by Charge: Recolor each atom by atomic charge according to the specifications of the Color Range fields and the Symmetric Color Range checkbox.
 
-- 
+- Symmetric Color Range: Forces the positive and negative limits of the charge range to have the same absolute magnitude (regardless of the actual range of the atomic charge values).
 
-Color Atoms by Charge: Recolor each atom by atomic charge according to the specifications of the Color Range fields and the Symmetric Color Range checkbox.
+- Fixed Color Range: Force the charge display to use the default fixed range. This range is set to -1.0 to 1.0 by default, and it can be modified in the Charge Distribution Preferences.
 
-- 
+- The Dipole Moment area of the dialog controls whether a vector representing the dipole moment is included in the display. When the vector is displayed, you can specify the scaling factor for the vector’s length (the default is about 1.0) using the slider control.
 
-Symmetric Color Range: Forces the positive and negative limits of the charge range to have the same absolute magnitude (regardless of the actual range of the atomic charge values).
+- Dipole Vector Color: Set the color for the vector.
 
-- 
-
-Fixed Color Range: Force the charge display to use the default fixed range. This range is set to -1.0 to 1.0 by default, and it can be modified in the Charge Distribution Preferences.
-
-- 
-
-The Dipole Moment area of the dialog controls whether a vector representing the dipole moment is included in the display. When the vector is displayed, you can specify the scaling factor for the vector’s length (the default is about 1.0) using the slider control.
-
-- 
-
-Dipole Vector Color: Set the color for the vector.
-
-- 
-
-Dipole Vector Radius: Sets the thickness of the vector.
+- Dipole Vector Radius: Sets the thickness of the vector.
 
 
 ![](imgs/p246_228.png)
@@ -6811,29 +5391,17 @@ The default clean settings attempt to achieve a balance that produces expected �
 
 The following controls are available in the dialog. The fields in the Rel. Weights column are:
 
-- 
+- Bond: The targeted bond lengths are assigned based on the van der Waals radii of the two atoms forming the bond, with slight adjustment for bond type. They are not intended to be chemically accurate, but they should give reasonable input geometries for Gaussian.
 
-Bond: The targeted bond lengths are assigned based on the van der Waals radii of the two atoms forming the bond, with slight adjustment for bond type. They are not intended to be chemically accurate, but they should give reasonable input geometries for Gaussian.
+- NonBond: Repulsive term between all atoms that are not directly bonded. The purpose of this component is to keep atom centers apart so one atom is never masking another atom. However, it will not adjust biphenyl.
 
-- 
+- Hard Angle: Hard angles are calculated for atom centers that contain 2–4 bonds. They are weighted more heavily since the targeted angles are known. These terms are vital for maintaining atom center integrity.
 
-NonBond: Repulsive term between all atoms that are not directly bonded. The purpose of this component is to keep atom centers apart so one atom is never masking another atom. However, it will not adjust biphenyl.
+- Soft Angle: Soft angles are calculated for atom centers that contain 5 or more bonds. The targeted angles are not well known, but desired results can be achieved with practice. To produce a trigonal bipyramidal structure, adjust the axial bond angle to 180 degrees. Make sure the linear angle bias option is on. Most of the time, the clean procedure will produce the desired structure. Practice with coordinate patterns to get a feel for cleaning more complex coordinations.
 
-- 
+- 1-Ctr Dihed: Calculated from the Newman projections down each bond and limited to atom centers with fewer than 5 bonds. This term helps maintain atom center integrity when the 2-center dihedrals are causing distortions.
 
-Hard Angle: Hard angles are calculated for atom centers that contain 2–4 bonds. They are weighted more heavily since the targeted angles are known. These terms are vital for maintaining atom center integrity.
-
-- 
-
-Soft Angle: Soft angles are calculated for atom centers that contain 5 or more bonds. The targeted angles are not well known, but desired results can be achieved with practice. To produce a trigonal bipyramidal structure, adjust the axial bond angle to 180 degrees. Make sure the linear angle bias option is on. Most of the time, the clean procedure will produce the desired structure. Practice with coordinate patterns to get a feel for cleaning more complex coordinations.
-
-- 
-
-1-Ctr Dihed: Calculated from the Newman projections down each bond and limited to atom centers with fewer than 5 bonds. This term helps maintain atom center integrity when the 2-center dihedrals are causing distortions.
-
-- 
-
-2-Ctr Dihed: This is the only term that affects tertiary structure. The targeted dihedrals will be eclipsed or staggered based on the bond types. If each atom center contains multiple bonds, the targeted dihedral will be eclipsed.
+- 2-Ctr Dihed: This is the only term that affects tertiary structure. The targeted dihedrals will be eclipsed or staggered based on the bond types. If each atom center contains multiple bonds, the targeted dihedral will be eclipsed.
 
 
 ![](imgs/p247_229.png)
@@ -6841,31 +5409,19 @@ Soft Angle: Soft angles are calculated for atom centers that contain 5 or more b
 <!-- p.248 -->
 The checkboxes at the bottom of the window have the following effects:
 
-- 
+- Double the weight for linear angles: This term assists cleaning with soft angles where the angles at an atom center are not well known.
 
-Double the weight for linear angles: This term assists cleaning with soft angles where the angles at an atom center are not well known.
-
-- 
-
-Use one 2-center dihedral per bond: Normally, this option should remain unchecked. It is available to provide better performance on slower systems.
+- Use one 2-center dihedral per bond: Normally, this option should remain unchecked. It is available to provide better performance on slower systems.
 
 The fields in the Opt. Controls column are:
 
-- 
+- Tolerance: Lower values give more accurate structures but can take significantly longer to clean. The range should be between 1.0E-5 and 1.0E-12.
 
-Tolerance: Lower values give more accurate structures but can take significantly longer to clean. The range should be between 1.0E-5 and 1.0E-12.
+- View Updates: Controls how often the views of the molecule being cleaned are updated. A value of 1 gives a refresh with every clean cycle. A value of 10 gives a refresh every 10 clean cycles. A value of 0 disables view updates until clean is complete. Depending on your system, this parameter can have a significant effect on cleaning time.
 
-- 
+- Max Cycles: Maximum number of steps during a clean optimization. A good value is 150. Larger structures may require a larger value.
 
-View Updates: Controls how often the views of the molecule being cleaned are updated. A value of 1 gives a refresh with every clean cycle. A value of 10 gives a refresh every 10 clean cycles. A value of 0 disables view updates until clean is complete. Depending on your system, this parameter can have a significant effect on cleaning time.
-
-- 
-
-Max Cycles: Maximum number of steps during a clean optimization. A good value is 150. Larger structures may require a larger value.
-
-- 
-
-Max Time: Maximum time (seconds) allowed for a clean operation to complete.
+- Max Time: Maximum time (seconds) allowed for a clean operation to complete.
 
 It is important to remember that the various components of the clean force field are relative. Changing one weight will affect the behavior of the other weights. For example, an excessive non-bond weight will produce longer bonds. Similarly, an excessive hard angle weight could affect the 2-center dihedrals.
 
@@ -6875,21 +5431,13 @@ You can disable any set of terms by assigning a weight of 0.0. For example, disa
 
 If the clean function is too slow on your system, try these settings:
 
-- 
+- NonBond: 0
 
-NonBond: 0
+- 1-Ctr Dihed: 0
 
-- 
+- Use one 2-center dihedral per bond: checked
 
-1-Ctr Dihed: 0
-
-- 
-
-Use one 2-center dihedral per bond: checked
-
-- 
-
-View Updates: 0
+- View Updates: 0
 
 Poor performance of the clean function can also be a symptom of a memory shortage on the system.
 
@@ -6907,13 +5455,9 @@ In general, if the Use RGB Selector checkbox is selected (which is the default),
 
 The buttons in the Colors Preferences dialog control the coloring of the following items:
 
-- 
+- Background Color: Background color in view windows. Click on the color chip to modify it.
 
-Background Color: Background color in view windows. Click on the color chip to modify it.
-
-- 
-
-Element Colors: Element-based atom coloring. This button brings up a periodic table indicating the default color for each element (see below). Click on any element to change its default color. Doing so results in the dialog on the right:
+- Element Colors: Element-based atom coloring. This button brings up a periodic table indicating the default color for each element (see below). Click on any element to change its default color. Doing so results in the dialog on the right:
 
 
 ![](imgs/p249_230.png)
@@ -6921,13 +5465,9 @@ Element Colors: Element-based atom coloring. This button brings up a periodic ta
 <!-- p.250 -->
 Modifying Default Element Colors Here we are modifying the color of Neon atoms.
 
-- 
+- Surface Colors: Specifies colors for surfaces (discussed below).
 
-Surface Colors: Specifies colors for surfaces (discussed below).
-
-- 
-
-Bond Colors: Sets coloring for bonds in each of the various display types. The dialog is similar to the one below, and it displays the selected color on a sphere. Don’t be confused by this; the selected colors will be used to color the bonds, not the atoms.
+- Bond Colors: Sets coloring for bonds in each of the various display types. The dialog is similar to the one below, and it displays the selected color on a sphere. Don’t be confused by this; the selected colors will be used to color the bonds, not the atoms.
 
 
 ![](imgs/p250_231.png)
@@ -6935,9 +5475,7 @@ Bond Colors: Sets coloring for bonds in each of the various display types. The d
 <!-- p.251 -->
 Specifying Bond Coloring In this example, we are changing the color of bonds in wireframe display mode from grey to black.
 
-- 
-
-Vibration Colors: Sets the coloring of the dipole derivative and displacement vectors in vibrations displays. The color selected will be used to color the displayed vectors (not the atoms).
+- Vibration Colors: Sets the coloring of the dipole derivative and displacement vectors in vibrations displays. The color selected will be used to color the displayed vectors (not the atoms).
 
 
 ![](imgs/p251_232.png)
@@ -6975,39 +5513,23 @@ Defining Custom Bonding Parameters
 
 GaussView determines bonding based on geometry in the following cases:
 
-- 
+- When a molecule is loaded and there is no bonding connectivity data provided: e.g., a Gaussian input file without Geom=Connectivity, a log file (since these files don’t have bonding connectivity data in general), a PDB file for which Standard Bonding for Residues is not requested or for included HETATMS when CONECT records are either not present or are requested to be ignored, and so on.
 
-When a molecule is loaded and there is no bonding connectivity data provided: e.g., a Gaussian input file without Geom=Connectivity, a log file (since these files don’t have bonding connectivity data in general), a PDB file for which Standard Bonding for Residues is not requested or for included HETATMS when CONECT records are either not present or are requested to be ignored, and so on.
+- When you select Edit=>Rebond.
 
-- 
+- When you perform point group or space group based symmetrization with the Rebond after Symmetrization option checked.
 
-When you select Edit=>Rebond.
+- When you click Combine Cells or select Contents=>Bonds=>Rebond in the PBC dialog.
 
-- 
-
-When you perform point group or space group based symmetrization with the Rebond after Symmetrization option checked.
-
-- 
-
-When you click Combine Cells or select Contents=>Bonds=>Rebond in the PBC dialog.
-
-- 
-
-When you click Apply or OK in the Custom Bonding Parameters dialog. In this case, GaussView will recalculate bonding for any atom pairs that have custom bonding parameters. Important Tip: If any atoms are currently selected, consideration for rebonding will occur only for them. Otherwise, consideration will be given to all atoms.
+- When you click Apply or OK in the Custom Bonding Parameters dialog. In this case, GaussView will recalculate bonding for any atom pairs that have custom bonding parameters. Important Tip: If any atoms are currently selected, consideration for rebonding will occur only for them. Otherwise, consideration will be given to all atoms.
 
 The fields in the dialog have the following meanings:
 
-- 
+- Active?: Whether the parameter is active (applied).
 
-Active?: Whether the parameter is active (applied).
+- Elem. 1 and Elem. 2: Atoms involved in the bond.
 
-- 
-
-Elem. 1 and Elem. 2: Atoms involved in the bond.
-
-- 
-
-Triple, Double, Resonant, Single, Weak: Maximum bond length for the specified bond type. Weak bonds are represented by a single dashed line. They can be visually useful for representing things like hydrogen bonds, and its
+- Triple, Double, Resonant, Single, Weak: Maximum bond length for the specified bond type. Weak bonds are represented by a single dashed line. They can be visually useful for representing things like hydrogen bonds, and its
 
 
 ![](imgs/p254_235.png)
@@ -7043,31 +5565,19 @@ Specifying Default Directory Locations
 
 The Starting Directory popup allows you to select the following choices:
 
-- 
+- Use previous work directory: Keep track of the last directory visited, and use that directory the next time.
 
-Use previous work directory: Keep track of the last directory visited, and use that directory the next time.
+- Use launch directory: Always use the directory from which GaussView launched as the default directory.
 
-- 
-
-Use launch directory: Always use the directory from which GaussView launched as the default directory.
-
-- 
-
-Specify: Always use the specified directory. You can use the ... button to navigate to the desired directory, or type the full path into the text box.
+- Specify: Always use the specified directory. You can use the ... button to navigate to the desired directory, or type the full path into the text box.
 
 The Scratch Directory popup, which specifies the location for temporary scratch files that GaussView uses in some cases, has the following choices:
 
-- 
+- Use GAUSS_SCRDIR: Use the Gaussian scratch directory for GaussView as well (as defined by the environment variable of this name).
 
-Use GAUSS_SCRDIR: Use the Gaussian scratch directory for GaussView as well (as defined by the environment variable of this name).
+- Use launch directory: Always use the directory from which GaussView launched as the Gaussian scratch directory.
 
-- 
-
-Use launch directory: Always use the directory from which GaussView launched as the Gaussian scratch directory.
-
-- 
-
-Specify: Always use the specified directory as the Gaussian scratch directory. You can use the ... button to navigate to the desired directory, or type the full path into the text box.
+- Specify: Always use the specified directory as the Gaussian scratch directory. You can use the ... button to navigate to the desired directory, or type the full path into the text box.
 
 The Maximum Recent Files field specifies the maximum length of the recent files list on the File menu.
 
@@ -7123,29 +5633,17 @@ Image Preferences
 
 The fields in this panel have the following meanings:
 
-- 
+- Object Quality: Specifies the image quality. Moving the slider toward the Realistic end of the scale increases the file size and the time required to generate the image file.
 
-Object Quality: Specifies the image quality. Moving the slider toward the Realistic end of the scale increases the file size and the time required to generate the image file.
+- Enlarge Width and Height by: Set the default image scaling factor (as above).
 
-- 
+- Background Color: Background color for the image.
 
-Enlarge Width and Height by: Set the default image scaling factor (as above).
+- Generic Pixel Format: Use the system software renderer. This option should be checked only after rendering problems/failures have been encountered during image capture or printing.
 
-- 
+- Gray Scale: Convert the image to gray scale (i.e., black and white) before capturing. The default is to save a color image.
 
-Background Color: Background color for the image.
-
-- 
-
-Generic Pixel Format: Use the system software renderer. This option should be checked only after rendering problems/failures have been encountered during image capture or printing.
-
-- 
-
-Gray Scale: Convert the image to gray scale (i.e., black and white) before capturing. The default is to save a color image.
-
-- 
-
-Render Method: Specify the rendering method. The choices available in this menu are shown above. This setting should seldom be changed.
+- Render Method: Specify the rendering method. The choices available in this menu are shown above. This setting should seldom be changed.
 
 
 ![](imgs/p262_242.png)
@@ -7155,29 +5653,17 @@ Render Method: Specify the rendering method. The choices available in this menu 
 
 The Job Setup Preferences dialog allows you to examine and customize how Gaussian and its utilities are launched from within GaussView. It is illustrated below. The Application field at the top of the panel specifies the program or utility whose execution method is currently displayed. Below this popup, there are launch choices, and the command line associated with the selected launch method is displayed in the Command Line area. The values of the GaussView internal variables used in the command line are displayed below the field for your convenience.
 
-Job Setup Preferences This example elects to run Gaussian directly on the local computer via the command line. The grey
-
-box shows the command used to do so (which can be edited). The variables used in the command
-
-line—in uppercase, starting with @—are defined below the Command Line area.
+Job Setup Preferences This example elects to run Gaussian directly on the local computer via the command line. The grey box shows the command used to do so (which can be edited). The variables used in the command line—in uppercase, starting with @—are defined below the Command Line area.
 
 For each job type, there are several launch choices:
 
-- 
+- Execute directly using default command line: The job will be started on the local system using the command line specified in the lower area.
 
-Execute directly using default command line: The job will be started on the local system using the command line specified in the lower area.
+- Execute indirectly through script using default command line: The job will be started on the local system using a GaussView-provided script. These scripts are located in the bin subdirectory of the GaussView installation directory. Their names are listed below. The associated command line appears in the lower area of the dialog. You can customize the script if desired, using a text editor. To use a different script, define a custom command line (see the next bullet).
 
-- 
+- Execute using custom command line: Use the command line specified in the box to start the job. You can enter whatever command line is appropriate for your situation. The GaussView-provided scripts may be called if desired. Successfully using this feature depends on a clear understanding of the command line invocation of Gaussian and its utilities under the current operating system. Consult the Gaussian User’s Reference for details.
 
-Execute indirectly through script using default command line: The job will be started on the local system using a GaussView-provided script. These scripts are located in the bin subdirectory of the GaussView installation directory. Their names are listed below. The associated command line appears in the lower area of the dialog. You can customize the script if desired, using a text editor. To use a different script, define a custom command line (see the next bullet).
-
-- 
-
-Execute using custom command line: Use the command line specified in the box to start the job. You can enter whatever command line is appropriate for your situation. The GaussView-provided scripts may be called if desired. Successfully using this feature depends on a clear understanding of the command line invocation of Gaussian and its utilities under the current operating system. Consult the Gaussian User’s Reference for details.
-
-- 
-
-Use SC Job Manager: Use the SC Job Manager facility to run the job, using the indicated command. It is described here.
+- Use SC Job Manager: Use the SC Job Manager facility to run the job, using the indicated command. It is described here.
 
 
 ![](imgs/p263_243.png)
@@ -7247,33 +5733,19 @@ Movie/Animation Preferences: General and for Molecule Animations
 
 The controls in the top half of the panel have the following meanings:
 
-- 
+- Object Quality: Specifies the movie quality. Moving the slider toward the Realistic end of the scale increases the file size and the time required to generate the movie file.
 
-Object Quality: Specifies the movie quality. Moving the slider toward the Realistic end of the scale increases the file size and the time required to generate the movie file.
+- Enlarge Width and Height by: Set the default movie scaling factor (as above).
 
-- 
+- Background Color: Background color for the movie.
 
-Enlarge Width and Height by: Set the default movie scaling factor (as above).
+- Gray Scale: Convert the movie to gray scale (i.e., black and white) before capturing. The default is to save a color movie.
 
-- 
+- Render Method: Specify the rendering method. The choices available in this menu are shown above. This setting should seldom be changed.
 
-Background Color: Background color for the movie.
+- Generic Pixel Format: Use the system software renderer. This option should be checked only after rendering problems/failures have been encountered during movie capture or printing.
 
-- 
-
-Gray Scale: Convert the movie to gray scale (i.e., black and white) before capturing. The default is to save a color movie.
-
-- 
-
-Render Method: Specify the rendering method. The choices available in this menu are shown above. This setting should seldom be changed.
-
-- 
-
-Generic Pixel Format: Use the system software renderer. This option should be checked only after rendering problems/failures have been encountered during movie capture or printing.
-
-- 
-
-Target Aspect Ratio: A projection attribute that describes the proportional relationship between the width of an image and its height.
+- Target Aspect Ratio: A projection attribute that describes the proportional relationship between the width of an image and its height.
 
 There are two panels on the bottom half of the Movie/Animation Preferences window: the Molecule Group Animations panel, which applies to all animations except those of vibration frequencies, and the Vibration Animations panel, which controls animations of vibration frequencies.
 
@@ -7285,37 +5757,23 @@ There are two panels on the bottom half of the Movie/Animation Preferences windo
 
 The controls on the Molecule Group Animations panel are:
 
-- 
+- Repeats: Controls how often, if at all, the animination should repeat after the Start Animation button has been pressed.
 
-Repeats: Controls how often, if at all, the animination should repeat after the Start Animation button has been pressed.
+- Sequence: Used to play the movie backwards or forwards and combinations of the two.
 
-- 
+- Frame Delay (msec): The time, in miliseconds, that the rendering engine waits before moving on to the next image in the movie.
 
-Sequence: Used to play the movie backwards or forwards and combinations of the two.
-
-- 
-
-Frame Delay (msec): The time, in miliseconds, that the rendering engine waits before moving on to the next image in the movie.
-
-- 
-
-Endpoint Delay (msec): Indicates, in miliseconds, how long the delay is between the endpoint of the animation and the next loop.
+- Endpoint Delay (msec): Indicates, in miliseconds, how long the delay is between the endpoint of the animation and the next loop.
 
 # Animations of Vibrational Frequencies
 
 The controls on the Vibration Animation panel are:
 
-- 
+- Repeats: Controls how often, if at all, the animination should repeat after the Start Animation button has been pressed.
 
-Repeats: Controls how often, if at all, the animination should repeat after the Start Animation button has been pressed.
+- Frames per Cycle: The number of frames the movie is broken into per cycle.
 
-- 
-
-Frames per Cycle: The number of frames the movie is broken into per cycle.
-
-- 
-
-Frame Delay (msec): The time, in miliseconds, that the rendering engine waits before moving on to the next image in the movie.
+- Frame Delay (msec): The time, in miliseconds, that the rendering engine waits before moving on to the next image in the movie.
 
 Movie/Animation Preferences for Normal Mode Animations
 
@@ -7333,29 +5791,17 @@ GaussView Print Preferences Default values are displayed in this dialog.
 
 The controls in this dialog have the following meanings:
 
-- 
+- Object Quality: This slider specifies the quality of the generated print image. Both the time required for rendering and the print job size increase as the slider moves to the Realistic end of the scale.
 
-Object Quality: This slider specifies the quality of the generated print image. Both the time required for rendering and the print job size increase as the slider moves to the Realistic end of the scale.
+- Automatically Increase Image Resolution: The default print operation increases the image resolution to match the printer resolution, up to the maximum factor specified in the Limit Image Enlargements to field.
 
-- 
+- Limit Image Enlargement to: Specifies the maximum resolution increase for automatic operations. Note that this control does not affect image size (see the next control).
 
-Automatically Increase Image Resolution: The default print operation increases the image resolution to match the printer resolution, up to the maximum factor specified in the Limit Image Enlargements to field.
+- Enlarge Width and Height by: Increase the image size by the indicated factor. If automatic image resolution is disabled, increasing this may result in poorer quality in the printed image.
 
-- 
+- Background Color: Specify the background color for the image. The default is white.
 
-Limit Image Enlargement to: Specifies the maximum resolution increase for automatic operations. Note that this control does not affect image size (see the next control).
-
-- 
-
-Enlarge Width and Height by: Increase the image size by the indicated factor. If automatic image resolution is disabled, increasing this may result in poorer quality in the printed image.
-
-- 
-
-Background Color: Specify the background color for the image. The default is white.
-
-- 
-
-Gray Scale: Produce a gray scale (toned black-and-white) image. The default is a color image.
+- Gray Scale: Produce a gray scale (toned black-and-white) image. The default is a color image.
 
 The remaining controls specify low-level graphics behavior. Generic Pixel Format says to use the system software renderer. This option should be checked only after rendering problems/failures have been encountered during image capture or printing.
 
@@ -7377,17 +5823,11 @@ Vibration Preferences
 
 This preference specifies the default Display Vibrations dialog settings:
 
-- 
+- Displacement Amplitude: The amplitude of atomic displacement in normal mode animations.
 
-Displacement Amplitude: The amplitude of atomic displacement in normal mode animations.
+- Displacement Vectors: The checkbox controls whether to display the motion associated with the vibration as a displacement vector in the View window. The Scale slider controls the vector’s length.
 
-- 
-
-Displacement Vectors: The checkbox controls whether to display the motion associated with the vibration as a displacement vector in the View window. The Scale slider controls the vector’s length.
-
-- 
-
-Dipole Derivative Unit Vector: The checkbox controls whether to display the dipole derivative unit vector as a vector in the View window. The Scale slider controls the vector’s length.
+- Dipole Derivative Unit Vector: The checkbox controls whether to display the dipole derivative unit vector as a vector in the View window. The Scale slider controls the vector’s length.
 
 For both the displacement vectors and the dipole derivative unit vector, you can modify the vector color with the Color control and the vector's thickness with the Radius setting.
 
@@ -7633,17 +6073,11 @@ You can now go on to fill out the rest of the dialog box, and the job will be re
 
 The following tutorial illustrates how to perform a conformational search and predict their Boltzmann-weighted spectra. It has three parts:
 
-- 
+- Performing the Conformational Search
 
-Performing the Conformational Search
+- Preparing and Running the Calculations
 
-- 
-
-Preparing and Running the Calculations
-
-- 
-
-Examining the Results
+- Examining the Results
 
 # Part 1: Performing a Conformational Search
 
@@ -7671,9 +6105,7 @@ The Open .SDF File Dialog
 ![](imgs/p286_269.png)
 
 <!-- p.287 -->
-The Reading .SDF File Dialog Use this window to select the conformations to examine. The selected ones will be opened in a
-
-new molecule group. Duplicates will have been automatically eliminated.
+The Reading .SDF File Dialog Use this window to select the conformations to examine. The selected ones will be opened in a new molecule group. Duplicates will have been automatically eliminated.
 
 1-8 We select all of the conformers initially and open them by clicking Select All and then Ok. Then from the Results menu, we choose Energy Plot, which opens the Energy Plot window:
 
