@@ -1,0 +1,71 @@
+site_name: GaussView 6 官方说明书
+site_description: GaussView 6 官方说明书中文翻译 + 英文原文（由 PDF 转换，共 332 页）
+site_author: PDF 转 Markdown + AI 翻译
+site_url: https://wxyhgk.github.io/gview6-docs/
+repo_url: https://github.com/wxyhgk/gview6-docs
+
+docs_dir: docs
+site_dir: site
+use_directory_urls: false
+
+extra_css:
+  - stylesheets/extra.css
+
+extra_javascript:
+  - javascripts/lang-switch.js
+
+theme:
+  name: material
+  language: zh
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - navigation.tracking
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+
+plugins:
+  - search:
+      lang: en
+
+markdown_extensions:
+  - toc:
+      permalink: true
+  - admonition
+  - attr_list
+  - md_in_html
+  - pymdownx.highlight
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+
+nav:
+  - 首页: index.md
+  - 中文文档:
+      - 总览: zh/index.md
+      - 01 界面与基础操作: zh/zh_01_界面与基础操作.md
+      - 02 构建与编辑分子: zh/zh_02_构建与编辑分子.md
+      - 03 高斯计算设置与提交: zh/zh_03_高斯计算设置与提交.md
+      - 04 绘图与光谱: zh/zh_04_绘图与光谱.md
+      - 05 Cube与表面体积数据: zh/zh_05_Cube与表面体积数据.md
+      - 06 选择与原子编辑: zh/zh_06_选择与原子编辑.md
+      - 07 文件与分子列表: zh/zh_07_文件与分子列表.md
+      - 08 动画与电影: zh/zh_08_动画与电影.md
+      - 09 任务管理与脚本: zh/zh_09_任务管理与脚本.md
+      - 10 附录: zh/zh_10_附录.md
+      - 11 教程: zh/zh_11_教程.md
+  - English:
+      - Overview: en/index.md
+      - 01 Interface & Basics: en/01_界面与基础操作.md
+      - 02 Building & Editing: en/02_构建与编辑分子.md
+      - 03 Job Setup & Submit: en/03_高斯计算设置与提交.md
+      - 04 Plots & Spectra: en/04_绘图与光谱.md
+      - 05 Cubes & Surfaces: en/05_Cube与表面体积数据.md
+      - 06 Selections & Atoms: en/06_选择与原子编辑.md
+      - 07 Files & Lists: en/07_文件与分子列表.md
+      - 08 Movies: en/08_动画与电影.md
+      - 09 Job Manager & Scripts: en/09_任务管理与脚本.md
+      - 10 Appendix: en/10_附录.md
+      - 11 Tutorials: en/11_教程.md
