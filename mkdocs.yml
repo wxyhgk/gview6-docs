@@ -1,7 +1,7 @@
 site_name: GaussView 6 官方说明书
 site_description: GaussView 6 官方说明书中文翻译 + 英文原文（由 PDF 转换，共 332 页）
 site_author: PDF 转 Markdown + AI 翻译
-site_url: https://wxyhgk.github.io/gview6-docs/
+site_url: https://wxyhgk.github.io/doc/gaussview/
 repo_url: https://github.com/wxyhgk/gview6-docs
 
 docs_dir: docs
